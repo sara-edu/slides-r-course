@@ -1,0 +1,31 @@
+---
+pagetitle: "R"
+format:
+  revealjs:
+    theme: [default, sara-style.scss]
+    slide-number: true
+    logo: images/logo.png
+knitr:
+  opts_chunk: 
+    echo: true
+---
+
+## {background-image="images/title-front.jpg" background-size="cover"}
+
+[R For<br>Beginners]{.r-fit-text .right}
+
+Ajay Koli | Savitribai Ramabai (SaRa) Institute of Data Science
+
+## Table of content
+
+- [R & RStudio]()
+
+- Data visualization
+
+- Publish using Quarto
+
+- Data wrangling
+
+- 
+
+{{< include basics.qmd >}}

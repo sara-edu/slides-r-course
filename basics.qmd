@@ -1,0 +1,25 @@
+---
+format: revealjs
+---
+
+# Basics of R and RStudio
+
+- Lets learn it.
+
+## R as a big calci
+
+- 1 + 1
+  - 2-2
+  - a and b
+
+- do the addition
+
+- do the minus
+
+## Code
+
+```{r}
+library(palmerpenguins)
+dplyr::glimpse(penguins)
+```
+

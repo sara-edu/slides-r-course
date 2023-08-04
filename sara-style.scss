@@ -1,0 +1,74 @@
+/*-- scss:defaults --*/
+
+// most of the color combinations are adapted from the slides of dear Allison Hill.
+
+// font style for the headings.
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
+
+// font style for the body text of the slides.
+@import url('https://fonts.googleapis.com/css?family=Sen&display=swap');
+
+
+// define color variables.
+$theme-navy-blue: #003366;
+$theme-gray:      #282a36;
+$theme-red:       #E7553C; 
+$theme-white:     #ffffff;
+$theme-light-blue: #A3D3FC;
+$theme-blue:      #76AADB;
+
+
+$presentation-heading-font: 'Libre Baskerville', 'serif';
+$presentation-heading-color: $theme-navy-blue;
+
+// body style.
+$font-family-sans-serif: "Sen", "sans-serif";
+$mainFontSize: 25px;
+$body-color: $theme-gray;
+$body-bg: $theme-white;
+
+// link style.
+$link-color: $theme-red;
+$link-color-hover: lighten($link-color, 15%);
+$selection-bg: $theme-blue;
+
+// code chunk style.
+//$code-block-border-color: lighten($navy-blue, 20%);
+$code-block-font-size: 0.8em;
+$code-color: $theme-red;
+$code-bg: #fff;
+$code-block-bg: #fff;
+
+
+/*-- scss:rules --*/
+
+
+.right {
+  text-align: right;
+}
+
+// underline the link.
+.reveal .slide a {
+  text-decoration: underline;
+}
+
+// to increase space between code block and code output
+.reveal div.sourceCode {
+    margin-bottom: 20px !important;
+}
+
+// shade around the code chunk box.
+.reveal div.sourceCode {
+  box-shadow: 0 15px 30px rgba($theme-blue, 0.8);
+}
+
+
+
+
+
+
+
+
+
+
+
