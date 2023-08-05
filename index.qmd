@@ -1,10 +1,14 @@
 ---
-pagetitle: "R"
+pagetitle: "R slides"
 format:
   revealjs:
     theme: [default, sara-style.scss]
     slide-number: true
     logo: images/logo.png
+    incremental: true
+    code-copy: true
+    code-link: true #using downlit pkg
+    code-line-numbers: true
 knitr:
   opts_chunk: 
     echo: true
@@ -12,20 +16,143 @@ knitr:
 
 ## {background-image="images/title-front.jpg" background-size="cover"}
 
-[R For<br>Beginners]{.r-fit-text .right}
+[{{< fa brands r-project size=large >}} For<br>Beginners]{.r-fit-text .right .theme-navy-blue}
+Ajay Koli | Savitribai Ramabai (SaRa) Institute of Data Science | India.
 
-Ajay Koli | Savitribai Ramabai (SaRa) Institute of Data Science
+[Background image by [joanna-kosinska](https://unsplash.com/@joannakosinska)]{.small}
+
+##
+
+:::: {.columns}
+
+::: {.column width="50%"}
+![](images/akk.png)
+:::
+
+::: {.column width="50%"}
+
+<br>
+<br>
+<br>
+
+[Hello there!!]{.r-fit-text .theme-hello .theme-navy-blue}
+
+Dr. Ajay Koli & Dr. Kiran Koli
+
+{{< fa award >}} Founders & Directors
+
+{{< fa globe >}} [SaRa Institute of Data Science](https://saraedu.netlify.app/)
+
+{{< fa brands twitter >}} [@sara_institute](https://twitter.com/sara_institute)
+
+{{< fa brands github >}} [sara-edu](https://github.com/sara-edu)
+:::
+
+::::
+
+## What is data science?
+
+## Career in data science
+
+## Data science tools
+
+```{r}
+#| label: packages-used
+#| echo: false
+#| warning: false
+#| message: false
+
+library(downlit) #to create link of r function
+library(tidyverse)
+library(palmerpenguins)
+```
 
 ## Table of content
 
-- [R & RStudio]()
+::: {.nonincremental}
 
-- Data visualization
+- [R & RStudio](#sec-basics)
 
-- Publish using Quarto
+- [Basics of Quarto](#sec-basics-quarto)
 
-- Data wrangling
+- [Data Visualization](#sec-viz)
 
-- 
+- [Publish using Quarto](#sec-publish)
+
+- [Data Wrangling](#sec-wrangle)
+:::
+
+# {background-image="images/basics.jpg"  background-size="cover" #sec-basics}
+
+:::: {.columns}
+
+::: {.column width="40%"}
+
+:::
+
+::: {.column width="60%"}
+[R and<br>RStudio]{.r-fit-text .theme-navy-blue .right}
+
+[Background image by [leohoho](https://unsplash.com/@leohoho)]{.small}
+
+:::
+
+::::
 
 {{< include basics.qmd >}}
+
+# {background-image="images/basics-quarto.jpg"  background-size="cover" #sec-basics-quarto}
+
+:::: {.columns}
+
+::: {.column width="10%"}
+
+:::
+
+::: {.column width="90%"}
+[Basics <br> of Quarto]{.r-fit-text .theme-navy-blue .centering}
+
+[Background image by [scott-webb](https://unsplash.com/@scottwebb)]{.small .theme-navy-blue}
+
+:::
+
+::::
+
+# {background-image="images/viz.jpg"  background-size="cover" #sec-viz}
+
+[Data <br> Visualization<br><br>]{.r-fit-text .theme-navy-blue .centering}
+
+[Background image by [jess-bailey](https://unsplash.com/@jessbaileydesigns)]{.small}
+
+# {background-image="images/publish.jpg"  background-size="cover" #sec-publish}
+
+[Publish using <br> Quarto]{.r-fit-text .theme-navy-blue .centering}
+
+[Background image by [scott-webb](https://unsplash.com/@scottwebb)]{.small .theme-navy-blue}
+
+
+# {background-image="images/wrangle.jpg"  background-size="cover" #sec-wrangle}
+
+:::: {.columns}
+
+::: {.column width="20%"}
+
+:::
+
+::: {.column width="80%"}
+[Data <br> Wrangling]{.r-fit-text .theme-navy-blue .centering}
+
+[Background image by [imattsmart](https://unsplash.com/@imattsmart)]{.small}
+
+:::
+
+::::
+
+## Your turn {#sec-turn}
+
+# {background-image="images/thanks.jpg" background-size="cover"}
+
+[thank you]{.r-fit-text .theme-hello .theme-navy-blue}
+
+[Background image by [anastasiia-kamil](https://unsplash.com/@nastyakamil)]{.small}
+

@@ -8,6 +8,9 @@
 // font style for the body text of the slides.
 @import url('https://fonts.googleapis.com/css?family=Sen&display=swap');
 
+// cursive font style.
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital@0;1&family=Sail&display=swap');
+
 
 // define color variables.
 $theme-navy-blue: #003366;
@@ -20,6 +23,7 @@ $theme-blue:      #76AADB;
 
 $presentation-heading-font: 'Libre Baskerville', 'serif';
 $presentation-heading-color: $theme-navy-blue;
+$presentation-h2-font-size: 2.5em;
 
 // body style.
 $font-family-sans-serif: "Sen", "sans-serif";
@@ -27,12 +31,14 @@ $mainFontSize: 25px;
 $body-color: $theme-gray;
 $body-bg: $theme-white;
 
+
 // link style.
 $link-color: $theme-red;
 $link-color-hover: lighten($link-color, 15%);
 $selection-bg: $theme-blue;
 
-// code chunk style.
+
+// code chunk box style.
 //$code-block-border-color: lighten($navy-blue, 20%);
 $code-block-font-size: 0.8em;
 $code-color: $theme-red;
@@ -42,20 +48,44 @@ $code-block-bg: #fff;
 
 /*-- scss:rules --*/
 
+.theme-navy-blue {
+  color: $theme-navy-blue;
+}
+
+.theme-white {
+  color: $theme-white;
+}
+
+
+.theme-hello {
+  font-family: 'Sail';
+}
+
 
 .right {
   text-align: right;
 }
+
+.centering {
+  text-align: center;
+}
+
+.small {
+  font-size: 0.5em;
+}
+
 
 // underline the link.
 .reveal .slide a {
   text-decoration: underline;
 }
 
+
 // to increase space between code block and code output
 .reveal div.sourceCode {
     margin-bottom: 20px !important;
 }
+
 
 // shade around the code chunk box.
 .reveal div.sourceCode {
@@ -63,6 +93,27 @@ $code-block-bg: #fff;
 }
 
 
+// your turn exercise slide style.
+.your-turn {
+  color: #fff;
+  h1, h2, h3 {
+    color: #fff;
+    font-size: 2.5em;
+  }
+
+  a {
+    color: #f1fa8c;
+  }
+  
+  a:hover {
+    color: #d8e17e;
+  }
+  
+  .slide-background-content {
+    background-color: #447099;
+  }
+  
+}
 
 
 
