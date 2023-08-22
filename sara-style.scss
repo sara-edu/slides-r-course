@@ -40,7 +40,7 @@ $selection-bg: $theme-blue;
 
 // code chunk box style.
 //$code-block-border-color: lighten($navy-blue, 20%);
-$code-block-font-size: 0.8em;
+$code-block-font-size: 1em;
 $code-color: $theme-red;
 $code-bg: #fff;
 $code-block-bg: #fff;
@@ -114,6 +114,31 @@ $code-block-bg: #fff;
   }
   
 }
+
+
+// inverse.
+.inverse {
+  color: #fff;
+  h1 {
+    color: #fff;
+    font-size: 3em;
+    text-align: center;
+  }
+  
+  a {
+    color: #bed3ec;
+  }
+  
+  a:hover {
+    color: #bed3ec;
+  }
+  
+  .slide-background-content {
+    background-color: #282a36;
+  }
+  
+}
+
 
 
 

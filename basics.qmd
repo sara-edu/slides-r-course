@@ -1,7 +1,924 @@
 ---
-format: revealjs
+format: 
+  revealjs:
+    theme: [default, sara-style.scss]
+knitr:
+  opts_chunk: 
+    echo: true
 ---
 
-## What is R?
+## R programming language
 
-## Your Turn {.your-turn}
+<br> <br>
+
+::: columns
+::: {.column width="30%"}
+![](https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/R_logo.svg/1920px-R_logo.svg.png)
+:::
+
+::: {.column width="70%"}
+<br> <br>
+
+"R is a free software environment for statistical computing and graphics."[^1]
+:::
+:::
+
+[^1]: [Source: R for Data Science, 2e](https://r4ds.hadley.nz/intro)
+
+## R's History
+
+::: nonincremental
+-   Initially developed as **S** language by Bells Labs.
+
+-   Later in August 1930 transformed **S** into **R** language by:
+:::
+
+::: columns
+::: {.column width="50%"}
+`Ross Ihaka`<br>(New Zealand Statistician)
+
+![](https://cdn.auckland.ac.nz/aem/content/auckland/en/science/about-the-faculty/department-of-statistics/ihaka-lecture-series/_jcr_content/leftpar/imagecomponent/image.img.480.low.jpg/1561079330278.jpg)
+:::
+
+::: {.column width="50%"}
+`Robert Gentleman`<br>(Canadian Statistician)
+
+![](https://www.computerhope.com/people/pictures/robert_gentleman.jpg){width="350"}
+:::
+:::
+
+## R is FREE
+
+Download R from [CRAN](https://cran.r-project.org/mirrors.html)
+
+![](images/cran.png)
+
+## R console
+
+::: columns
+::: {.column width="50%"}
+-   R version 4.3.1 (2023-06-16)
+
+-   R name "Beagle Scouts"
+
+-   R licence "ABSOLUTELY NO WARRANTY"
+
+-   R prompt `>|`
+:::
+
+::: {.column width="50%"}
+![](images/r-console.png){height="650" width="500"}
+:::
+:::
+
+## Never save workspace image:
+
+::: columns
+::: {.column width="50%"}
+<br>
+
+-   It helps in "freshly minted R sessions".
+
+-   "put more trust in your script than in your memory".
+:::
+
+::: {.column width="50%"}
+![](images/r-close.png){height="650" width="500"}
+:::
+:::
+
+::: aside
+[Source: R Bloggers](https://www.r-bloggers.com/2017/04/using-r-dont-save-your-workspace/)
+:::
+
+## R as a big calculator {.centering}
+
+<br>
+
+::: columns
+::: {.column width="50%"}
+### [Code]{.centering}
+
+```{r}
+#| label: number
+#| eval: false
+1
+```
+:::
+
+::: {.column width="50%"}
+### [Output]{.centering}
+
+```{r}
+#| label: number
+#| echo: false
+#| output: asis
+```
+:::
+:::
+
+## R as a big calculator: Add {.centering}
+
+<br>
+
+::: columns
+::: {.column width="50%"}
+### [Code]{.centering}
+
+```{r}
+#| label: add
+#| eval: false
+1 + 1
+```
+:::
+
+::: {.column width="50%"}
+### [Output]{.centering}
+
+```{r}
+#| label: add
+#| echo: false
+#| output: asis
+```
+:::
+:::
+
+## R as a big calculator: Subtract {.centering}
+
+<br>
+
+::: columns
+::: {.column width="50%"}
+### [Code]{.centering}
+
+```{r}
+#| label: subtract
+#| eval: false
+10 - 2
+```
+:::
+
+::: {.column width="50%"}
+### [Output]{.centering}
+
+```{r}
+#| label: subtract
+#| echo: false
+#| output: asis
+```
+:::
+:::
+
+## R as a big calculator: Multiply {.centering}
+
+<br>
+
+::: columns
+::: {.column width="50%"}
+### [Code]{.centering}
+
+```{r}
+#| label: multiply
+#| eval: false
+12 * 4
+```
+:::
+
+::: {.column width="50%"}
+### [Output]{.centering}
+
+```{r}
+#| label: multiply
+#| echo: false
+#| output: asis
+```
+:::
+:::
+
+## R as a big calculator: Divide {.centering}
+
+<br>
+
+::: columns
+::: {.column width="50%"}
+### [Code]{.centering}
+
+```{r}
+#| label: division
+#| eval: false
+25 / 5
+```
+:::
+
+::: {.column width="50%"}
+### [Output]{.centering}
+
+```{r}
+#| label: division
+#| echo: false
+#| output: asis
+```
+:::
+:::
+
+## R as a big calculator: Logic {.centering}
+
+<br>
+
+::: columns
+::: {.column width="50%"}
+### [Code]{.centering}
+
+```{r}
+#| label: logic1
+#| eval: false
+4 == 5
+```
+:::
+
+::: {.column width="50%"}
+### [Output]{.centering}
+
+```{r}
+#| label: logic1
+#| echo: false
+#| output: asis
+```
+:::
+:::
+
+## R as a big calculator: Logic {.centering}
+
+<br>
+
+::: columns
+::: {.column width="50%"}
+### [Code]{.centering}
+
+```{r}
+#| label: logic2
+#| eval: false
+67 > 60
+```
+:::
+
+::: {.column width="50%"}
+### [Output]{.centering}
+
+```{r}
+#| label: logic2
+#| echo: false
+#| output: asis
+```
+:::
+:::
+
+## R as a big calculator {.centering}
+
+<br>
+
+::: columns
+::: {.column width="60%"}
+### [Code]{.centering}
+
+```{r}
+#| label: calci5
+#| eval: false
+3434 + 343453 * 2323 / 534 - 1000
+```
+:::
+
+::: {.column width="40%"}
+### [Output]{.centering}
+
+```{r}
+#| label: calci5
+#| echo: false
+#| output: asis
+```
+:::
+:::
+
+## Plot using R
+
+::: panel-tabset
+### Code
+
+```{r}
+#| label: plot1
+#| eval: false
+plot(1:100)
+```
+
+### Output
+
+```{r}
+#| label: plot1
+#| echo: false
+#| output: asis
+```
+:::
+
+##  {.inverse}
+
+![](images/rainbowr.gif){fig-align="center"}
+
+[function]{.r-fit-text .centering}
+
+## R function
+
+-   "A function, in a programming environment, is a set of instructions."
+
+-   "A programmer builds a function to avoid repeating the same task, or reduce complexity."
+
+## R function
+
+::: panel-tabset
+### Code
+
+```{r}
+#| label: fun-round1
+#| eval: false
+
+round(24.3454, 3)
+```
+
+### Output
+
+```{r}
+#| label: fun-round1
+#| echo: false
+#| output: asis
+
+```
+:::
+
+## Structure of R function {.centering background-image="images/function-args.png" background-size="80%"}
+
+## Round function
+
+::: panel-tabset
+### Code
+
+Function with default argument.
+
+```{r}
+#| label: fun-round2
+#| eval: false
+
+round(46.487)
+```
+
+### Output
+
+```{r}
+#| label: fun-round2
+#| echo: false
+#| output: asis
+
+```
+:::
+
+## Round function
+
+::: panel-tabset
+### Code
+
+Function with a specific value of an argument.
+
+```{r}
+#| label: fun-round3
+#| eval: false
+
+round(46.587, digits = 2)
+```
+
+### Output
+
+```{r}
+#| label: fun-round3
+#| echo: false
+#| output: asis
+
+```
+:::
+
+## Square root function
+
+::: panel-tabset
+### Code
+
+Function with a specific value of an argument.
+
+```{r}
+#| label: fun-sqrt
+#| eval: false
+
+sqrt(x = 9)
+```
+
+### Output
+
+```{r}
+#| label: fun-sqrt
+#| echo: false
+#| output: asis
+
+```
+:::
+
+## Sequence function
+
+::: panel-tabset
+### Code
+
+Function with a specific value of an argument.
+
+```{r}
+#| label: fun-seq
+#| eval: false
+
+seq.int(from = 10, to = 30, by = 5)
+```
+
+or
+
+```{r}
+#| label: fun-seq1
+#| eval: false
+
+seq.int(from = 10,
+        to = 30,
+        by = 5)
+```
+
+### Output
+
+```{r}
+#| label: fun-seq
+#| echo: false
+#| output: asis
+
+```
+:::
+
+##  {.inverse}
+
+![](images/stormyr.gif){fig-align="center"}
+
+[comment]{.r-fit-text .centering}
+
+## Comment:
+
+-   "Humans will be able to read the comments, but your computer will pass over them."
+
+-   In R, `#` is used as a commenting symbol.
+
+::: aside
+[Source](https://en.wikipedia.org/wiki/Comment_computer_programming)
+:::
+
+## 😏 That's okay but how to...
+
+::: nonincremental
+-   combine plot, text, tables and images in a single file.
+
+-   publish my work online or convert into a word, pdf or html file.
+
+-   work efficiently with my different projects and save, share and track them.
+:::
+
+WE NEED A SUPERHERO ...
+
+#  {.inverse}
+
+[![](https://www.rstudio.com/wp-content/uploads/2018/10/RStudio-Logo-Flat.png){fig-width="3" fig-align="center" width="500"}]{.r-fit-text}
+
+## posit earlier RStudio
+
+<br>
+
+::: columns
+::: {.column width="40%"}
+-   As per posit, RStudio is "the most trusted IDE for open source data science".
+
+-   RStudio is an integrated development environment (IDE) for R and Python.
+
+-   RStudio 2023.06.0+421 "Mountain Hydrangea" is used to prepare present slides.
+:::
+
+::: {.column width="60%"}
+![](https://www.rstudio.com/wp-content/uploads/2018/10/RStudio-Logo-Flat.png){fig-align="center"}
+![](images/posit-logo.svg)
+:::
+:::
+
+::: aside
+[Source: posit](https://posit.co/products/open-source/rstudio/)
+:::
+
+## RStduio IDE
+
+![](images/rstd-ide.png)
+
+## RStduio IDE
+
+::: columns
+::: {.column width="40%"}
+"It includes a console, syntax-highlighting editor that supports direct code execution, and tools for plotting, history, debugging, and workspace management."[^3]
+:::
+
+::: {.column width="60%"}
+![](images/rstd-ide.png)
+:::
+:::
+
+[^3]: [Source: posit](https://posit.co/products/open-source/rstudio/)
+
+## R $\rightleftharpoons$ RStudio {.centering}
+
+<br> <br>
+
+::: columns
+::: {.column width="50%"}
+### imagine RStudio as a stylish car ...
+
+{{< fa car size=7x >}}
+:::
+
+::: {.column width="50%"}
+### ... and R as its powerful engine.
+
+{{< fa gear size=7x >}}
+:::
+:::
+
+## [RStudio $\rightarrow$ Tools $\rightarrow$ Global Options]{.r-fit-text .centering}
+
+![](images/rstd-options.png){fig-align="center"}
+
+## [RStudio $\rightarrow$ Tools $\rightarrow$ Global Options]{.r-fit-text .centering}
+
+![](images/rstd-options2.png){fig-align="center"}
+
+#  {.inverse}
+
+![](images/pkgs-space.png){fig-align="center"}
+
+[packages]{.r-fit-text}
+
+## R packages
+
+-   "An R package is a collection of functions, data, and documentation that extends the capabilities of base R. Using packages is key to the successful use of R."[^4]
+
+[^4]: [Source: R for Data Science, 2e](https://r4ds.hadley.nz/intro)
+
+## R packages {.centering background-image="images/metacran.png" background-size="65%"}
+
+::: aside
+[Source: Metacran](https://www.r-pkg.org/)
+:::
+
+## Install packages {.centering}
+
+![](images/pkg-download1.png)
+
+## Name of the packages {.centering}
+
+![](images/pkg-download2.png)
+
+## Installed packages {.centering}
+
+![](images/pkg-download3.png)
+
+## Function to install packages
+
+```{r}
+#| eval: false
+
+install.packages("tidyverse")
+```
+
+## Function to call packages
+
+```{r}
+#| eval: false
+
+library(tidyverse)
+```
+
+## Using packages
+
+-   You need to install package only once like:
+
+    -   📚 We buy books once and use them again and again
+
+    -   💡 Fix the bulb once and use it again and again.
+
+-   In every R document you need to **call once** the package using function `library()`, for example library(ggplot2).
+
+-   Once in a while, you need to update the installed packages as well.
+
+-   If you un-install R or RStudio, you will lose all installed packages.
+
+## Tools $\rightarrow$ package updates {.centering}
+
+![](images/update-pkg1.png)
+
+## Select packages to update {.centering}
+
+![](images/update-pkg2.png)
+
+## Click install updates {.centering}
+
+![](images/update-pkg3.png)
+
+## To remove packages {.centering}
+
+![](images/remove-pkg.png)
+
+#  {.inverse}
+
+![](images/heartyr.gif){fig-align="center"}
+
+[objects]{.r-fit-text}
+
+## R object
+
+> Just a name that you can use to call up stored data.
+
+::: aside
+[Source: Garrett Grolemund](https://rstudio-education.github.io/hopr/basics.html#objects)
+:::
+
+## Create object
+
+::: {.panel-tabset}
+
+### Code
+
+```{r}
+#| label: age
+#| eval: false
+age <- c(23, 25, 16, 40, 34)
+
+age
+```
+
+### Output
+
+```{r}
+#| label: age
+#| output: asis
+#| echo: false 
+```
+
+:::
+
+## Create object
+
+::: {.panel-tabset}
+
+### Code
+
+```{r}
+#| label: income
+#| eval: false
+income <- c(23000, 25000, 16000, 4000, 34000)
+
+income
+```
+
+### Output
+
+```{r}
+#| label: income
+#| output: asis
+#| echo: false 
+```
+
+:::
+
+## Create object
+
+::: {.panel-tabset}
+
+### Code
+
+```{r}
+#| label: name
+#| eval: false
+name <- c("Bhim", "Rama", "Sara", "Phule", "Savitri")
+
+name
+```
+
+### Output
+
+```{r}
+#| label: name
+#| output: asis
+#| echo: false 
+```
+
+:::
+
+## Create object
+
+::: {.panel-tabset}
+
+### Code
+
+```{r}
+#| label: place
+#| eval: false
+place <- c("MH", "RJ", "DL", "HR", "HR")
+
+place
+```
+
+### Output
+
+```{r}
+#| label: place
+#| output: asis
+#| echo: false 
+```
+
+:::
+
+## Create object
+
+::: {.panel-tabset}
+
+### Code
+
+```{r}
+#| label: weight
+#| eval: false
+weight_kg <- c(50, 52, 61, 40, 70)
+
+weight_kg
+```
+
+### Output
+
+```{r}
+#| label: weight
+#| output: asis
+#| echo: false 
+```
+
+:::
+
+## Guidelines to name R objects
+
+- a name cannot start with a number.
+
+- a name cannot use some special symbols, like `^`, `!`, `$`, `@`, `+`, `-`, `/`, or `*`,`:`.
+
+- avoid caps.
+
+- avoid space.
+
+- use dash (like weight-kg) or underscore (like weight_kg).
+
+- if chronology matters then add date (2020-09-05-file-name)
+
+## RStudio environment window
+
+![](images/rstd-env.png)
+
+[🤔 how to form a data set by combining all these objects]{.r-fit-text .fragment} 
+
+##  👇 data set like this 😻😻😻😻
+
+```{r}
+#| echo: false
+
+example_df <- data.frame(name, income, age, place, weight_kg)
+
+example_df
+```
+
+
+## How to create a data object?
+
+::: {.panel-tabset}
+
+### Code
+
+```{r}
+#| label: df
+#| eval: false
+example_df <- data.frame(name, income, age, place, weight_kg)
+
+example_df
+```
+
+### Output
+
+```{r}
+#| label: df
+#| output: true
+#| echo: false 
+```
+
+:::
+
+## Export data sect as a `csv` file
+
+::: {.panel-tabset}
+
+### Code
+
+```{r}
+#| label: export-csv
+#| eval: false
+
+library(readr)
+
+# create a folder in wd & name it "data"
+write_csv(example_df, "data/example_df.csv") 
+```
+
+### Output
+
+```{r}
+#| label: export-csv
+#| output: asis
+#| echo: false 
+```
+
+To see the created file, check the "data" folder in your working directory.
+:::
+
+## Your Turn
+
+## List of all objects
+
+::: {.panel-tabset}
+
+### Code
+
+```{r}
+#| label: objects-list
+#| eval: false
+
+objects()
+```
+
+### Output
+
+```{r}
+#| label: objects-list
+#| output: asis
+#| echo: false 
+```
+
+:::
+
+# {.inverse}
+
+![](images/breakr.gif){fig-align="center"}
+
+[need help!]{.r-fit-text}
+
+## Using console `>`
+
+### in console type `?your query`
+
+- for example `?knitr`.
+
+- for example `?mtcars`.
+
+- for example `?dplyr`.
+
+## RStudio: package website {.centering}
+
+![](images/help-cran.png)
+
+
+## [Post community](https://community.rstudio.com/latest) {.centering}
+
+![](images/help-posit.png)
+
+## [Stack Overflow](https://stackoverflow.com/) {.centering}
+
+![](images/help-stack.png)
+
+## [GitHub](https://github.com/) {.centering}
+
+![](images/help-git.png)
+
+## Social Media #RStats {.centering background-image="images/help-tweet.png" background-size="35%"}
+
+
+
+
+
+
+
+
+
+

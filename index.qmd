@@ -5,10 +5,12 @@ format:
     theme: [default, sara-style.scss]
     slide-number: true
     logo: images/logo.png
+    footer: "[TOC](#sec-toc)"
     incremental: true
     code-copy: true
     code-link: true #using downlit pkg
     code-line-numbers: true
+    menu: false
 knitr:
   opts_chunk: 
     echo: true
@@ -17,7 +19,7 @@ knitr:
 ## {background-image="images/title-front.jpg" background-size="cover"}
 
 [{{< fa brands r-project size=large >}} For<br>Beginners]{.r-fit-text .right .theme-navy-blue}
-Ajay Koli | Savitribai Ramabai (SaRa) Institute of Data Science | India.
+Ajay Koli | Savitribai Ramabai (SaRa) Institute of Data Science | India
 
 [Background image by [joanna-kosinska](https://unsplash.com/@joannakosinska)]{.small}
 
@@ -45,16 +47,65 @@ Dr. Ajay Koli & Dr. Kiran Koli
 
 {{< fa brands twitter >}} [@sara_institute](https://twitter.com/sara_institute)
 
-{{< fa brands github >}} [sara-edu](https://github.com/sara-edu)
+{{< fa brands github >}} [Slide source code](https://github.com/sara-edu)
+```{=html}
+<a class="github-button" href="https://github.com/sara-edu/slides-r-course" data-icon="octicon-star" data-size="large" data-show-count="true" aria-label="Star this course on Github">Star this course on Github</a><script async defer src="https://buttons.github.io/buttons.js"></script>
+```
 :::
 
 ::::
 
-## What is data science?
+## Data science
+
+<br>
+
+> "Data science is an exciting discipline that allows you to transform raw data into understanding, insight, and knowledge."
+
+::: aside
+[Source: Hadley Wickham](https://r4ds.hadley.nz/)
+:::
 
 ## Career in data science
 
-## Data science tools
+<br>
+
+> "You don’t need to be an expert programmer to be a successful data scientist."
+
+::: aside
+[Source: Hadley Wickham](https://r4ds.hadley.nz/)
+:::
+
+## Types of data professionals {.centering}
+
+<br>
+
+![](images/career.jpg){height="500"}
+
+::: aside
+[Source: Alex Wang](https://www.linkedin.com/in/alexwang2911/recent-activity/all/)
+:::
+
+## Data science project process
+
+<br>
+
+![](https://r4ds.hadley.nz/diagrams/data-science/base.png)
+
+::: aside
+[Source: Hadley Wickham](https://r4ds.hadley.nz/)
+:::
+
+## Main tools of data science
+
+**Importing, tidying, transforming, and visualizing data**
+
+<br>
+
+![](https://r4ds.hadley.nz/diagrams/data-science/whole-game.png)
+
+::: aside
+[Source: Hadley Wickham](https://r4ds.hadley.nz/)
+:::
 
 ```{r}
 #| label: packages-used
@@ -67,7 +118,13 @@ library(tidyverse)
 library(palmerpenguins)
 ```
 
-## Table of content
+## Session information
+
+```{r}
+sessionInfo()
+```
+
+## Table of content {#sec-toc}
 
 ::: {.nonincremental}
 
@@ -93,11 +150,13 @@ library(palmerpenguins)
 ::: {.column width="60%"}
 [R and<br>RStudio]{.r-fit-text .theme-navy-blue .right}
 
-[Background image by [leohoho](https://unsplash.com/@leohoho)]{.small}
-
 :::
 
 ::::
+
+::: aside
+[Background image by [leohoho](https://unsplash.com/@leohoho)]{.small}
+:::
 
 {{< include basics.qmd >}}
 
@@ -122,14 +181,17 @@ library(palmerpenguins)
 
 [Data <br> Visualization<br><br>]{.r-fit-text .theme-navy-blue .centering}
 
+::: aside
 [Background image by [jess-bailey](https://unsplash.com/@jessbaileydesigns)]{.small}
+:::
 
 # {background-image="images/publish.jpg"  background-size="cover" #sec-publish}
 
 [Publish using <br> Quarto]{.r-fit-text .theme-navy-blue .centering}
 
+::: aside
 [Background image by [scott-webb](https://unsplash.com/@scottwebb)]{.small .theme-navy-blue}
-
+:::
 
 # {background-image="images/wrangle.jpg"  background-size="cover" #sec-wrangle}
 
@@ -142,7 +204,7 @@ library(palmerpenguins)
 ::: {.column width="80%"}
 [Data <br> Wrangling]{.r-fit-text .theme-navy-blue .centering}
 
-[Background image by [imattsmart](https://unsplash.com/@imattsmart)]{.small}
+[Background image by [imattsmart](https://unsplash.com/@imattsmart) | [ToC](#sec-toc)]{.small}
 
 :::
 
@@ -154,5 +216,7 @@ library(palmerpenguins)
 
 [thank you]{.r-fit-text .theme-hello .theme-navy-blue}
 
+::: aside
 [Background image by [anastasiia-kamil](https://unsplash.com/@nastyakamil)]{.small}
+:::
 
