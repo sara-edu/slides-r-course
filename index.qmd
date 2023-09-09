@@ -9,11 +9,15 @@ format:
     incremental: true
     code-copy: true
     code-link: true #using downlit pkg
-    code-line-numbers: true
+    code-line-numbers: false
     menu: false
+    highlight-style: solarized
+    transition: convex
+    background-transition: convex
 knitr:
   opts_chunk: 
     echo: true
+    fig.retina: 3 
 ---
 
 ## {background-image="images/title-front.jpg" background-size="cover"}
@@ -21,29 +25,41 @@ knitr:
 [{{< fa brands r-project size=large >}} For<br>Beginners]{.r-fit-text .right .theme-navy-blue}
 Ajay Koli | Savitribai Ramabai (SaRa) Institute of Data Science | India
 
-[Background image by [joanna-kosinska](https://unsplash.com/@joannakosinska)]{.small}
+[Background image by [Joanna Kosinska](https://unsplash.com/@joannakosinska)]{.small}
+
+```{r}
+#| label: packages-used
+#| echo: false
+#| warning: false
+#| message: false
+
+library(downlit) #to create link of r function
+library(tidyverse)
+library(palmerpenguins)
+```
 
 ##
 
 :::: {.columns}
 
 ::: {.column width="50%"}
-![](images/akk.png)
+<br>
+<br>
+![](images/ajay.png)
 :::
 
 ::: {.column width="50%"}
 
 <br>
 <br>
-<br>
 
 [Hello there!!]{.r-fit-text .theme-hello .theme-navy-blue}
 
-Dr. Ajay Koli & Dr. Kiran Koli
+{{< fa circle-user >}} [Dr. Ajay Kumar Koli](https://koliajay.netlify.app/) 
 
-{{< fa award >}} Founders & Directors
+{{< fa award >}} Founder & Executive Director
 
-{{< fa globe >}} [SaRa Institute of Data Science](https://saraedu.netlify.app/)
+{{< fa play >}} [SaRa Institute of Data Science](https://saraedu.netlify.app/)
 
 {{< fa brands twitter >}} [@sara_institute](https://twitter.com/sara_institute)
 
@@ -62,7 +78,7 @@ Dr. Ajay Koli & Dr. Kiran Koli
 > "Data science is an exciting discipline that allows you to transform raw data into understanding, insight, and knowledge."
 
 ::: aside
-[Source: Hadley Wickham](https://r4ds.hadley.nz/)
+Source: [R for Data Science, 2e](https://r4ds.hadley.nz/intro)
 :::
 
 ## Career in data science
@@ -72,7 +88,7 @@ Dr. Ajay Koli & Dr. Kiran Koli
 > "You don’t need to be an expert programmer to be a successful data scientist."
 
 ::: aside
-[Source: Hadley Wickham](https://r4ds.hadley.nz/)
+Source: [R for Data Science, 2e](https://r4ds.hadley.nz/intro)
 :::
 
 ## Types of data professionals {.centering}
@@ -92,37 +108,8 @@ Dr. Ajay Koli & Dr. Kiran Koli
 ![](https://r4ds.hadley.nz/diagrams/data-science/base.png)
 
 ::: aside
-[Source: Hadley Wickham](https://r4ds.hadley.nz/)
+Source: [R for Data Science, 2e](https://r4ds.hadley.nz/intro)
 :::
-
-## Main tools of data science
-
-**Importing, tidying, transforming, and visualizing data**
-
-<br>
-
-![](https://r4ds.hadley.nz/diagrams/data-science/whole-game.png)
-
-::: aside
-[Source: Hadley Wickham](https://r4ds.hadley.nz/)
-:::
-
-```{r}
-#| label: packages-used
-#| echo: false
-#| warning: false
-#| message: false
-
-library(downlit) #to create link of r function
-library(tidyverse)
-library(palmerpenguins)
-```
-
-## Session information
-
-```{r}
-sessionInfo()
-```
 
 ## Table of content {#sec-toc}
 
@@ -149,18 +136,15 @@ sessionInfo()
 
 ::: {.column width="60%"}
 [R and<br>RStudio]{.r-fit-text .theme-navy-blue .right}
-
 :::
 
 ::::
 
-::: aside
-[Background image by [leohoho](https://unsplash.com/@leohoho)]{.small}
-:::
+[Background image by [Leohoho](https://unsplash.com/@leohoho)]{.small}
 
 {{< include basics.qmd >}}
 
-# {background-image="images/basics-quarto.jpg"  background-size="cover" #sec-basics-quarto}
+# {background-image="https://images.unsplash.com/photo-1544724759-e2e242adb0db?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3028&q=80"  background-size="cover" background-position="0 60 0 0" #sec-basics-quarto}
 
 :::: {.columns}
 
@@ -169,28 +153,34 @@ sessionInfo()
 :::
 
 ::: {.column width="90%"}
-[Basics <br> of Quarto]{.r-fit-text .theme-navy-blue .centering}
-
-[Background image by [scott-webb](https://unsplash.com/@scottwebb)]{.small .theme-navy-blue}
+[Basics <br> of Quarto]{.r-fit-text .theme-navy-blue .right}
 
 :::
 
 ::::
+
+::: aside
+[Background image by [Jenny Pace](https://unsplash.com/@thejennypace)]{.small}
+:::
+
+{{< include quarto.qmd >}}
 
 # {background-image="images/viz.jpg"  background-size="cover" #sec-viz}
 
 [Data <br> Visualization<br><br>]{.r-fit-text .theme-navy-blue .centering}
 
 ::: aside
-[Background image by [jess-bailey](https://unsplash.com/@jessbaileydesigns)]{.small}
+[Background image by [Jess Bailey](https://unsplash.com/@jessbaileydesigns)]{.small}
 :::
 
-# {background-image="images/publish.jpg"  background-size="cover" #sec-publish}
+# {background-image="https://images.unsplash.com/photo-1606636660488-16a8646f012c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"  background-size="cover" #sec-publish}
 
-[Publish using <br> Quarto]{.r-fit-text .theme-navy-blue .centering}
+[Publish using <br> Quarto]{.r-fit-text .theme-navy-blue}
+
+<br>
 
 ::: aside
-[Background image by [scott-webb](https://unsplash.com/@scottwebb)]{.small .theme-navy-blue}
+[Background image by [Tamanna Rumee](https://unsplash.com/@tamanna_rumee)]{.small}
 :::
 
 # {background-image="images/wrangle.jpg"  background-size="cover" #sec-wrangle}
@@ -204,19 +194,27 @@ sessionInfo()
 ::: {.column width="80%"}
 [Data <br> Wrangling]{.r-fit-text .theme-navy-blue .centering}
 
-[Background image by [imattsmart](https://unsplash.com/@imattsmart) | [ToC](#sec-toc)]{.small}
-
 :::
 
 ::::
 
+::: aside
+[Background image by [Matt Smart](https://unsplash.com/@imattsmart)]{.small}
+:::
+
 ## Your turn {#sec-turn}
+
+## Tools used to create these slides
+
+```{r}
+sessionInfo()
+```
 
 # {background-image="images/thanks.jpg" background-size="cover"}
 
 [thank you]{.r-fit-text .theme-hello .theme-navy-blue}
 
 ::: aside
-[Background image by [anastasiia-kamil](https://unsplash.com/@nastyakamil)]{.small}
+[Background image by [Anastasiia Kamil](https://unsplash.com/@nastyakamil)]{.small}
 :::
 

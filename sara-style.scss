@@ -19,15 +19,17 @@ $theme-red:       #E7553C;
 $theme-white:     #ffffff;
 $theme-light-blue: #A3D3FC;
 $theme-blue:      #76AADB;
+$theme-green: #2a9d8f;
 
 
 $presentation-heading-font: 'Libre Baskerville', 'serif';
 $presentation-heading-color: $theme-navy-blue;
-$presentation-h2-font-size: 2.5em;
+$presentation-h2-font-size: 2.0em;
 
 // body style.
 $font-family-sans-serif: "Sen", "sans-serif";
-$mainFontSize: 25px;
+//$mainFontSize: 35px;
+$presentation-font-size-root: 30px;
 $body-color: $theme-gray;
 $body-bg: $theme-white;
 
@@ -35,7 +37,7 @@ $body-bg: $theme-white;
 // link style.
 $link-color: $theme-red;
 $link-color-hover: lighten($link-color, 15%);
-$selection-bg: $theme-blue;
+$selection-bg: #007AF8;
 
 
 // code chunk box style.
@@ -47,6 +49,22 @@ $code-block-bg: #fff;
 
 
 /*-- scss:rules --*/
+
+.theme-gray {
+  color: #808080;
+}
+
+.theme-red {
+  color: $theme-red;
+}
+
+.theme-blue {
+  color: #219ebc;
+}
+
+.theme-green {
+  color: #31572c;
+}
 
 .theme-navy-blue {
   color: $theme-navy-blue;
@@ -139,7 +157,15 @@ $code-block-bg: #fff;
   
 }
 
+// this idea of rainbow color is borrowed from Emil's slides link https://github.com/EmilHvitfeldt/talk-nyr-slidecraft/blob/main/styles.scss
 
+.rainbow-red {color: #FF0002;}
+.rainbow-orange {color: #FF7800;}
+.rainbow-yellow {color: #FFFD0A;}
+.rainbow-green {color: #10DD15;}
+.rainbow-blue {color: #3050FF;}
+.rainbow-indigo {color: #7B20A3;}
+.rainbow-purple {color: #D501FA;}
 
 
 
