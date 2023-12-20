@@ -1,31 +1,29 @@
 ---
-pagetitle: "R slides"
-format:
+pagetitle: "R Slides"
+format: 
   revealjs:
-    theme: [default, sara-style.scss]
+    theme: [default, style.scss]
     slide-number: true
     logo: images/logo.png
-    footer: "[TOC](#sec-toc)"
     incremental: true
     code-copy: true
     code-link: true #using downlit pkg
     code-line-numbers: false
-    menu: false
-    highlight-style: solarized
     transition: convex
     background-transition: convex
+    progress: false
+    controls: true
+    touch: true
+    menu: true
 knitr:
   opts_chunk: 
     echo: true
-    fig.retina: 3 
+    fig.retina: 3
 ---
 
-## {background-image="images/title-front.jpg" background-size="cover"}
+# [{{< fa brands r-project size=large >}} FOR<br>BEGINNERS]{.r-fit-text .right .navy-blue} {background-image="images/title-front.jpg" background-size=cover}
 
-[{{< fa brands r-project size=large >}} For<br>Beginners]{.r-fit-text .right .theme-navy-blue}
-Ajay Koli | Savitribai Ramabai (SaRa) Institute of Data Science | India
-
-[Background image by [Joanna Kosinska](https://unsplash.com/@joannakosinska)]{.small}
+[Dr. Ajay Kumar Koli, PhD $\cdot$ SARA Institute of Data Science $\cdot$ India]{.r-fit-text}
 
 ```{r}
 #| label: packages-used
@@ -38,35 +36,150 @@ library(tidyverse)
 library(palmerpenguins)
 ```
 
-##
+## 
+
+[Hello Everyone!!]{.theme-cursive .r-fit-text}
 
 :::: {.columns}
 
-::: {.column width="50%"}
-<br>
-<br>
+::: {.column width="35%"}
+
 ![](images/ajay.png)
 :::
 
-::: {.column width="50%"}
+::: {.column width="65%"}
 
 <br>
-<br>
-
-[Hello there!!]{.r-fit-text .theme-hello .theme-navy-blue}
 
 {{< fa circle-user >}} [Dr. Ajay Kumar Koli](https://koliajay.netlify.app/) 
 
 {{< fa award >}} Founder & Executive Director
 
-{{< fa play >}} [SaRa Institute of Data Science](https://saraedu.netlify.app/)
+{{< fa play >}} [SARA Institute of Data Science](https://saraedu.netlify.app/)
 
 {{< fa brands twitter >}} [@sara_institute](https://twitter.com/sara_institute)
 
-{{< fa brands github >}} [Slide source code](https://github.com/sara-edu)
+{{< fa brands github >}} [Slide source code](https://github.com/sara-edu/workshop-r-mdu.github.io)
+
 ```{=html}
-<a class="github-button" href="https://github.com/sara-edu/slides-r-course" data-icon="octicon-star" data-size="large" data-show-count="true" aria-label="Star this course on Github">Star this course on Github</a><script async defer src="https://buttons.github.io/buttons.js"></script>
+<a class="github-button" href="https://github.com/sara-edu/slides-r-course" data-icon="octicon-star" data-size="large" data-show-count="true" aria-label="Star this course on Github">Star This Course on Github</a><script async defer src="https://buttons.github.io/buttons.js"></script>
 ```
+:::
+
+::::
+
+## About SARA {.center}
+
+<br>
+
+:::: {.columns}
+
+::: {.column width="30%"}
+
+<br>
+<br>
+
+![](images/sara.png)
+
+:::
+
+::: {.column width="70%"}
+
+- SARA stands for Savitribai Ramabai Institute of Data Science.
+
+- It is a Charitable Education Trust, est. in 2023 by Dr. Ajay Kumar Koli & Dr. Kiran Lata Koli.
+
+- Our mission to enhance the representation of under-privileged communities in the field of data science.
+
+:::
+
+::::
+
+
+## Purpose
+
+<br>
+
+> To share reasons with you (and hopefully convince you) why you should learn data science tools like R, python, GitHub, quarto etc.
+
+## Work {.center}
+
+![](images/researcher.jpg){fig-align="center"}
+
+. . .
+
+[We [think]{.theme-red} we work like this but ...]{.r-fit-text}
+
+## Work {.center}
+
+[This is our [actual]{.theme-red} work look.]{.r-fit-text}
+
+![](images/researcher-sad.webp){fig-align="center"}
+
+## 🤯 Work Flowchart
+
+:::: {.columns .center}
+
+::: {.column width="25%"}
+MS Word
+
+![](images/word.png)
+:::
+
+::: {.column width="25%"}
+Excel
+
+![](images/excel.png)
+
+:::
+
+::: {.column width="25%"}
+PPTs
+
+![](images/ppt.png)
+:::
+
+::: {.column width="25%"}
+Other Tools:
+
+::: {.nonincremental}
+
+- PDF
+
+- SPSS
+
+- SAS
+
+- STATA
+
+- Reference management
+
+:::
+
+:::
+
+::::
+
+## Work Influencer
+
+<br>
+
+:::: {.columns}
+
+::: {.column width="50%"}
+![](https://media2.giphy.com/media/uudzUtVcsLAoo/giphy.gif?cid=ecf05e47fkaog688v6ft2g7rjkhz2oficp1uf3puupiag8ox&ep=v1_gifs_search&rid=giphy.gif&ct=g){width=100%}
+:::
+
+::: {.column width="50%"}
+
+<br>
+
+[👀 Focus on Content.]{.r-fit-text}
+
+<br>
+
+[💅 Set Yourself Apart.]{.r-fit-text}
+
 :::
 
 ::::
@@ -85,23 +198,21 @@ Source: [R for Data Science, 2e](https://r4ds.hadley.nz/intro)
 
 <br>
 
-> "You don’t need to be an expert programmer to be a successful data scientist."
+> "You don't need to be an expert programmer to be a successful data scientist."
 
 ::: aside
 Source: [R for Data Science, 2e](https://r4ds.hadley.nz/intro)
 :::
 
-## Types of data professionals {.centering}
+## Types of Data Roles {.centering}
 
-<br>
-
-![](images/career.jpg){height="500"}
+![](images/career.jpg){fig-align='center' width="60%"}
 
 ::: aside
-[Source: Alex Wang](https://www.linkedin.com/in/alexwang2911/recent-activity/all/)
+[Source: Alex Wang](https://www.linkedin.com/feed/update/urn:li:activity:7142645513215950850/)
 :::
 
-## Data science project process
+## Data Science Process
 
 <br>
 
@@ -111,22 +222,21 @@ Source: [R for Data Science, 2e](https://r4ds.hadley.nz/intro)
 Source: [R for Data Science, 2e](https://r4ds.hadley.nz/intro)
 :::
 
-## Table of content {#sec-toc}
+## Table of Content {#sec-toc}
 
-::: {.nonincremental}
+::: nonincremental
+-   [R & RStudio](#sec-basics)
 
-- [R & RStudio](#sec-basics)
+-   [Basics of Quarto](#sec-basics-quarto)
 
-- [Basics of Quarto](#sec-basics-quarto)
+-   [Data Visualization](#sec-viz)
 
-- [Data Visualization](#sec-viz)
+-   [Publish using Quarto](#sec-publish)
 
-- [Publish using Quarto](#sec-publish)
-
-- [Data Wrangling](#sec-wrangle)
+-   [Data Wrangling](#sec-wrangle)
 :::
 
-# {background-image="images/basics.jpg"  background-size="cover" #sec-basics}
+## {background-image="https://images.unsplash.com/photo-1636819488524-1f019c4e1c44?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"  background-size="cover" #sec-basics}
 
 :::: {.columns}
 
@@ -135,47 +245,1253 @@ Source: [R for Data Science, 2e](https://r4ds.hadley.nz/intro)
 :::
 
 ::: {.column width="60%"}
-[R and<br>RStudio]{.r-fit-text .theme-navy-blue .right}
-:::
 
-::::
+<br>
+<br>
 
-[Background image by [Leohoho](https://unsplash.com/@leohoho)]{.small}
-
-{{< include basics.qmd >}}
-
-# {background-image="https://images.unsplash.com/photo-1544724759-e2e242adb0db?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3028&q=80"  background-size="cover" background-position="0 60 0 0" #sec-basics-quarto}
-
-:::: {.columns}
-
-::: {.column width="10%"}
-
-:::
-
-::: {.column width="90%"}
-[Basics <br> of Quarto]{.r-fit-text .theme-navy-blue .right}
+[R and <br> RStudio]{.theme-tech .r-fit-text .right}
 
 :::
 
 ::::
 
 ::: aside
-[Background image by [Jenny Pace](https://unsplash.com/@thejennypace)]{.small}
+
+Background image by [Andy Hermawan](https://unsplash.com/@kolamdigital)
+
 :::
 
-{{< include quarto.qmd >}}
+#  {background-image="images/exploder.gif" background-position="center" background-size="contain" .inverse}
 
-# {background-image="images/viz.jpg"  background-size="cover" #sec-viz}
-
-[Data <br> Visualization<br><br>]{.r-fit-text .theme-navy-blue .centering}
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 
 ::: aside
-[Background image by [Jess Bailey](https://unsplash.com/@jessbaileydesigns)]{.small}
+[Artwork by [Alision Horst](https://allisonhorst.com/)]{.small}
 :::
 
-# {background-image="https://images.unsplash.com/photo-1606636660488-16a8646f012c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"  background-size="cover" #sec-publish}
+## R Programming Language
 
-[Publish using <br> Quarto]{.r-fit-text .theme-navy-blue}
+<br> <br>
+
+::: columns
+::: {.column width="30%"}
+![](https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/R_logo.svg/1920px-R_logo.svg.png)
+:::
+
+::: {.column width="70%"}
+<br> 
+
+"R is a free software environment for statistical computing and graphics."[^1]
+:::
+:::
+
+[^1]: [Source: R for Data Science, 2e](https://r4ds.hadley.nz/intro)
+
+## History of R
+
+::: nonincremental
+-   Initially developed as **S** language by Bells Labs.
+
+-   First appeared in August 1993 as **R** language by:
+:::
+
+::: columns
+::: {.column width="50%"}
+`Ross Ihaka`<br>(New Zealand Statistician)
+
+![](https://cdn.auckland.ac.nz/aem/content/auckland/en/science/about-the-faculty/department-of-statistics/ihaka-lecture-series/_jcr_content/leftpar/imagecomponent/image.img.480.low.jpg/1561079330278.jpg)
+:::
+
+::: {.column width="50%"}
+`Robert Gentleman`<br>(Canadian Statistician)
+
+![](https://www.computerhope.com/people/pictures/robert_gentleman.jpg){width="350"}
+:::
+:::
+
+## R is FREE
+
+[Download](https://cran.r-project.org/mirrors.html) R from CRAN
+
+![](images/cran.png)
+
+## R Console
+
+::: columns
+::: {.column width="50%"}
+<br>
+
+-   R version 4.3.1 (2023-06-16)
+
+-   R name "Beagle Scouts"
+
+-   R licence "ABSOLUTELY NO WARRANTY"
+
+-   R prompt `>|`
+:::
+
+::: {.column width="50%"}
+![](images/r-console.png){height="650" width="500"}
+:::
+:::
+
+## Don't save workspace image
+
+::: columns
+
+::: {.column width="50%"}
+
+<br>
+
+-   It helps in "freshly minted R sessions".
+
+-   "put more trust in your script than in your memory".
+:::
+
+::: {.column width="50%"}
+![](images/r-close.png){height="650" width="500"}
+:::
+:::
+
+::: aside
+[Source: R Bloggers](https://www.r-bloggers.com/2017/04/using-r-dont-save-your-workspace/)
+:::
+
+#  {.inverse}
+
+[OPERATORS]{.r-fit-text}
+
+## Operators
+
+> "Operators are used to perform operations on variables and values."
+
+<br>
+
+`12 + 3` in this code `+` is an operator.
+
+<br>
+
+::: {.callout-tip}
+Put spaces between and around operators (`=+-*/`)
+:::
+
+::: aside
+Source: [w3schools](https://www.w3schools.com/r/r_operators.asp)
+:::
+
+<!-- ## Types of R Operators: -->
+
+<!-- -   Arithmetic operators -->
+<!-- -   Assignment operators -->
+<!-- -   Comparison operators -->
+<!-- -   Logical operators -->
+<!-- -   Miscellaneous operators -->
+
+## R arithmetic operators
+
+Arithmetic operators are used with numeric values to perform common mathematical operations:
+
+<br>
+
+| Operator | Name           | Example |
+|----------|----------------|---------|
+| `+`      | Addition       | x + y   |
+| `-`      | Subtraction    | x - y   |
+| `*`      | Multiplication | x \* y  |
+| `/`      | Division       | x / y   |
+| `^`      | Exponent       | x \^ y  |
+
+## R console {.center}
+
+<br>
+
+::: columns
+::: {.column width="50%"}
+### [Code]{.center}
+
+```{r}
+#| label: number
+#| eval: false
+7
+```
+:::
+
+::: {.column width="50%"}
+### [Output]{.center}
+
+```{r}
+#| label: number
+#| echo: false
+#| output: asis
+```
+:::
+:::
+
+## R console: Addition {.center}
+
+<br>
+
+::: columns
+::: {.column width="50%"}
+### [Code]{.center}
+
+```{r}
+#| label: add
+#| eval: false
+2 + 1
+```
+:::
+
+::: {.column width="50%"}
+### [Output]{.center}
+
+```{r}
+#| label: add
+#| echo: false
+#| output: asis
+```
+:::
+:::
+
+## R console: Subtraction {.center}
+
+<br>
+
+::: columns
+
+::: {.column width="50%"}
+### [Code]{.center}
+
+```{r}
+#| label: subtract
+#| eval: false
+10 - 2
+```
+:::
+
+::: {.column width="50%"}
+### [Output]{.center}
+
+```{r}
+#| label: subtract
+#| echo: false
+#| output: asis
+```
+:::
+
+:::
+
+## R console: Multiplication {.center}
+
+<br>
+
+::: columns
+::: {.column width="50%"}
+### [Code]{.center}
+
+```{r}
+#| label: multiply
+#| eval: false
+12 * 4
+```
+:::
+
+::: {.column width="50%"}
+### [Output]{.center}
+
+```{r}
+#| label: multiply
+#| echo: false
+#| output: asis
+```
+:::
+:::
+
+## R console: Division {.center}
+
+<br>
+
+::: columns
+::: {.column width="50%"}
+### [Code]{.center}
+
+```{r}
+#| label: division
+#| eval: false
+25 / 5
+```
+:::
+
+::: {.column width="50%"}
+### [Output]{.center}
+
+```{r}
+#| label: division
+#| echo: false
+#| output: asis
+```
+:::
+:::
+
+## R comparison operators
+
+Comparison operators are used to compare two values:
+
+<br>
+
+| Operator | Name                     | Example |
+|----------|--------------------------|---------|
+| `==`     | Equal                    | x == y  |
+| `!=`     | Not equal                | x != y  |
+| `>`      | Greater than             | x > y   |
+| `<`      | Less than                | x < y   |
+| `>=`     | Greater than or equal to | x >= y  |
+| `<=`     | Less than or equal to    | x <= y  |
+
+
+## R console: Logic {.center}
+
+<br>
+
+::: columns
+::: {.column width="50%"}
+### [Code]{.center}
+
+```{r}
+#| label: logic1
+#| eval: false
+4 == 5
+```
+:::
+
+::: {.column width="50%"}
+### [Output]{.center}
+
+```{r}
+#| label: logic1
+#| echo: false
+#| output: asis
+```
+:::
+:::
+
+## R console: Logic {.center}
+
+<br>
+
+::: columns
+::: {.column width="50%"}
+### [Code]{.center}
+
+```{r}
+#| label: logic2
+#| eval: false
+67 > 60
+```
+:::
+
+::: {.column width="50%"}
+### [Output]{.center}
+
+```{r}
+#| label: logic2
+#| echo: false
+#| output: asis
+```
+:::
+:::
+
+## R console {.center}
+
+<br>
+
+::: columns
+::: {.column width="75%"}
+### [Code]{.center}
+
+```{r}
+#| label: calci5
+#| eval: false
+3434 + 343453 * 2323 / 534 - 1000
+```
+:::
+
+::: {.column width="25%"}
+### [Output]{.center}
+
+```{r}
+#| label: calci5
+#| echo: false
+#| output: asis
+```
+:::
+
+<br> 
+<br>
+
+::: callout-important
+R follows the BODMAS (bracket, order, division, multiplication, addition and subtraction) rule to solve mathematical equations.
+:::
+:::
+
+## Plot using R
+
+::: panel-tabset
+### Code
+
+```{r}
+#| label: plot1
+#| eval: false
+plot(1:100)
+```
+
+<br>
+<br>
+
+::: {.callout-important}
+R Miscellaneous Operators: Miscellaneous operators are used to manipulate data.
+
+|          |                                           |            |
+|----------|-------------------------------------------|------------|
+| Operator | Description                               | Example    |
+| `:`      | Creates a series of numbers in a sequence | x <- 1:10  |
+
+:::
+
+### Output
+
+```{r}
+#| label: plot1
+#| echo: false
+#| output: asis
+```
+:::
+
+## 😏 That's okay but how to$...$
+
+::: nonincremental
+-   combine plot, text, tables and images in a single file.
+
+-   publish my work online or convert into a word, pdf or html file.
+
+-   work efficiently with my different projects and save, share and track them.
+:::
+
+# {transition="zoom" transition-speed="slow" .center}
+
+[🔥 WE NEED A SUPERHERO 🔥]{.r-fit-text}
+
+![](https://media3.giphy.com/media/o6FWop1Gbuyly/giphy.gif?cid=ecf05e474i92dhzes35zr0jtervmdixne1moeehvvtnntmm8&ep=v1_gifs_related&rid=giphy.gif&ct=g){fig-align="center"}
+
+# {.inverse .center}
+
+![](images/logo-rstd.png){height=150}
+
+[
+[S]{.rainbow-orange}
+[T]{.rainbow-yellow}
+[U]{.rainbow-green}
+[D]{.rainbow-indigo}
+[I]{.rainbow-red}
+[O]{.rainbow-purple}
+]{.r-fit-text}
+
+## posit, earlier RStudio
+
+<br>
+
+::: columns
+::: {.column width="70%"}
+-   RStudio is an integrated development environment (IDE) for R and Python.
+
+-   As per posit, RStudio is "the most trusted IDE for open source data science".
+
+- [Download](https://posit.co/download/rstudio-desktop/) RStudio.
+:::
+
+::: {.column width="30%"}
+![](https://www.rstudio.com/wp-content/uploads/2018/10/RStudio-Logo-Flat.png){fig-align="center"} ![](images/posit-logo.svg)
+:::
+:::
+
+::: aside
+Source: [posit](https://posit.co/products/open-source/rstudio/)
+:::
+
+## RStudio IDE {.center}
+
+![](images/rstd_ide.png){.r-stretch}
+
+## RStudio IDE
+
+"It includes a console, syntax-highlighting editor that supports direct code execution, and tools for plotting, history, debugging, and workspace management." [Source: posit](https://posit.co/products/open-source/rstudio/)
+
+![](images/rstd_ide.png){fig-align="center"}
+
+## [RStudio $\rightarrow$ Tools $\rightarrow$ Global Options]{.r-fit-text .center}
+
+![](images/rstd_options1.png){fig-align="center"}
+
+## [RStudio $\rightarrow$ Tools $\rightarrow$ Global Options]{.r-fit-text .center}
+
+![](images/rstd_options2.png){fig-align="center"}
+
+
+## R & RStudio {.center}
+
+<br>
+
+::: columns
+::: {.column width="50%"}
+### Imagine R as a powerful engine
+
+<br>
+
+[{{< fa gear size=7x >}}]{.theme-red}
+:::
+
+::: {.column width="50%"}
+### and RStudio as a stylish car
+
+<br>
+
+[{{< fa car size=7x >}}]{.theme-blue}
+:::
+:::
+
+#  {.inverse .center}
+
+![](images/project-logo.png)
+
+[PROJECT]{.r-fit-text}
+
+## Open RStudio {.center}
+
+![](images/rstd-proj.png)
+
+## RStudio Without Project {.center}
+
+![](images/rstd-proj-none.png)
+
+## RStudio Without Project {.center}
+
+![](images/rstd-proj-folders.png)
+
+## RStudio Project Helps: {background-image="images/r-projects.jpg" background-size="55%" background-position="bottom right"}
+
+::: columns
+::: {.column width="100%"}
+-   "to divide your work into multiple contexts, each with their own"
+    -   working directory,
+    -   workspace,
+    -   history, and
+    -   source documents."
+:::
+:::
+
+::: aside
+Source: [RStudio](https://support.rstudio.com/hc/en-us/articles/200526207-Using-Projects) & Artwork by [Allison Horst](https://www.allisonhorst.com/)
+:::
+
+## {background-color="#9FE2BF"}
+
+[⛷️ Create <br> RStudio Project <br> in 4 Steps ⛷️]{.r-fit-text .center}
+
+## Create RStudio Project {.center}
+
+![](images/rstd_proj1.png)
+
+## Create RStudio Project {.center}
+
+![](images/rstd_proj2.png)
+
+## [In case anything goes wrong$...$]{.theme-red} {.center}
+
+![](images/rstd_proj3.1.png)
+
+## Create RStudio Project {.center}
+
+![](images/rstd_proj3.png)
+
+## Create RStudio Project {.center}
+
+![](images/rstd_proj4.png)
+
+## Create RStudio Project {.center}
+
+![](images/rstd_proj4a.png)
+
+## Create RStudio Project {.center}
+
+![](images/rstd_proj4b.png)
+
+## Create RStudio Project {.center}
+
+![](images/rstd_proj4c.png)
+
+## RStudio Project "name" {.center}
+
+![](images/rstd_proj_name.png)
+
+## RStudio Project "path" {.center}
+
+![](images/rstd_proj_path1.png)
+
+## RStudio Project {.center}
+
+![](images/rstd_proj_path2.png)
+
+
+# {.inverse .center}
+
+![](images/code_hero.gif)
+
+::: {aside}
+[Artwork by [Alision Horst](https://allisonhorst.com/)]{.small}
+:::
+
+## Write R Codes in
+
+> R Console
+
+!["The code input and output are in the R console"](images/code-console.png){height="500"}
+
+## Write R Codes in
+
+> R script using RStudio.
+
+![](images/code-script.png)
+
+## Write R Codes in
+
+> Quarto document using RStudio
+
+![](images/code-quarto.png)
+:::
+
+## R Script (.R)
+
+> Write codes in the R script $\rightarrow$ Console will show the results.
+
+-   Benefits of writing codes in R script:
+    -   You can save it for later use and revision.
+    -   You can share with others.
+    -   A better track of codes.
+
+## 💡 Tips for R Script
+
+1.  Writing readable code because other people might need to use your code.
+
+2.  Writing readable code because you might need to use your code, a few weeks/months/years after you've written it.
+
+3.  Put spaces between and around variable names and operators (`=+-*/`).
+
+4.  Break up long lines of code.
+
+5.  Keeping a consistent style.
+
+::: aside
+Source: [Marius Mather](https://bookdown.org/marius_mather/Rad/tips-for-effective-r-programming.html) also [Tomaž Kaštrun](https://tomaztsql.wordpress.com/2023/01/31/tips-for-organising-your-r-code/)
+:::
+
+#  {.inverse}
+
+![](images/rainbowr.gif){fig-align="center"}
+
+[FUNCTION]{.r-fit-text .center}
+
+::: {aside}
+[Artwork by [Alision Horst](https://allisonhorst.com/)]{.small}
+:::
+
+## R Function
+
+-   "A function, in a programming environment, is a set of instructions."
+
+-   "A programmer builds a function to avoid repeating the same task, or reduce complexity."
+
+## R Function
+
+::: panel-tabset
+### Code
+
+```{r}
+#| label: fun-round1
+#| eval: false
+
+round(24.3454, 3)
+```
+
+<br>
+
+`round(argument 1, argument 2)`
+
+### Output
+
+```{r}
+#| label: fun-round1
+#| echo: false
+#| output: asis
+
+```
+:::
+
+## Structure of R Function {.center transition="fade"}
+
+<br>
+
+![](images/function_str1.png)
+
+## Structure of R Function {.center transition="fade"}
+
+<br>
+
+![](images/function_str2.png)
+
+## Structure of R Function {.center transition="fade"}
+
+<br>
+
+![](images/function_str3.png)
+
+## Structure of R Function {.center transition="fade"}
+
+<br>
+
+![](images/function_str4.png)
+
+## Structure of R Function {.center transition="fade"}
+
+<br>
+
+![](images/function_str5.png)
+
+<!-- ## Structure of R function {.center background-image="images/function-args.png" background-size="80%"} -->
+
+## Round Function
+
+::: panel-tabset
+### Code
+
+Function with default argument.
+
+```{r}
+#| label: fun-round2
+#| eval: false
+
+round(46.487)
+```
+
+### Output
+
+```{r}
+#| label: fun-round2
+#| echo: false
+#| output: asis
+
+```
+:::
+
+## Round Function
+
+::: panel-tabset
+### Code
+
+Function with a specific value of an argument.
+
+```{r}
+#| label: fun-round3
+#| eval: false
+
+round(46.587, digits = 2)
+```
+
+### Output
+
+```{r}
+#| label: fun-round3
+#| echo: false
+#| output: asis
+
+```
+:::
+
+## Square Root Function
+
+::: panel-tabset
+### Code
+
+Function with a specific value of an argument.
+
+```{r}
+#| label: fun-sqrt
+#| eval: false
+
+sqrt(x = 9)
+```
+
+### Output
+
+```{r}
+#| label: fun-sqrt
+#| echo: false
+#| output: asis
+
+```
+:::
+
+## Sequence Function
+
+::: panel-tabset
+### Code
+
+Function with a specific value of an argument.
+
+```{r}
+#| label: fun-seq
+#| eval: false
+
+seq.int(from = 10, to = 30, by = 5)
+```
+
+or
+
+```{r}
+#| label: fun-seq1
+#| eval: false
+
+seq.int(from = 10,
+        to = 30,
+        by = 5)
+```
+
+### Output
+
+```{r}
+#| label: fun-seq
+#| echo: false
+#| output: asis
+
+```
+:::
+
+#  {.inverse}
+
+![](images/stormyr.gif){fig-align="center"}
+
+[COMMENT]{.r-fit-text .center}
+
+::: {aside}
+[Artwork by [Alision Horst](https://allisonhorst.com/)]{.small}
+:::
+
+## Comment:
+
+-   "Humans will be able to read the comments, but your computer will pass over them."
+
+-   In R, `#` is used as a commenting symbol.
+
+::: aside
+[Source](https://en.wikipedia.org/wiki/Comment_computer_programming)
+:::
+
+#  {.inverse}
+
+![](images/pkgs-space.png){fig-align="center"}
+
+[PACKAGES]{.r-fit-text}
+
+## R Packages {background-image="https://miro.medium.com/v2/resize:fit:732/1*qVn_OyvyHA6AG2gaQkTXfA.png" background-opacity="0.15" background-size="contain" background-position="right"}
+
+"An R package is a collection of functions, data, and documentation that extends the capabilities of base R. Using packages is key to the successful use of R."[^3]
+
+[^3]: [Source: R for Data Science, 2e](https://r4ds.hadley.nz/intro)
+
+## R Packages 
+
+![](images/metacran.png){.r-stretch}
+
+::: aside
+<br>Source: [Metacran](https://www.r-pkg.org/)
+:::
+
+## Install Packages {.center}
+
+![](images/pkg-download1.png)
+
+## Name of the Packages {.center}
+
+![](images/pkg-download2.png)
+
+## Installed Packages {.center}
+
+![](images/pkg-download3.png)
+
+## [Function to Install Packages]{.r-fit-text}
+
+<br>
+
+```{r}
+#| eval: false
+
+install.packages("tidyverse")
+```
+
+## Function to Call Package
+
+<br>
+
+```{r}
+#| eval: false
+
+library(tidyverse)
+```
+
+## Using Packages
+
+-   You need to install package only once like:
+
+    -   📚 We buy books once and use them again and again
+
+    -   💡 Fix the bulb once and use it again and again.
+
+## Using Packages
+
+-   In every R document you need to **call once** the package using function `library()`, for example library(ggplot2).
+
+-   Once in a while, you need to update the installed packages as well.
+
+-   If you un-install R or RStudio, you will lose all installed packages.
+
+## Tools $\rightarrow$ Package Updates {.center}
+
+![](images/update-pkg1.png)
+
+## Select Packages to Update {.center}
+
+![](images/update-pkg2.png)
+
+## Click Install Updates {.center}
+
+![](images/update-pkg3.png)
+
+## To Remove Packages {.center}
+
+![](images/remove-pkg.png)
+
+#  {.inverse}
+
+![](images/heartyr.gif){fig-align="center"}
+
+[OBJECTS]{.r-fit-text}
+
+::: {aside}
+[Artwork by [Alision Horst](https://allisonhorst.com/)]{.small}
+:::
+
+## R Object
+
+<br>
+
+> Just a name that you can use to call up stored data.
+
+<br>
+
+::: {.callout-important}
+R assignment operators: Assignment operators are used to assign values to variables.
+
+`my_var <- 3`
+
+`my_var # print my_var`
+:::
+
+::: aside
+Source: [Garrett Grolemund](https://rstudio-education.github.io/hopr/basics.html#objects)
+:::
+
+## Create Object
+
+::: panel-tabset
+### Code
+
+```{r}
+#| label: age
+#| eval: false
+age <- c(23, 25, 16, 40, 34)
+
+age
+```
+
+### Output
+
+```{r}
+#| label: age
+#| output: asis
+#| echo: false 
+```
+:::
+
+## Create Object
+
+::: panel-tabset
+### Code
+
+```{r}
+#| label: income
+#| eval: false
+income <- c(23000, 25000, 16000, 4000, 34000)
+
+income
+```
+
+### Output
+
+```{r}
+#| label: income
+#| output: asis
+#| echo: false 
+```
+:::
+
+## Create Object
+
+::: panel-tabset
+### Code
+
+```{r}
+#| label: name
+#| eval: false
+name <- c("Bhim", "Rama", "Sara", "Phule", "Savitri")
+
+name
+```
+
+### Output
+
+```{r}
+#| label: name
+#| output: asis
+#| echo: false 
+```
+:::
+
+## Create Object
+
+::: panel-tabset
+### Code
+
+```{r}
+#| label: place
+#| eval: false
+place <- c("MH", "RJ", "DL", "HR", "HR")
+
+place
+```
+
+### Output
+
+```{r}
+#| label: place
+#| output: asis
+#| echo: false 
+```
+:::
+
+## Create Object
+
+::: panel-tabset
+### Code
+
+```{r}
+#| label: weight
+#| eval: false
+weight_kg <- c(50, 52, 61, 40, 70)
+
+weight_kg
+```
+
+### Output
+
+```{r}
+#| label: weight
+#| output: asis
+#| echo: false 
+```
+:::
+
+## [💡Guidelines to Name R Objects:]{.r-fit-text}
+
+-   a name cannot start with a number.
+
+-   a name cannot use some special symbols, like `^`, `!`, `$`, `@`, `+`, `-`, `/`, or `*`,`:`.
+
+-   avoid caps.
+
+-   avoid space.
+
+-   use dash (like weight-kg) or underscore (like weight_kg).
+
+-   if chronology matters then add date (2020-09-05-file-name).
+
+## [RStudio Environment Window]{.r-fit-text}
+
+<br>
+
+![](images/rstd-env.png)
+
+[🤔 How to combine all these objects and form a data set?]{.r-fit-text .fragment .theme-red}
+
+## 👇 Something Like This 😻😻
+
+<br>
+
+```{r}
+#| echo: false
+
+example_df <- data.frame(name, income, age, place, weight_kg)
+
+example_df
+```
+
+## [How to Create a Data Object?]{.r-fit-text}
+
+::: panel-tabset
+### Code
+
+```{r}
+#| label: df
+#| eval: false
+example_df <- data.frame(name, income, age, place, weight_kg)
+
+example_df
+```
+
+### Output
+
+```{r}
+#| label: df
+#| output: true
+#| echo: false 
+```
+:::
+
+## Export Data as a `csv` File
+
+::: panel-tabset
+### Code
+
+```{r}
+#| label: export-csv
+#| eval: false
+
+library(readr)
+
+# create a folder in wd & name it "data"
+write_csv(example_df, "data/example_df.csv") 
+```
+
+### Output
+
+```{r}
+#| label: export-csv
+#| output: asis
+#| echo: false 
+```
+
+To see the created file, check the "data" folder in your working directory.
+:::
+
+## List of All Objects
+
+::: panel-tabset
+### Code
+
+```{r}
+#| label: objects-list
+#| eval: false
+
+objects()
+```
+
+### Output
+
+```{r}
+#| label: objects-list
+#| output: asis
+#| echo: false 
+```
+:::
+
+#  {.inverse}
+
+![](images/breakr.gif){fig-align="center"}
+
+[COMMUNITY]{.r-fit-text}
+
+::: {aside}
+[Artwork by [Alision Horst](https://allisonhorst.com/)]{.small}
+:::
+
+## Help Using Console `>`
+
+> in console type `?your query`
+
+-   for example `?knitr`.
+
+-   for example `?mtcars`.
+
+-   for example `?dplyr`.
+
+## RStudio: Package Website {.center}
+
+<br>
+
+![](images/help-cran.png)
+
+## [Posit Community](https://community.rstudio.com/latest) {.center}
+
+![](images/help-posit.png)
+
+## [Stack Overflow](https://stackoverflow.com/) {.center}
+
+![](images/help-stack.png)
+
+## [GitHub](https://github.com/) {.center}
+
+![](images/help-git.png)
+
+## Social Media #RStats {.center}
+
+::: {layout-ncol=2}
+
+![](images/help-tweet.png)
+
+![](images/code_hero.jpg)
+
+:::
+
+::: {aside}
+[Artwork by [Alision Horst](https://allisonhorst.com/)]{.small}
+:::
+
+# [PUBLISH USING<br>QUARTO]{.r-fit-text} {#sec-publish background-image="https://images.unsplash.com/photo-1606636660488-16a8646f012c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" background-size="cover"}
 
 <br>
 
@@ -183,38 +1499,471 @@ Source: [R for Data Science, 2e](https://r4ds.hadley.nz/intro)
 [Background image by [Tamanna Rumee](https://unsplash.com/@tamanna_rumee)]{.small}
 :::
 
-# {background-image="images/wrangle.jpg"  background-size="cover" #sec-wrangle}
+##  {.inverse .center}
 
-:::: {.columns}
+![](images/logo_quarto.png)
+
+[QUARTO]{.r-fit-text}
+
+## [Quarto, the next generation of R Markdown]{.r-fit-text}
+
+<br>
+
+::: columns
+::: {.column width="40%"}
+![](images/logo_rmd.png)
+:::
 
 ::: {.column width="20%"}
+<br> <br> [{{< fa arrow-right-long >}}]{.r-fit-text .theme-gray}
+:::
+
+::: {.column width="40%"}
+![](images/quarto-logo-hex.png){width="400"}
+:::
+:::
+
+::: aside
+Read more here [From R Markdown to Quarto](https://rstudio-conf-2022.github.io/rmd-to-quarto/)
+:::
+
+## Quarto
+
+> "An open-source scientific and technical publishing system"
+
+. . .
+
+Quarto can produce a wide variety of output formats:
+
+::: nonincremental
+    * Articles & Reports
+    * Presentations
+    * Interactive Docs
+    * Websites
+    * Books
+:::
+
+::: aside
+Source: [Quarto website](https://quarto.org/)
+:::
+
+##  {background-image="images/quarto_workflow.png" background-size="contain" background-position="center"}
+
+##  {background-image="images/dynamic_content1.png" background-size="cover" background-position="center"}
+
+[Analyze. Share. Reproduce. You have a story to tell with data --- tell it with Quarto.]{.r-fit-text}
+
+##  {background-image="images/dynamic_content2.png" background-size="cover" background-position="center"}
+
+##  {background-image="images/dynamic_content3.png" background-size="cover" background-position="center"}
+
+##  {background-image="images/yaml_quarto.png" background-size="cover" background-position="center" transition="fade"}
+
+##  {background-image="images/text_quarto.png" background-size="cover" background-position="center"}
+
+##  {background-image="images/code_quarto.png" background-size="cover" background-position="center"}
+
+##  {background-image="images/render_quarto.png" background-size="cover" background-position="center"}
+
+## [Download](https://github.com/quarto-dev/quarto-cli/releases/download/v1.3.450/quarto-1.3.450-macos.pkg) Quarto {.center}
+
+![](images/start_quarto1.png)
+
+## Get Started: Choose IDE {.center}
+
+![](images/start_quarto2.png)
+
+## Create a New Quarto Document {.center}
+
+![](images/quarto_new_file2.png)
+
+## [File $\rightarrow$ New File $\rightarrow$ Quarto Document]{.r-fit-text} {.center}
+
+![](images/quarto_new_file1.png)
+
+## New Quarto Document {.center}
+
+![](images/new_quarto1.png)
+
+## New Quarto Document {.center}
+
+![](images/new_quarto2.png)
+
+## New Quarto Document {.center}
+
+![](images/new_quarto3.png)
+
+## New Quarto Document {.center}
+
+![](images/new_quarto4.png)
+
+## New Quarto Document {.center}
+
+![](images/new_quarto5.png)
+
+## New Quarto Document {.center}
+
+![](images/new_quarto6.png)
+
+## New Quarto Document {.center}
+
+![](images/new_quarto7.png)
+
+## New Quarto Document {.center}
+
+![](images/new_quarto8.png)
+
+## Save Quarto Document {.center}
+
+![](images/quarto_file_name.png)
+
+## Save Quarto Document {.center}
+
+![](images/quarto_file_folder.png)
+
+
+## {background-image="images/render.png" background-size="contain"}
+
+## When you render the quarto document
+
+> Quarto sends the `.qmd` file to **knitr**, which executes all of the code chunks and creates a new markdown (`.md`) document which includes the code and its output. The markdown file generated by knitr is then processed by **pandoc**, which is responsible for creating the finished file.
+
+## When you render the quarto document
+
+<br>
+
+![](https://r4ds.hadley.nz/images/quarto-flow.png){.r-stretch}
+
+::: aside
+Source: [R for Data Science, 2e](https://r4ds.hadley.nz/quarto#sec-caching)
+:::
+
+
+## Source Editor & Visual Editor {.center}
+
+<br>
+
+![](images/spider.gif)
+
+## Visual Editor {.center}
+
+![](images/visual_mode1.png)
+
+## Visual Editor
+
+![](images/visual_mode2.png){fig-align="center"}
+
+## Visual Editor
+
+![](images/visual_mode3.png){fig-align="center"}
+
+## Source Editor
+
+![](images/source_mode2.png){fig-align="center"}
+
+##  {background-image="images/source_visual_quarto.png" background-size="contain" background-position="center middle"}
+
+#  {.inverse .center}
+
+![](https://logowik.com/content/uploads/images/markdown1678.logowik.com.webp){height="200"}
+
+[Markdown Basics:<br>TEXT]{.r-fit-text .rainbow-yellow}
+
+## Text formatting
+
+<br>
+
++-----------------------------------+-----------------------------------+
+| Markdown Syntax                   | Output                            |
++===================================+===================================+
+| ``` markdown                      | *italics*                         |
+| *italics*                         |                                   |
+| ```                               |                                   |
++-----------------------------------+-----------------------------------+
+| ``` markdown                      | **bold**                          |
+| **bold**                          |                                   |
+| ```                               |                                   |
++-----------------------------------+-----------------------------------+
+| ``` markdown                      | ***bold italics***                |
+| ***bold italics***                |                                   |
+| ```                               |                                   |
++-----------------------------------+-----------------------------------+
+
+::: aside
+Source: [Quarto guide](https://quarto.org/docs/authoring/markdown-basics.html)
+:::
+
+## Text formatting
+
+<br>
+
++-----------------------------------+-----------------------------------+
+| Markdown Syntax                   | Output                            |
++===================================+===================================+
+| ``` markdown                      | superscript^2^ / subscript~2~     |
+| superscript^2^ / subscript~2~     |                                   |
+| ```                               |                                   |
++-----------------------------------+-----------------------------------+
+| ``` markdown                      | ~~strikethrough~~                 |
+| ~~strikethrough~~                 |                                   |
+| ```                               |                                   |
++-----------------------------------+-----------------------------------+
+| ``` markdown                      | `verbatim code`                   |
+| `verbatim code`                   |                                   |
+| ```                               |                                   |
++-----------------------------------+-----------------------------------+
+
+::: aside
+Source: [Quarto guide](https://quarto.org/docs/authoring/markdown-basics.html)
+:::
+
+## Headings {.scrollable}
+
+<br>
+
++-----------------+-----------------------------------+
+| Markdown Syntax | Output                            |
++=================+===================================+
+| ``` markdown    | # Header 1 {.heading-output}      |
+| # Header 1      |                                   |
+| ```             |                                   |
++-----------------+-----------------------------------+
+| ``` markdown    | ## Header 2 {.heading-output}     |
+| ## Header 2     |                                   |
+| ```             |                                   |
++-----------------+-----------------------------------+
+| ``` markdown    | ### Header 3 {.heading-output}    |
+| ### Header 3    |                                   |
+| ```             |                                   |
++-----------------+-----------------------------------+
+| ``` markdown    | #### Header 4 {.heading-output}   |
+| #### Header 4   |                                   |
+| ```             |                                   |
++-----------------+-----------------------------------+
+| ``` markdown    | ##### Header 5 {.heading-output}  |
+| ##### Header 5  |                                   |
+| ```             |                                   |
++-----------------+-----------------------------------+
+| ``` markdown    | ###### Header 6 {.heading-output} |
+| ###### Header 6 |                                   |
+| ```             |                                   |
++-----------------+-----------------------------------+
+
+## Links {.scrollable}
+
+<br>
+
++--------------------------------------+--------------------------------------+
+| Markdown syntax                      | Output                               |
++======================================+======================================+
+| ``` markdown                         | <https://saraedu.netlify.app/>       |
+| <https://saraedu.netlify.app/>       |                                      |
+| ```                                  |                                      |
++--------------------------------------+--------------------------------------+
+| ``` markdown                         | [SaRa](https://saraedu.netlify.app/) |
+| [SaRa](https://saraedu.netlify.app/) |                                      |
+| ```                                  |                                      |
++--------------------------------------+--------------------------------------+
+
+## Images {.scrollable}
+
++--------------------------------------------------------------+--------------------------------------------------------------------------------------------------------+
+| Markdown Syntax                                              | Output                                                                                                 |
++==============================================================+========================================================================================================+
+| ``` markdown                                                 | ![Caption](rose.jpg){fig-alt="A line drawing of an elephant."}                                         |
+| ![Caption](rose.jpg)                                         |                                                                                                        |
+| ```                                                          |                                                                                                        |
++--------------------------------------------------------------+--------------------------------------------------------------------------------------------------------+
+| ``` markdown                                                 | [![Caption](rose.jpg)](https://quarto.org)                                                             |
+| [![Caption](rose.jpg)](https://quarto.org)                   |                                                                                                        |
+| ```                                                          |                                                                                                        |
++--------------------------------------------------------------+--------------------------------------------------------------------------------------------------------+
+| ``` markdown                                                 | [![Caption](rose.jpg "An elephant"){fig-alt="A line drawing of an elephant."}](https://quarto.org)     |
+| [![Caption](rose.jpg)](https://quarto.org "An elephant")     |                                                                                                        |
+| ```                                                          |                                                                                                        |
++--------------------------------------------------------------+--------------------------------------------------------------------------------------------------------+
+| ``` markdown                                                 | [![](rose.jpg){fig-alt="A line drawing of an elephant."}](https://quarto.org)                          |
+| [![](rose.jpg){fig-alt="Alt text"}](https://quarto.org)      |                                                                                                        |
+| ```                                                          |                                                                                                        |
++--------------------------------------------------------------+--------------------------------------------------------------------------------------------------------+
+
+## Lists {.scrollable} 
+
+::: nonincremental
+
++-----------------------------------+---------------------------------+
+| Markdown Syntax                   | Output                          |
++===================================+=================================+
+| ``` markdown                      |                                 |
+| * unordered list                  | * unordered list                |
+|     + sub-item 1                  |     + sub-item 1                |
+|     + sub-item 2                  |     + sub-item 2                |
+|         - sub-sub-item 1          |         - sub-sub-item 1        |
+| ```                               |                                 |
++-----------------------------------+---------------------------------+
+| ``` markdown                      |                                 |
+| *   item 2                        | -   item 2                      |
+|                                   |                                 |
+|     Continued (indent 4 spaces)   |     Continued (indent 4 spaces) |
+| ```                               |                                 |
++-----------------------------------+---------------------------------+
+| ``` markdown                      |                                 |
+| 1. ordered list                   |  1. ordered list                |
+| 2. item 2                         |  2. item 2                      |
+|     i) sub-item 1                 |      i) sub-item 1              |
+|          A.  sub-sub-item 1       |           A.  sub-sub-item 1    |
+| ```                               |                                 |
+|                                   |                                 |
++-----------------------------------+---------------------------------+
+| ``` markdown                      |                                 |
+| (@)  A list whose numbering       |  (1) A list whose numbering     |
+|                                   |                                 |
+| continues after                   |  continues after                |
+|                                   |                                 |
+| (@)  an interruption              |  (2) an interruption            |
+| ```                               |                                 |
++-----------------------------------+---------------------------------+
+| ``` markdown                      |                                 |
+| ::: {}                            | ::: {}                          |
+| 1. A list                         | 1. A list                       |
+| :::                               | :::                             |
+|                                   |                                 |
+| ::: {}                            | ::: {}                          |
+| 1. Followed by another list       | 1. Followed by another list     |
+| :::                               | :::                             |
+| ```                               |                                 |
++-----------------------------------+---------------------------------+
+| ``` markdown                      |                                 |
+| term                              | term                            |
+| : definition                      | : definition                    |
+| ```                               |                                 |
++-----------------------------------+---------------------------------+
+:::
+
+## Tables
+
+#### Markdown Syntax
+
+``` markdown
+| Right | Left | Default | Center |
+|------:|:-----|---------|:------:|
+|   12  |  12  |    12   |    12  |
+|  123  |  123 |   123   |   123  |
+|    1  |    1 |     1   |     1  |
+```
+
+#### Output
+
+| Right | Left | Default | Center |
+|------:|:-----|---------|:------:|
+|    12 | 12   | 12      |   12   |
+|   123 | 123  | 123     |  123   |
+|     1 | 1    | 1       |   1    |
+
+
+## Equations
+
+Use `$` delimiters for inline math and `$$` delimiters for display math. For example:
+
++---------------------------+-------------------------+
+| Markdown Syntax           | Output                  |
++===========================+=========================+
+| ``` markdown              |                         |
+| inline math: $E = mc^{2}$ | inline math: $E=mc^{2}$ |
+| ```                       |                         |
++---------------------------+-------------------------+
+| ``` markdown              |                         |
+| display math:             | display math:           |
+|                           |                         |
+| $$E = mc^{2}$$            | $$E = mc^{2}$$          |
+| ```                       |                         |
++---------------------------+-------------------------+
+
+## Diagrams
+
+```{mermaid}
+%%| echo: fenced
+flowchart LR
+  A[Hard edge] --> B(Round edge)
+  B --> C{Decision}
+  C --> D[Result one]
+  C --> E[Result two]
+```
+
+
+## Videos
+
+You can include videos in documents using the `{{{< video >}}}` shortcode.
+
+``` {.markdown shortcodes="false"}
+{{< video https://www.youtube.com/embed/wo9vZccmqwc >}}
+```
+
+## Divs (`:::`)
+
+"Divs are special entities that allow you to apply identifiers and/or styles to a **region of a document.** Divs are block elements (like paragraphs)."
+
+``` markdown
+
+::: {.aside}
+This content will be placed aside in the page.
+:::
+
+```
+
+::: {.aside }
+Source: [Quarto guide](https://quarto.org/docs/visual-editor/content.html)
+:::
+
+## Spans
+
+"Spans are special entities that allow you to apply identifiers and/or style to a **region of text**. Spans are inline formatting marks (like bold and italic)."
+
+<br>
+
+``` markdown
+
+[This text color becomes light blue color.]{.theme-red}
+
+
+```
+
+<br>
+
+[This text color becomes light blue color.]{.theme-red}
+
+::: {.aside }
+Source: [Quarto guide](https://quarto.org/docs/visual-editor/content.html)
+:::
+
+## References {.scrollable}
+
+::: {.nonincremental}
+
+- Title slide background image is from [Joanna Kosinska](https://unsplash.com/photos/white-baubles-and-sleigh-bells-0CQfTLOVTPU).
+
+- R for Data Science (2e) by Hadley Wickham, Mine Çetinkaya-Rundel, and Garrett Grolemund. [ebook link](https://r4ds.hadley.nz/)
+
+- R bloggers <https://www.r-bloggers.com/>
+
+- The R Project for Statistical Computing <https://www.r-project.org/>
+
+- posit (earlier RStudio) <https://posit.co/>
+
+- R packages for data science <https://www.tidyverse.org/>
 
 :::
 
-::: {.column width="80%"}
-[Data <br> Wrangling]{.r-fit-text .theme-navy-blue .centering}
+# {background-image="https://images.unsplash.com/photo-1553379762-ff913d5513b5?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" background-size="cover"}
 
+:::: {.columns}
+
+::: {.column width="70%"}
+[Thank<br>You]{.r-fit-text .theme-cursive .theme-navy-blue}
 :::
 
 ::::
 
 ::: aside
-[Background image by [Matt Smart](https://unsplash.com/@imattsmart)]{.small}
+[Background image by [Oh Tilly](https://unsplash.com/photos/white-flowers-B8_YF4fjPwo)]{.small}
 :::
-
-## Your turn {#sec-turn}
-
-## Tools used to create these slides
-
-```{r}
-sessionInfo()
-```
-
-# {background-image="images/thanks.jpg" background-size="cover"}
-
-[thank you]{.r-fit-text .theme-hello .theme-navy-blue}
-
-::: aside
-[Background image by [Anastasiia Kamil](https://unsplash.com/@nastyakamil)]{.small}
-:::
-

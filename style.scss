@@ -1,0 +1,125 @@
+/*-- scss:defaults --*/
+
+// audio
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Libre+Baskerville&display=swap');
+
+// bruno ace
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace&display=swap');
+
+// Michroma
+@import url('https://fonts.googleapis.com/css2?family=Michroma&display=swap');
+
+// font style for the body text of the slides.
+@import url('https://fonts.googleapis.com/css?family=Sen&display=swap');
+
+// cursive font style for hello and thank you.
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital@0;1&family=Sail&display=swap');
+
+//
+// Color system
+//
+$white:          #ffffff !default;
+$navy-blue:      #003366 !default;
+$theme-red:      #E7553C !default;
+$theme-blue:     #76AADB !default;
+
+$presentation-heading-font: 'Audiowide', sans-serif;
+
+$font-family-sans-serif: "Sen", "sans-serif";
+
+$presentation-heading-color: $navy-blue;
+
+// link style.
+$link-color: $theme-red;
+$link-color-hover: lighten($link-color, 15%);
+$selection-bg: #007AF8;
+
+.theme-tech {
+  font-family: 'Audiowide', sans-serif;
+  color: #003366;
+  
+}
+
+.theme-cursive {
+  font-family: 'Sail';
+  color: #003366;
+}
+
+// alignment 
+.center {
+  text-align: center;
+}
+
+.left {
+  text-align: left;
+}
+
+.right {
+  text-align: right;
+}
+
+.theme-white {
+  color: $white;
+}
+
+.navy-blue {
+  color: $navy-blue;
+}
+
+.theme-red {
+  color: $theme-red;
+}
+
+.small {
+  font-size: 0.5em;
+}
+
+// this idea of rainbow color is borrowed from Emil's slides link https://github.com/EmilHvitfeldt/talk-nyr-slidecraft/blob/main/styles.scss
+
+.rainbow-red {color: #FF0002;}
+.rainbow-orange {color: #FF7800;}
+.rainbow-yellow {color: #FFFD0A;}
+.rainbow-green {color: #10DD15;}
+.rainbow-blue {color: #3050FF;}
+.rainbow-indigo {color: #7B20A3;}
+.rainbow-purple {color: #D501FA;}
+
+// code chunk box style.
+//$code-block-border-color: lighten($navy-blue, 20%);
+$code-block-font-size: 1em;
+$code-color: $theme-red;
+$code-bg: #fff;
+$code-block-bg: #fff;
+
+// to increase space between code block and code output
+.reveal div.sourceCode {
+    margin-bottom: 20px !important;
+}
+
+// shade around the code chunk box.
+.reveal div.sourceCode {
+  box-shadow: 0 15px 30px rgba($theme-blue, 0.8);
+}
+
+// inverse.
+.inverse {
+  color: #fff;
+  h1 {
+    color: #fff;
+    font-size: 3em;
+    text-align: center;
+  }
+  
+  a {
+    color: #bed3ec;
+  }
+  
+  a:hover {
+    color: #bed3ec;
+  }
+  
+  .slide-background-content {
+    background-color: #282a36;
+  }
+  
+}

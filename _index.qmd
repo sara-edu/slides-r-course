@@ -1,0 +1,203 @@
+---
+pagetitle: "R slides"
+format:
+  revealjs:
+    theme: [default, sara-style.scss]
+    slide-number: true
+    logo: images/logo.png
+    footer: "[TOC](#sec-toc)"
+    incremental: true
+    code-copy: true
+    code-link: true #using downlit pkg
+    code-line-numbers: false
+    menu: false
+    highlight-style: solarized
+    transition: convex
+    background-transition: convex
+    progress: false
+knitr:
+  opts_chunk: 
+    echo: true
+    fig.retina: 3 
+---
+
+##  {background-image="images/title-front.jpg" background-size="cover"}
+
+[{{< fa brands r-project size=large >}} For<br>Beginners]{.r-fit-text .right .theme-navy-blue} Ajay Koli | SARA Institute of Data Science | India
+
+[Background image by [Joanna Kosinska](https://unsplash.com/@joannakosinska)]{.small}
+
+```{r}
+#| label: packages-used
+#| echo: false
+#| warning: false
+#| message: false
+
+library(downlit) #to create link of r function
+library(tidyverse)
+library(palmerpenguins)
+```
+
+## 
+
+::: columns
+::: {.column width="50%"}
+<br> <br> ![](images/ajay.png)
+:::
+
+::: {.column width="50%"}
+<br> <br>
+
+[Hello there!!]{.r-fit-text .theme-hello .theme-navy-blue}
+
+{{< fa circle-user >}} [Dr. Ajay Kumar Koli](https://koliajay.netlify.app/)
+
+{{< fa award >}} Founder & Executive Director
+
+{{< fa play >}} [SaRa Institute of Data Science](https://saraedu.netlify.app/)
+
+{{< fa brands twitter >}} 
+
+{{< fa brands github >}} [Slide source code](https://github.com/sara-edu)
+
+```{=html}
+<a class="github-button" href="https://github.com/sara-edu/slides-r-course" data-icon="octicon-star" data-size="large" data-show-count="true" aria-label="Star this course on Github">Star this course on Github</a><script async defer src="https://buttons.github.io/buttons.js"></script>
+```
+:::
+:::
+
+## Data science
+
+<br>
+
+> "Data science is an exciting discipline that allows you to transform raw data into understanding, insight, and knowledge."
+
+::: aside
+Source: [R for Data Science, 2e](https://r4ds.hadley.nz/intro)
+:::
+
+## Career in data science
+
+<br>
+
+> "You don't need to be an expert programmer to be a successful data scientist."
+
+::: aside
+Source: [R for Data Science, 2e](https://r4ds.hadley.nz/intro)
+:::
+
+## Types of data professionals {.centering}
+
+<br>
+
+![](images/career.jpg){height="500"}
+
+::: aside
+[Source: Alex Wang](https://www.linkedin.com/in/alexwang2911/recent-activity/all/)
+:::
+
+## Data science project process
+
+<br>
+
+![](https://r4ds.hadley.nz/diagrams/data-science/base.png)
+
+::: aside
+Source: [R for Data Science, 2e](https://r4ds.hadley.nz/intro)
+:::
+
+## Table of content {#sec-toc}
+
+::: nonincremental
+-   [R & RStudio](#sec-basics)
+
+-   [Basics of Quarto](#sec-basics-quarto)
+
+-   [Data Visualization](#sec-viz)
+
+-   [Publish using Quarto](#sec-publish)
+
+-   [Data Wrangling](#sec-wrangle)
+:::
+
+#  {#sec-basics background-image="images/basics.jpg" background-size="cover"}
+
+::: columns
+::: {.column width="40%"}
+:::
+
+::: {.column width="60%"}
+[R and<br>RStudio]{.r-fit-text .theme-navy-blue .right}
+:::
+:::
+
+[Background image by [Leohoho](https://unsplash.com/@leohoho)]{.small}
+
+{{< include basics.qmd >}}
+
+# {#sec-basics-quarto background-image="https://images.unsplash.com/photo-1544724759-e2e242adb0db?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3028&q=80" background-size="cover" background-position="0 60 0 0"}
+
+::: columns
+::: {.column width="10%"}
+:::
+
+::: {.column width="90%"}
+[Basics <br> of Quarto]{.r-fit-text .theme-navy-blue .right}
+:::
+:::
+
+::: aside
+[Background image by [Jenny Pace](https://unsplash.com/@thejennypace)]{.small}
+:::
+
+{{< include quarto.qmd >}}
+
+#  {#sec-viz background-image="images/viz.jpg" background-size="cover"}
+
+[Data <br> Visualization<br><br>]{.r-fit-text .theme-navy-blue .centering}
+
+::: aside
+[Background image by [Jess Bailey](https://unsplash.com/@jessbaileydesigns)]{.small}
+:::
+
+#  {#sec-publish background-image="https://images.unsplash.com/photo-1606636660488-16a8646f012c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" background-size="cover"}
+
+[Publish using <br> Quarto]{.r-fit-text .theme-navy-blue}
+
+<br>
+
+::: aside
+[Background image by [Tamanna Rumee](https://unsplash.com/@tamanna_rumee)]{.small}
+:::
+
+#  {#sec-wrangle background-image="images/wrangle.jpg" background-size="cover"}
+
+::: columns
+::: {.column width="20%"}
+:::
+
+::: {.column width="80%"}
+[Data <br> Wrangling]{.r-fit-text .theme-navy-blue .centering}
+:::
+:::
+
+::: aside
+[Background image by [Matt Smart](https://unsplash.com/@imattsmart)]{.small}
+:::
+
+## Your turn {#sec-turn}
+
+## Tools used to create these slides
+
+```{r}
+sessionInfo()
+```
+
+#  {background-image="images/thanks.jpg" background-size="cover"}
+
+[thank you]{.r-fit-text .theme-hello .theme-navy-blue}
+
+::: aside
+[Background image by [Anastasiia Kamil](https://unsplash.com/@nastyakamil)]{.small}
+:::
+

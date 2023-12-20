@@ -1,0 +1,176 @@
+/*-- scss:defaults --*/
+
+// most of the color combinations are adapted from the slides of dear Allison Hill.
+
+// font style for the headings.
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
+
+// font style for the body text of the slides.
+@import url('https://fonts.googleapis.com/css?family=Sen&display=swap');
+
+// cursive font style.
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital@0;1&family=Sail&display=swap');
+
+
+// define color variables.
+$theme-navy-blue: #003366;
+$theme-gray:      #282a36;
+$theme-red:       #E7553C; 
+$theme-white:     #ffffff;
+$theme-light-blue: #A3D3FC;
+$theme-blue:      #76AADB;
+$theme-green: #2a9d8f;
+
+
+$presentation-heading-font: 'Libre Baskerville', 'serif';
+$presentation-heading-color: $theme-navy-blue;
+$presentation-h2-font-size: 2.0em;
+
+// body style.
+$font-family-sans-serif: "Sen", "sans-serif";
+//$mainFontSize: 35px;
+//$presentation-font-size-root: 30px;
+$body-color: $theme-gray;
+$body-bg: $theme-white;
+
+
+// link style.
+$link-color: $theme-red;
+$link-color-hover: lighten($link-color, 15%);
+$selection-bg: #007AF8;
+
+
+// code chunk box style.
+//$code-block-border-color: lighten($navy-blue, 20%);
+$code-block-font-size: 1em;
+$code-color: $theme-red;
+$code-bg: #fff;
+$code-block-bg: #fff;
+
+
+/*-- scss:rules --*/
+
+.theme-gray {
+  color: #808080;
+}
+
+.theme-red {
+  color: $theme-red;
+}
+
+.theme-blue {
+  color: #219ebc;
+}
+
+.theme-green {
+  color: #31572c;
+}
+
+.theme-navy-blue {
+  color: $theme-navy-blue;
+}
+
+.theme-white {
+  color: $theme-white;
+}
+
+
+.theme-hello {
+  font-family: 'Sail';
+}
+
+
+.right {
+  text-align: right;
+}
+
+.centering {
+  text-align: center;
+}
+
+.small {
+  font-size: 0.5em;
+}
+
+
+// underline the link.
+.reveal .slide a {
+  text-decoration: underline;
+}
+
+
+// to increase space between code block and code output
+.reveal div.sourceCode {
+    margin-bottom: 20px !important;
+}
+
+
+// shade around the code chunk box.
+.reveal div.sourceCode {
+  box-shadow: 0 15px 30px rgba($theme-blue, 0.8);
+}
+
+
+// your turn exercise slide style.
+.your-turn {
+  color: #fff;
+  h1, h2, h3 {
+    color: #fff;
+    font-size: 2.5em;
+  }
+
+  a {
+    color: #f1fa8c;
+  }
+  
+  a:hover {
+    color: #d8e17e;
+  }
+  
+  .slide-background-content {
+    background-color: #447099;
+  }
+  
+}
+
+
+// inverse.
+.inverse {
+  color: #fff;
+  h1 {
+    color: #fff;
+    font-size: 3em;
+    text-align: center;
+  }
+  
+  a {
+    color: #bed3ec;
+  }
+  
+  a:hover {
+    color: #bed3ec;
+  }
+  
+  .slide-background-content {
+    background-color: #282a36;
+  }
+  
+}
+
+// this idea of rainbow color is borrowed from Emil's slides link https://github.com/EmilHvitfeldt/talk-nyr-slidecraft/blob/main/styles.scss
+
+.rainbow-red {color: #FF0002;}
+.rainbow-orange {color: #FF7800;}
+.rainbow-yellow {color: #FFFD0A;}
+.rainbow-green {color: #10DD15;}
+.rainbow-blue {color: #3050FF;}
+.rainbow-indigo {color: #7B20A3;}
+.rainbow-purple {color: #D501FA;}
+
+
+
+
+
+
+
+
