@@ -1,5 +1,6 @@
 ---
-pagetitle: "R Slides"
+pagetitle: "R Course Slides"
+description: "Study Material from the SARA Institute of Data Science, Sonipat, India."
 format: 
   revealjs:
     theme: [default, style.scss]
@@ -106,13 +107,11 @@ library(palmerpenguins)
 
 ![](images/researcher.jpg){fig-align="center"}
 
-. . .
-
 [We [think]{.theme-red} we work like this but ...]{.r-fit-text}
 
 ## Work {.center}
 
-[This is our [actual]{.theme-red} work look.]{.r-fit-text}
+[This is our work look [actually]{.theme-red}.]{.r-fit-text}
 
 ![](images/researcher-sad.webp){fig-align="center"}
 
@@ -184,42 +183,46 @@ Other Tools:
 
 ::::
 
-## Data science
+## Data Science
 
 <br>
 
 > "Data science is an exciting discipline that allows you to transform raw data into understanding, insight, and knowledge."
 
 ::: aside
-Source: [R for Data Science, 2e](https://r4ds.hadley.nz/intro)
+[Source: [R for Data Science, 2e](https://r4ds.hadley.nz/intro)]{.small}
 :::
 
-## Career in data science
+## Career in Data Science
 
 <br>
 
 > "You don't need to be an expert programmer to be a successful data scientist."
 
 ::: aside
-Source: [R for Data Science, 2e](https://r4ds.hadley.nz/intro)
+[Source: [R for Data Science, 2e](https://r4ds.hadley.nz/intro)]{.small}
 :::
 
-## Types of Data Roles {.centering}
+## Types of Data Roles {.center}
 
 ![](images/career.jpg){fig-align='center' width="60%"}
 
 ::: aside
-[Source: Alex Wang](https://www.linkedin.com/feed/update/urn:li:activity:7142645513215950850/)
+[[Source: Alex Wang](https://www.linkedin.com/feed/update/urn:li:activity:7142645513215950850/)]{.small}
 :::
 
-## Data Science Process
+## Data Science Process {.center}
 
 <br>
 
 ![](https://r4ds.hadley.nz/diagrams/data-science/base.png)
 
+<br>
+
 ::: aside
-Source: [R for Data Science, 2e](https://r4ds.hadley.nz/intro)
+
+[Source: [R for Data Science, 2e](https://r4ds.hadley.nz/intro)]{.small}
+
 :::
 
 ## Table of Content {#sec-toc}
@@ -236,7 +239,7 @@ Source: [R for Data Science, 2e](https://r4ds.hadley.nz/intro)
 -   [Data Wrangling](#sec-wrangle)
 :::
 
-## {background-image="https://images.unsplash.com/photo-1636819488524-1f019c4e1c44?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"  background-size="cover" #sec-basics}
+# {background-image="https://images.unsplash.com/photo-1636819488524-1f019c4e1c44?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"  background-size="cover" #sec-basics}
 
 :::: {.columns}
 
@@ -257,17 +260,12 @@ Source: [R for Data Science, 2e](https://r4ds.hadley.nz/intro)
 
 ::: aside
 
-Background image by [Andy Hermawan](https://unsplash.com/@kolamdigital)
+[Background image by [Andy Hermawan](https://unsplash.com/@kolamdigital)]{.small}
 
 :::
 
-#  {background-image="images/exploder.gif" background-position="center" background-size="contain" .inverse}
+# {background-image="images/exploder.gif" background-position="center" background-size="contain" .inverse}
 
-<br>
-<br>
-<br>
-<br>
-<br>
 <br>
 <br>
 <br>
@@ -283,7 +281,7 @@ Background image by [Andy Hermawan](https://unsplash.com/@kolamdigital)
 <br>
 
 ::: aside
-[Artwork by [Alision Horst](https://allisonhorst.com/)]{.small}
+[[Artwork by [Alision Horst](https://allisonhorst.com/)]{.small}]{.small .theme-white}
 :::
 
 ## R Programming Language
@@ -298,11 +296,13 @@ Background image by [Andy Hermawan](https://unsplash.com/@kolamdigital)
 ::: {.column width="70%"}
 <br> 
 
-"R is a free software environment for statistical computing and graphics."[^1]
+"R is a free software environment for statistical computing and graphics."
 :::
 :::
 
-[^1]: [Source: R for Data Science, 2e](https://r4ds.hadley.nz/intro)
+::: aside
+[Source: [R for Data Science, 2e](https://r4ds.hadley.nz/intro)]{.small}
+:::
 
 ## History of R
 
@@ -352,13 +352,15 @@ Background image by [Andy Hermawan](https://unsplash.com/@kolamdigital)
 :::
 :::
 
-## Don't save workspace image
+## Workspace Image
 
 ::: columns
 
 ::: {.column width="50%"}
 
 <br>
+
+- Don't save workspace image.
 
 -   It helps in "freshly minted R sessions".
 
@@ -371,7 +373,7 @@ Background image by [Andy Hermawan](https://unsplash.com/@kolamdigital)
 :::
 
 ::: aside
-[Source: R Bloggers](https://www.r-bloggers.com/2017/04/using-r-dont-save-your-workspace/)
+[[Source: R Bloggers](https://www.r-bloggers.com/2017/04/using-r-dont-save-your-workspace/)]{.small}
 :::
 
 #  {.inverse}
@@ -393,7 +395,7 @@ Put spaces between and around operators (`=+-*/`)
 :::
 
 ::: aside
-Source: [w3schools](https://www.w3schools.com/r/r_operators.asp)
+[Source: [w3schools](https://www.w3schools.com/r/r_operators.asp)]{.small}
 :::
 
 <!-- ## Types of R Operators: -->
@@ -404,7 +406,7 @@ Source: [w3schools](https://www.w3schools.com/r/r_operators.asp)
 <!-- -   Logical operators -->
 <!-- -   Miscellaneous operators -->
 
-## R arithmetic operators
+## R Arithmetic Operators
 
 Arithmetic operators are used with numeric values to perform common mathematical operations:
 
@@ -418,7 +420,7 @@ Arithmetic operators are used with numeric values to perform common mathematical
 | `/`      | Division       | x / y   |
 | `^`      | Exponent       | x \^ y  |
 
-## R console {.center}
+## R Console {.center}
 
 <br>
 
@@ -444,7 +446,7 @@ Arithmetic operators are used with numeric values to perform common mathematical
 :::
 :::
 
-## R console: Addition {.center}
+## R Console: Addition {.center}
 
 <br>
 
@@ -470,7 +472,7 @@ Arithmetic operators are used with numeric values to perform common mathematical
 :::
 :::
 
-## R console: Subtraction {.center}
+## R Console: Subtraction {.center}
 
 <br>
 
@@ -498,7 +500,7 @@ Arithmetic operators are used with numeric values to perform common mathematical
 
 :::
 
-## R console: Multiplication {.center}
+## R Console: Multiplication {.center}
 
 <br>
 
@@ -524,7 +526,7 @@ Arithmetic operators are used with numeric values to perform common mathematical
 :::
 :::
 
-## R console: Division {.center}
+## R Console: Division {.center}
 
 <br>
 
@@ -550,7 +552,7 @@ Arithmetic operators are used with numeric values to perform common mathematical
 :::
 :::
 
-## R comparison operators
+## R Comparison Operators
 
 Comparison operators are used to compare two values:
 
@@ -566,7 +568,7 @@ Comparison operators are used to compare two values:
 | `<=`     | Less than or equal to    | x <= y  |
 
 
-## R console: Logic {.center}
+## R Console: Logic {.center}
 
 <br>
 
@@ -592,7 +594,7 @@ Comparison operators are used to compare two values:
 :::
 :::
 
-## R console: Logic {.center}
+## R Console: Logic {.center}
 
 <br>
 
@@ -618,7 +620,7 @@ Comparison operators are used to compare two values:
 :::
 :::
 
-## R console {.center}
+## R Console {.center}
 
 <br>
 
@@ -651,7 +653,7 @@ R follows the BODMAS (bracket, order, division, multiplication, addition and sub
 :::
 :::
 
-## Plot using R
+## Plot Using R
 
 ::: panel-tabset
 ### Code
@@ -684,7 +686,7 @@ R Miscellaneous Operators: Miscellaneous operators are used to manipulate data.
 ```
 :::
 
-## 😏 That's okay but how to$...$
+## 😏 That's Okay But How To
 
 ::: nonincremental
 -   combine plot, text, tables and images in a single file.
@@ -694,7 +696,7 @@ R Miscellaneous Operators: Miscellaneous operators are used to manipulate data.
 -   work efficiently with my different projects and save, share and track them.
 :::
 
-# {transition="zoom" transition-speed="slow" .center}
+## {background-color=#000000 transition="zoom" transition-speed="slow" .center}
 
 [🔥 WE NEED A SUPERHERO 🔥]{.r-fit-text}
 
@@ -732,7 +734,7 @@ R Miscellaneous Operators: Miscellaneous operators are used to manipulate data.
 :::
 
 ::: aside
-Source: [posit](https://posit.co/products/open-source/rstudio/)
+[Source: [posit](https://posit.co/products/open-source/rstudio/)]{.small}
 :::
 
 ## RStudio IDE {.center}
@@ -741,9 +743,13 @@ Source: [posit](https://posit.co/products/open-source/rstudio/)
 
 ## RStudio IDE
 
-"It includes a console, syntax-highlighting editor that supports direct code execution, and tools for plotting, history, debugging, and workspace management." [Source: posit](https://posit.co/products/open-source/rstudio/)
+"It includes a console, syntax-highlighting editor that supports direct code execution, and tools for plotting, history, debugging, and workspace management." 
 
-![](images/rstd_ide.png){fig-align="center"}
+![](images/rstd_ide.png){fig-align="right" width="70%"}
+
+::: aside
+[Source: [posit](https://posit.co/products/open-source/rstudio/)]{.small}
+:::
 
 ## [RStudio $\rightarrow$ Tools $\rightarrow$ Global Options]{.r-fit-text .center}
 
@@ -754,7 +760,7 @@ Source: [posit](https://posit.co/products/open-source/rstudio/)
 ![](images/rstd_options2.png){fig-align="center"}
 
 
-## R & RStudio {.center}
+## R & RStudio {.center .theme-cursive}
 
 <br>
 
@@ -807,10 +813,10 @@ Source: [posit](https://posit.co/products/open-source/rstudio/)
 :::
 
 ::: aside
-Source: [RStudio](https://support.rstudio.com/hc/en-us/articles/200526207-Using-Projects) & Artwork by [Allison Horst](https://www.allisonhorst.com/)
+[Source: [RStudio](https://support.rstudio.com/hc/en-us/articles/200526207-Using-Projects) & Artwork by [Allison Horst](https://www.allisonhorst.com/)]{.small}
 :::
 
-## {background-color="#9FE2BF"}
+## {background-color="#000"}
 
 [⛷️ Create <br> RStudio Project <br> in 4 Steps ⛷️]{.r-fit-text .center}
 
@@ -822,7 +828,7 @@ Source: [RStudio](https://support.rstudio.com/hc/en-us/articles/200526207-Using-
 
 ![](images/rstd_proj2.png)
 
-## [In case anything goes wrong$...$]{.theme-red} {.center}
+## [In Case Anything Goes Wrong$...$]{.theme-red} {.center}
 
 ![](images/rstd_proj3.1.png)
 
@@ -864,7 +870,7 @@ Source: [RStudio](https://support.rstudio.com/hc/en-us/articles/200526207-Using-
 ![](images/code_hero.gif)
 
 ::: {aside}
-[Artwork by [Alision Horst](https://allisonhorst.com/)]{.small}
+[[Artwork by [Alision Horst](https://allisonhorst.com/)]{.small}]{.small}
 :::
 
 ## Write R Codes in
@@ -908,7 +914,7 @@ Source: [RStudio](https://support.rstudio.com/hc/en-us/articles/200526207-Using-
 5.  Keeping a consistent style.
 
 ::: aside
-Source: [Marius Mather](https://bookdown.org/marius_mather/Rad/tips-for-effective-r-programming.html) also [Tomaž Kaštrun](https://tomaztsql.wordpress.com/2023/01/31/tips-for-organising-your-r-code/)
+[Source: [Marius Mather](https://bookdown.org/marius_mather/Rad/tips-for-effective-r-programming.html) also [Tomaž Kaštrun](https://tomaztsql.wordpress.com/2023/01/31/tips-for-organising-your-r-code/)]{.small}
 :::
 
 #  {.inverse}
@@ -1109,7 +1115,7 @@ seq.int(from = 10,
 -   In R, `#` is used as a commenting symbol.
 
 ::: aside
-[Source](https://en.wikipedia.org/wiki/Comment_computer_programming)
+[[Source](https://en.wikipedia.org/wiki/Comment_computer_programming)]{.small}
 :::
 
 #  {.inverse}
@@ -1129,7 +1135,7 @@ seq.int(from = 10,
 ![](images/metacran.png){.r-stretch}
 
 ::: aside
-<br>Source: [Metacran](https://www.r-pkg.org/)
+<br>[Source: [Metacran](https://www.r-pkg.org/)]{.small}
 :::
 
 ## Install Packages {.center}
@@ -1223,7 +1229,7 @@ R assignment operators: Assignment operators are used to assign values to variab
 :::
 
 ::: aside
-Source: [Garrett Grolemund](https://rstudio-education.github.io/hopr/basics.html#objects)
+[Source: [Garrett Grolemund](https://rstudio-education.github.io/hopr/basics.html#objects)]{.small}
 :::
 
 ## Create Object
@@ -1491,7 +1497,7 @@ objects()
 [Artwork by [Alision Horst](https://allisonhorst.com/)]{.small}
 :::
 
-# [PUBLISH USING<br>QUARTO]{.r-fit-text} {#sec-publish background-image="https://images.unsplash.com/photo-1606636660488-16a8646f012c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" background-size="cover"}
+# [PUBLISH <br> USING<br>QUARTO]{.r-fit-text .left} {#sec-publish background-image="https://images.unsplash.com/photo-1606636660488-16a8646f012c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" background-size="cover"}
 
 <br>
 
@@ -1499,13 +1505,13 @@ objects()
 [Background image by [Tamanna Rumee](https://unsplash.com/@tamanna_rumee)]{.small}
 :::
 
-##  {.inverse .center}
+#  {.inverse .center}
 
 ![](images/logo_quarto.png)
 
 [QUARTO]{.r-fit-text}
 
-## [Quarto, the next generation of R Markdown]{.r-fit-text}
+## [Quarto is the Next Generation of R Markdown]{.r-fit-text}
 
 <br>
 
@@ -1515,7 +1521,7 @@ objects()
 :::
 
 ::: {.column width="20%"}
-<br> <br> [{{< fa arrow-right-long >}}]{.r-fit-text .theme-gray}
+<br> <br> [{{< fa arrow-right-long >}}]{.r-fit-text .navy-blue}
 :::
 
 ::: {.column width="40%"}
@@ -1524,7 +1530,7 @@ objects()
 :::
 
 ::: aside
-Read more here [From R Markdown to Quarto](https://rstudio-conf-2022.github.io/rmd-to-quarto/)
+[Read more here [From R Markdown to Quarto](https://rstudio-conf-2022.github.io/rmd-to-quarto/)]{.small}
 :::
 
 ## Quarto
@@ -1535,29 +1541,31 @@ Read more here [From R Markdown to Quarto](https://rstudio-conf-2022.github.io/r
 
 Quarto can produce a wide variety of output formats:
 
-::: nonincremental
-    * Articles & Reports
-    * Presentations
-    * Interactive Docs
-    * Websites
-    * Books
+::: {.nonincremental .theme-red}
+{{< fa square-check >}} Articles & Reports
+
+{{< fa square-check >}} Presentations
+
+{{< fa square-check >}} Interactive Docs
+
+{{< fa square-check >}} Websites
+
+{{< fa square-check >}} Books
 :::
 
 ::: aside
-Source: [Quarto website](https://quarto.org/)
+[Source: [Quarto website](https://quarto.org/)]{.small}
 :::
 
-##  {background-image="images/quarto_workflow.png" background-size="contain" background-position="center"}
+##  [Analyze. Share. Reproduce. You have a story to tell with data --- tell it with Quarto.]{.r-fit-text} {background-image="images/quarto_workflow.png" background-size="contain" background-position="center"}
 
 ##  {background-image="images/dynamic_content1.png" background-size="cover" background-position="center"}
-
-[Analyze. Share. Reproduce. You have a story to tell with data --- tell it with Quarto.]{.r-fit-text}
 
 ##  {background-image="images/dynamic_content2.png" background-size="cover" background-position="center"}
 
 ##  {background-image="images/dynamic_content3.png" background-size="cover" background-position="center"}
 
-##  {background-image="images/yaml_quarto.png" background-size="cover" background-position="center" transition="fade"}
+##  {background-image="images/yaml_quarto.png" background-size="cover" background-position="center"}
 
 ##  {background-image="images/text_quarto.png" background-size="cover" background-position="center"}
 
@@ -1624,40 +1632,39 @@ Source: [Quarto website](https://quarto.org/)
 
 ## {background-image="images/render.png" background-size="contain"}
 
-## When you render the quarto document
+## Process When You Render the Quarto Document
 
 > Quarto sends the `.qmd` file to **knitr**, which executes all of the code chunks and creates a new markdown (`.md`) document which includes the code and its output. The markdown file generated by knitr is then processed by **pandoc**, which is responsible for creating the finished file.
 
-## When you render the quarto document
+## [Process When You Render the Quarto Document]{.center}
 
 <br>
 
 ![](https://r4ds.hadley.nz/images/quarto-flow.png){.r-stretch}
 
 ::: aside
-Source: [R for Data Science, 2e](https://r4ds.hadley.nz/quarto#sec-caching)
+[Source: [R for Data Science, 2e](https://r4ds.hadley.nz/quarto#sec-caching)]{.small}
 :::
 
-
-## Source Editor & Visual Editor {.center}
+## [Source Editor vs. Visual Editor]{.r-fit-text .center}
 
 <br>
 
-![](images/spider.gif)
+![](images/spider.gif){fig-align=center}
 
 ## Visual Editor {.center}
 
 ![](images/visual_mode1.png)
 
-## Visual Editor
+## Visual Editor {.center}
 
 ![](images/visual_mode2.png){fig-align="center"}
 
-## Visual Editor
+## Visual Editor {.center}
 
 ![](images/visual_mode3.png){fig-align="center"}
 
-## Source Editor
+## Source Editor {.center}
 
 ![](images/source_mode2.png){fig-align="center"}
 
@@ -1667,7 +1674,7 @@ Source: [R for Data Science, 2e](https://r4ds.hadley.nz/quarto#sec-caching)
 
 ![](https://logowik.com/content/uploads/images/markdown1678.logowik.com.webp){height="200"}
 
-[Markdown Basics:<br>TEXT]{.r-fit-text .rainbow-yellow}
+[MARKDOWN]{.r-fit-text}
 
 ## Text formatting
 
@@ -1690,7 +1697,7 @@ Source: [R for Data Science, 2e](https://r4ds.hadley.nz/quarto#sec-caching)
 +-----------------------------------+-----------------------------------+
 
 ::: aside
-Source: [Quarto guide](https://quarto.org/docs/authoring/markdown-basics.html)
+[Source: [Quarto guide](https://quarto.org/docs/authoring/markdown-basics.html)]{.small}
 :::
 
 ## Text formatting
@@ -1714,7 +1721,7 @@ Source: [Quarto guide](https://quarto.org/docs/authoring/markdown-basics.html)
 +-----------------------------------+-----------------------------------+
 
 ::: aside
-Source: [Quarto guide](https://quarto.org/docs/authoring/markdown-basics.html)
+[Source: [Quarto guide](https://quarto.org/docs/authoring/markdown-basics.html)]{.small}
 :::
 
 ## Headings {.scrollable}
@@ -1760,8 +1767,8 @@ Source: [Quarto guide](https://quarto.org/docs/authoring/markdown-basics.html)
 | <https://saraedu.netlify.app/>       |                                      |
 | ```                                  |                                      |
 +--------------------------------------+--------------------------------------+
-| ``` markdown                         | [SaRa](https://saraedu.netlify.app/) |
-| [SaRa](https://saraedu.netlify.app/) |                                      |
+| ``` markdown                         | [SARA](https://saraedu.netlify.app/) |
+| [SARA](https://saraedu.netlify.app/) |                                      |
 | ```                                  |                                      |
 +--------------------------------------+--------------------------------------+
 
@@ -1779,7 +1786,7 @@ Source: [Quarto guide](https://quarto.org/docs/authoring/markdown-basics.html)
 | ```                                                          |                                                                                                        |
 +--------------------------------------------------------------+--------------------------------------------------------------------------------------------------------+
 | ``` markdown                                                 | [![Caption](rose.jpg "An elephant"){fig-alt="A line drawing of an elephant."}](https://quarto.org)     |
-| [![Caption](rose.jpg)](https://quarto.org "An elephant")     |                                                                                                        |
+| [![Caption](rose.jpg)](https://quarto.org "The Rose")     |                                                                                                        |
 | ```                                                          |                                                                                                        |
 +--------------------------------------------------------------+--------------------------------------------------------------------------------------------------------+
 | ``` markdown                                                 | [![](rose.jpg){fig-alt="A line drawing of an elephant."}](https://quarto.org)                          |
@@ -1840,7 +1847,7 @@ Source: [Quarto guide](https://quarto.org/docs/authoring/markdown-basics.html)
 +-----------------------------------+---------------------------------+
 :::
 
-## Tables
+## Tables {.scrollable}
 
 #### Markdown Syntax
 
@@ -1906,13 +1913,13 @@ You can include videos in documents using the `{{{< video >}}}` shortcode.
 ``` markdown
 
 ::: {.aside}
-This content will be placed aside in the page.
+[This content will be placed aside in the page.]{.small}
 :::
 
 ```
 
 ::: {.aside }
-Source: [Quarto guide](https://quarto.org/docs/visual-editor/content.html)
+[Source: [Quarto guide](https://quarto.org/docs/visual-editor/content.html)]{.small}
 :::
 
 ## Spans
@@ -1923,20 +1930,20 @@ Source: [Quarto guide](https://quarto.org/docs/visual-editor/content.html)
 
 ``` markdown
 
-[This text color becomes light blue color.]{.theme-red}
+[This text color becomes tomato red color.]{.theme-red}
 
 
 ```
 
 <br>
 
-[This text color becomes light blue color.]{.theme-red}
+[This text color becomes tomato red color.]{.theme-red}
 
 ::: {.aside }
-Source: [Quarto guide](https://quarto.org/docs/visual-editor/content.html)
+[Source: [Quarto guide](https://quarto.org/docs/visual-editor/content.html)]{.small}
 :::
 
-## References {.scrollable}
+## References {.scrollable .small}
 
 ::: {.nonincremental}
 
