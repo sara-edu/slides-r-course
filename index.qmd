@@ -12,8 +12,8 @@ format:
     code-line-numbers: false
     transition: convex
     background-transition: convex
-    progress: false
-    controls: true
+    progress: true
+    #controls: true
     touch: true
     menu: true
 knitr:
@@ -1497,7 +1497,7 @@ objects()
 [Artwork by [Alision Horst](https://allisonhorst.com/)]{.small}
 :::
 
-# [PUBLISH <br> USING<br>QUARTO]{.r-fit-text .left} {#sec-publish background-image="https://images.unsplash.com/photo-1606636660488-16a8646f012c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" background-size="cover"}
+# [PUBLISH <br> USING <br> QUARTO]{.r-fit-text .left} {#sec-publish background-image="https://images.unsplash.com/photo-1606636660488-16a8646f012c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" background-size="cover"}
 
 <br>
 
@@ -1559,11 +1559,11 @@ Quarto can produce a wide variety of output formats:
 
 ##  [Analyze. Share. Reproduce. You have a story to tell with data --- tell it with Quarto.]{.r-fit-text} {background-image="images/quarto_workflow.png" background-size="contain" background-position="center"}
 
-##  {background-image="images/dynamic_content1.png" background-size="cover" background-position="center"}
+##  {background-image="images/dynamic-content1.png" background-size="contain" background-position="center" background-transition="fade"}
 
-##  {background-image="images/dynamic_content2.png" background-size="cover" background-position="center"}
+##  {background-image="images/dynamic-content2.png" background-size="contain" background-position="center" background-transition="fade"}
 
-##  {background-image="images/dynamic_content3.png" background-size="cover" background-position="center"}
+##  {background-image="images/dynamic-content3.png" background-size="contain" background-position="center" background-transition="fade"}
 
 ##  {background-image="images/yaml_quarto.png" background-size="cover" background-position="center"}
 
@@ -1683,6 +1683,10 @@ Quarto can produce a wide variety of output formats:
 +-----------------------------------+-----------------------------------+
 | Markdown Syntax                   | Output                            |
 +===================================+===================================+
+| ``` markdown                      | normal                            |
+| normal                            |                                   |
+| ```                               |                                   |
++===================================+===================================+
 | ``` markdown                      | *italics*                         |
 | *italics*                         |                                   |
 | ```                               |                                   |
@@ -1707,12 +1711,16 @@ Quarto can produce a wide variety of output formats:
 +-----------------------------------+-----------------------------------+
 | Markdown Syntax                   | Output                            |
 +===================================+===================================+
-| ``` markdown                      | superscript^2^ / subscript~2~     |
-| superscript^2^ / subscript~2~     |                                   |
+| ``` markdown                      | superscript^2^                    |
+| superscript^2^                    |                                   |
+| ```                               |                                   |
++===================================+===================================+
+| ``` markdown                      | subscript~2~                      |
+| subscript~2~                      |                                   |
 | ```                               |                                   |
 +-----------------------------------+-----------------------------------+
-| ``` markdown                      | ~~strikethrough~~                 |
-| ~~strikethrough~~                 |                                   |
+| ``` markdown                      | ~~strike through~~                |
+| ~~strike through~~                |                                   |
 | ```                               |                                   |
 +-----------------------------------+-----------------------------------+
 | ``` markdown                      | `verbatim code`                   |
@@ -1774,27 +1782,31 @@ Quarto can produce a wide variety of output formats:
 
 ## Images {.scrollable}
 
+<br>
+
 +--------------------------------------------------------------+--------------------------------------------------------------------------------------------------------+
 | Markdown Syntax                                              | Output                                                                                                 |
 +==============================================================+========================================================================================================+
-| ``` markdown                                                 | ![Caption](rose.jpg){fig-alt="A line drawing of an elephant."}                                         |
-| ![Caption](rose.jpg)                                         |                                                                                                        |
+| ``` markdown                                                 | ![Rose](rose.jpg)                                                                                      |
+| ![Rose](rose.jpg)                                            |                                                                                                        |
 | ```                                                          |                                                                                                        |
 +--------------------------------------------------------------+--------------------------------------------------------------------------------------------------------+
-| ``` markdown                                                 | [![Caption](rose.jpg)](https://quarto.org)                                                             |
-| [![Caption](rose.jpg)](https://quarto.org)                   |                                                                                                        |
+| ``` markdown                                                 | [![Rose](rose.jpg)](https://quarto.org)                                                                |
+| [![Rose](rose.jpg)](https://quarto.org)                      |                                                                                                        |
 | ```                                                          |                                                                                                        |
 +--------------------------------------------------------------+--------------------------------------------------------------------------------------------------------+
-| ``` markdown                                                 | [![Caption](rose.jpg "An elephant"){fig-alt="A line drawing of an elephant."}](https://quarto.org)     |
-| [![Caption](rose.jpg)](https://quarto.org "The Rose")     |                                                                                                        |
+| ``` markdown                                                 | [![Rose](rose.jpg)](https://quarto.org "The Rose")                                                     |
+| [![Rose](rose.jpg)](https://quarto.org "The Rose")           |                                                                                                        |
 | ```                                                          |                                                                                                        |
 +--------------------------------------------------------------+--------------------------------------------------------------------------------------------------------+
-| ``` markdown                                                 | [![](rose.jpg){fig-alt="A line drawing of an elephant."}](https://quarto.org)                          |
-| [![](rose.jpg){fig-alt="Alt text"}](https://quarto.org)      |                                                                                                        |
+| ``` markdown                                                 | ![Rose](rose.jpg){fig-alt="A rose with dew drops."}                                                    |
+| ![Rose](rose.jpg){fig-alt="A rose with dew drops."}          |                                                                                                        |
 | ```                                                          |                                                                                                        |
 +--------------------------------------------------------------+--------------------------------------------------------------------------------------------------------+
 
 ## Lists {.scrollable} 
+
+<br>
 
 ::: nonincremental
 
@@ -1808,20 +1820,36 @@ Quarto can produce a wide variety of output formats:
 |         - sub-sub-item 1          |         - sub-sub-item 1        |
 | ```                               |                                 |
 +-----------------------------------+---------------------------------+
-| ``` markdown                      |                                 |
-| *   item 2                        | -   item 2                      |
-|                                   |                                 |
-|     Continued (indent 4 spaces)   |     Continued (indent 4 spaces) |
-| ```                               |                                 |
+
+:::
+
+
+## Lists {.scrollable} 
+
+<br>
+
+::: nonincremental
+
 +-----------------------------------+---------------------------------+
+| Markdown Syntax                   | Output                          |
++===================================+=================================+
 | ``` markdown                      |                                 |
 | 1. ordered list                   |  1. ordered list                |
-| 2. item 2                         |  2. item 2                      |
-|     i) sub-item 1                 |      i) sub-item 1              |
-|          A.  sub-sub-item 1       |           A.  sub-sub-item 1    |
+| 1. item 2                         |  1. item 2                      |
 | ```                               |                                 |
-|                                   |                                 |
 +-----------------------------------+---------------------------------+
+
+:::
+
+## Lists {.scrollable} 
+
+<br>
+
+::: nonincremental
+
++-----------------------------------+---------------------------------+
+| Markdown Syntax                   | Output                          |
++===================================+=================================+
 | ``` markdown                      |                                 |
 | (@)  A list whose numbering       |  (1) A list whose numbering     |
 |                                   |                                 |
@@ -1830,6 +1858,18 @@ Quarto can produce a wide variety of output formats:
 | (@)  an interruption              |  (2) an interruption            |
 | ```                               |                                 |
 +-----------------------------------+---------------------------------+
+
+:::
+
+## Lists {.scrollable} 
+
+<br>
+
+::: nonincremental
+
++-----------------------------------+---------------------------------+
+| Markdown Syntax                   | Output                          |
++===================================+=================================+
 | ``` markdown                      |                                 |
 | ::: {}                            | ::: {}                          |
 | 1. A list                         | 1. A list                       |
@@ -1840,14 +1880,29 @@ Quarto can produce a wide variety of output formats:
 | :::                               | :::                             |
 | ```                               |                                 |
 +-----------------------------------+---------------------------------+
+
+:::
+
+## Definition {.scrollable} 
+
+<br>
+
+::: nonincremental
+
++-----------------------------------+---------------------------------+
+| Markdown Syntax                   | Output                          |
++===================================+=================================+
 | ``` markdown                      |                                 |
 | term                              | term                            |
 | : definition                      | : definition                    |
 | ```                               |                                 |
 +-----------------------------------+---------------------------------+
+
 :::
 
 ## Tables {.scrollable}
+
+<br>
 
 #### Markdown Syntax
 
@@ -1870,7 +1925,9 @@ Quarto can produce a wide variety of output formats:
 
 ## Equations
 
-Use `$` delimiters for inline math and `$$` delimiters for display math. For example:
+<br>
+
+Use `$` delimiters for inline math. For example:
 
 +---------------------------+-------------------------+
 | Markdown Syntax           | Output                  |
@@ -1879,6 +1936,16 @@ Use `$` delimiters for inline math and `$$` delimiters for display math. For exa
 | inline math: $E = mc^{2}$ | inline math: $E=mc^{2}$ |
 | ```                       |                         |
 +---------------------------+-------------------------+
+
+## Equations
+
+<br>
+
+Use `$$` delimiters for display math. For example:
+
++---------------------------+-------------------------+
+| Markdown Syntax           | Output                  |
++===========================+=========================+
 | ``` markdown              |                         |
 | display math:             | display math:           |
 |                           |                         |
@@ -1886,61 +1953,53 @@ Use `$` delimiters for inline math and `$$` delimiters for display math. For exa
 | ```                       |                         |
 +---------------------------+-------------------------+
 
-## Diagrams
-
-```{mermaid}
-%%| echo: fenced
-flowchart LR
-  A[Hard edge] --> B(Round edge)
-  B --> C{Decision}
-  C --> D[Result one]
-  C --> E[Result two]
-```
-
-
 ## Videos
 
-You can include videos in documents using the `{{{< video >}}}` shortcode.
+<br>
+
+You can include videos in documents using the <br>`{{{< video >}}}` short code.
 
 ``` {.markdown shortcodes="false"}
 {{< video https://www.youtube.com/embed/wo9vZccmqwc >}}
 ```
 
-## Divs (`:::`)
+{{< video https://www.youtube.com/embed/wo9vZccmqwc >}}
 
-"Divs are special entities that allow you to apply identifiers and/or styles to a **region of a document.** Divs are block elements (like paragraphs)."
-
-``` markdown
-
-::: {.aside}
-[This content will be placed aside in the page.]{.small}
-:::
-
-```
-
-::: {.aside }
-[Source: [Quarto guide](https://quarto.org/docs/visual-editor/content.html)]{.small}
-:::
-
-## Spans
-
-"Spans are special entities that allow you to apply identifiers and/or style to a **region of text**. Spans are inline formatting marks (like bold and italic)."
+# [DATA <br> VISUALIZATION<br>]{.r-fit-text .theme-tech}  {#sec-viz background-image="images/viz.jpg" background-size="cover"}
 
 <br>
-
-``` markdown
-
-[This text color becomes tomato red color.]{.theme-red}
-
-
-```
-
+<br>
+<br>
 <br>
 
-[This text color becomes tomato red color.]{.theme-red}
+::: aside
 
-::: {.aside }
-[Source: [Quarto guide](https://quarto.org/docs/visual-editor/content.html)]{.small}
+[Background image by [Jess Bailey](https://unsplash.com/@jessbaileydesigns)]{.small}
+
+:::
+
+{{< include viz.qmd >}}
+
+#  {#sec-wrangle background-image="https://images.unsplash.com/photo-1586864143550-e78342051c9c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" background-size="cover"}
+
+::: columns
+::: {.column width="20%"}
+:::
+
+::: {.column width="80%"}
+<br>
+<br>
+[DATA <br> WRANGLING]{.r-fit-text .theme-tech .centering}
+:::
+:::
+
+<br>
+<br>
+<br>
+<br>
+
+::: aside
+[Background Image By [Matt Smart](https://unsplash.com/@imattsmart)]{.small}
 :::
 
 ## References {.scrollable .small}
@@ -1966,7 +2025,11 @@ You can include videos in documents using the `{{{< video >}}}` shortcode.
 :::: {.columns}
 
 ::: {.column width="70%"}
-[Thank<br>You]{.r-fit-text .theme-cursive .theme-navy-blue}
+[Thank<br>You]{.r-fit-text .theme-cursive .theme-navy-blue .left}
+:::
+
+::: {.column width="30%"}
+
 :::
 
 ::::
@@ -1974,3 +2037,4 @@ You can include videos in documents using the `{{{< video >}}}` shortcode.
 ::: aside
 [Background image by [Oh Tilly](https://unsplash.com/photos/white-flowers-B8_YF4fjPwo)]{.small}
 :::
+

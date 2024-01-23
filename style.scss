@@ -86,7 +86,7 @@ $selection-bg: #007AF8;
 
 // code chunk box style.
 //$code-block-border-color: lighten($navy-blue, 20%);
-$code-block-font-size: 1em;
+//$code-block-font-size: 1em;
 $code-color: $theme-red;
 $code-bg: #fff;
 $code-block-bg: #fff;
@@ -120,6 +120,28 @@ $code-block-bg: #fff;
   
   .slide-background-content {
     background-color: #282a36;
+  }
+  
+}
+
+// your turn exercise slide style.
+.your-turn {
+  color: #fff;
+  h1, h2, h3 {
+    color: #fff;
+    font-size: 2.5em;
+  }
+
+  a {
+    color: #f1fa8c;
+  }
+  
+  a:hover {
+    color: #d8e17e;
+  }
+  
+  .slide-background-content {
+    background-color: #ffffed;
   }
   
 }

@@ -386,7 +386,8 @@
       margin-right: 0; 
     }
   </style>
-<script src="index_files/libs/quarto-diagram/mermaid.min.js"></script><script src="index_files/libs/quarto-diagram/mermaid-init.js"></script><link href="index_files/libs/quarto-diagram/mermaid.css" rel="stylesheet">
+<link href="index_files/libs/countdown-0.4.0/countdown.css" rel="stylesheet">
+<script src="index_files/libs/countdown-0.4.0/countdown.js"></script>
 </head>
 <body class="quarto-light">
   <div class="reveal">
@@ -1445,7 +1446,7 @@
 <div class="{aside}">
 <p><span class="small">Artwork by <a href="https://allisonhorst.com/">Alision Horst</a></span></p>
 </div>
-</section></section><section id="sec-publish" class="title-slide slide level1 center" data-background-image="https://images.unsplash.com/photo-1606636660488-16a8646f012c?ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&amp;auto=format&amp;fit=crop&amp;w=2070&amp;q=80" data-background-size="cover"><h1><span class="r-fit-text left">PUBLISH <br> USING<br>QUARTO</span></h1>
+</section></section><section id="sec-publish" class="title-slide slide level1 center" data-background-image="https://images.unsplash.com/photo-1606636660488-16a8646f012c?ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&amp;auto=format&amp;fit=crop&amp;w=2070&amp;q=80" data-background-size="cover"><h1><span class="r-fit-text left">PUBLISH <br> USING <br> QUARTO</span></h1>
 <p><br></p>
 
 <aside><div>
@@ -1485,9 +1486,9 @@
 <aside><div>
 <p><span class="small">Source: <a href="https://quarto.org/">Quarto website</a></span></p>
 </div></aside></section><section id="analyze.-share.-reproduce.-you-have-a-story-to-tell-with-data-tell-it-with-quarto." class="slide level2" data-background-image="images/quarto_workflow.png" data-background-size="contain" data-background-position="center"><h2><span class="r-fit-text">Analyze. Share. Reproduce. You have a story to tell with data — tell it with Quarto.</span></h2>
-</section><section id="section-14" class="slide level2" data-background-image="images/dynamic_content1.png" data-background-size="cover" data-background-position="center"><h2></h2>
-</section><section id="section-15" class="slide level2" data-background-image="images/dynamic_content2.png" data-background-size="cover" data-background-position="center"><h2></h2>
-</section><section id="section-16" class="slide level2" data-background-image="images/dynamic_content3.png" data-background-size="cover" data-background-position="center"><h2></h2>
+</section><section id="section-14" class="slide level2" data-background-image="images/dynamic-content1.png" data-background-size="contain" data-background-position="center" data-background-transition="fade"><h2></h2>
+</section><section id="section-15" class="slide level2" data-background-image="images/dynamic-content2.png" data-background-size="contain" data-background-position="center" data-background-transition="fade"><h2></h2>
+</section><section id="section-16" class="slide level2" data-background-image="images/dynamic-content3.png" data-background-size="contain" data-background-position="center" data-background-transition="fade"><h2></h2>
 </section><section id="section-17" class="slide level2" data-background-image="images/yaml_quarto.png" data-background-size="cover" data-background-position="center"><h2></h2>
 </section><section id="section-18" class="slide level2" data-background-image="images/text_quarto.png" data-background-size="cover" data-background-position="center"><h2></h2>
 </section><section id="section-19" class="slide level2" data-background-image="images/code_quarto.png" data-background-size="cover" data-background-position="center"><h2></h2>
@@ -1559,15 +1560,19 @@
 </tr></thead>
 <tbody>
 <tr class="odd">
-<td><div class="sourceCode" id="cb28"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a>*italics*</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></td>
-<td><em>italics</em></td>
+<td><div class="sourceCode" id="cb28"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a>normal</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></td>
+<td>normal</td>
 </tr>
 <tr class="even">
-<td><div class="sourceCode" id="cb29"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb29-1"><a href="#cb29-1" aria-hidden="true" tabindex="-1"></a>**bold**</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></td>
-<td><strong>bold</strong></td>
+<td><div class="sourceCode" id="cb29"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb29-1"><a href="#cb29-1" aria-hidden="true" tabindex="-1"></a>*italics*</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></td>
+<td><em>italics</em></td>
 </tr>
 <tr class="odd">
-<td><div class="sourceCode" id="cb30"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb30-1"><a href="#cb30-1" aria-hidden="true" tabindex="-1"></a>***bold italics***</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></td>
+<td><div class="sourceCode" id="cb30"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb30-1"><a href="#cb30-1" aria-hidden="true" tabindex="-1"></a>**bold**</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></td>
+<td><strong>bold</strong></td>
+</tr>
+<tr class="even">
+<td><div class="sourceCode" id="cb31"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb31-1"><a href="#cb31-1" aria-hidden="true" tabindex="-1"></a>***bold italics***</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></td>
 <td><strong><em>bold italics</em></strong></td>
 </tr>
 </tbody>
@@ -1588,16 +1593,21 @@
 </tr></thead>
 <tbody>
 <tr class="odd">
-<td><div class="sourceCode" id="cb31"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb31-1"><a href="#cb31-1" aria-hidden="true" tabindex="-1"></a>superscript^2^ / subscript~2~</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></td>
-<td>superscript<sup>2</sup> / subscript<sub>2</sub>
+<td><div class="sourceCode" id="cb32"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb32-1"><a href="#cb32-1" aria-hidden="true" tabindex="-1"></a>superscript^2^</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></td>
+<td>superscript<sup>2</sup>
 </td>
 </tr>
 <tr class="even">
-<td><div class="sourceCode" id="cb32"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb32-1"><a href="#cb32-1" aria-hidden="true" tabindex="-1"></a>~~strikethrough~~</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></td>
-<td><del>strikethrough</del></td>
+<td><div class="sourceCode" id="cb33"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb33-1"><a href="#cb33-1" aria-hidden="true" tabindex="-1"></a>subscript~2~</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></td>
+<td>subscript<sub>2</sub>
+</td>
 </tr>
 <tr class="odd">
-<td><div class="sourceCode" id="cb33"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb33-1"><a href="#cb33-1" aria-hidden="true" tabindex="-1"></a><span class="in">`verbatim code`</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></td>
+<td><div class="sourceCode" id="cb34"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb34-1"><a href="#cb34-1" aria-hidden="true" tabindex="-1"></a>~~strike through~~</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></td>
+<td><del>strike through</del></td>
+</tr>
+<tr class="even">
+<td><div class="sourceCode" id="cb35"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb35-1"><a href="#cb35-1" aria-hidden="true" tabindex="-1"></a><span class="in">`verbatim code`</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></td>
 <td><code>verbatim code</code></td>
 </tr>
 </tbody>
@@ -1618,27 +1628,27 @@
 </tr></thead>
 <tbody>
 <tr class="odd">
-<td><div class="sourceCode" id="cb34"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb34-1"><a href="#cb34-1" aria-hidden="true" tabindex="-1"></a><span class="fu"># Header 1</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></td>
+<td><div class="sourceCode" id="cb36"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb36-1"><a href="#cb36-1" aria-hidden="true" tabindex="-1"></a><span class="fu"># Header 1</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></td>
 <td><h1 id="header-1" class="heading-output">Header 1</h1></td>
 </tr>
 <tr class="even">
-<td><div class="sourceCode" id="cb35"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb35-1"><a href="#cb35-1" aria-hidden="true" tabindex="-1"></a><span class="fu">## Header 2</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></td>
+<td><div class="sourceCode" id="cb37"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb37-1"><a href="#cb37-1" aria-hidden="true" tabindex="-1"></a><span class="fu">## Header 2</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></td>
 <td><h2 id="header-2" class="heading-output">Header 2</h2></td>
 </tr>
 <tr class="odd">
-<td><div class="sourceCode" id="cb36"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb36-1"><a href="#cb36-1" aria-hidden="true" tabindex="-1"></a><span class="fu">### Header 3</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></td>
+<td><div class="sourceCode" id="cb38"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb38-1"><a href="#cb38-1" aria-hidden="true" tabindex="-1"></a><span class="fu">### Header 3</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></td>
 <td><h3 id="header-3" class="heading-output">Header 3</h3></td>
 </tr>
 <tr class="even">
-<td><div class="sourceCode" id="cb37"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb37-1"><a href="#cb37-1" aria-hidden="true" tabindex="-1"></a><span class="fu">#### Header 4</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></td>
+<td><div class="sourceCode" id="cb39"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb39-1"><a href="#cb39-1" aria-hidden="true" tabindex="-1"></a><span class="fu">#### Header 4</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></td>
 <td><h4 id="header-4" class="heading-output">Header 4</h4></td>
 </tr>
 <tr class="odd">
-<td><div class="sourceCode" id="cb38"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb38-1"><a href="#cb38-1" aria-hidden="true" tabindex="-1"></a><span class="fu">##### Header 5</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></td>
+<td><div class="sourceCode" id="cb40"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb40-1"><a href="#cb40-1" aria-hidden="true" tabindex="-1"></a><span class="fu">##### Header 5</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></td>
 <td><h5 id="header-5" class="heading-output">Header 5</h5></td>
 </tr>
 <tr class="even">
-<td><div class="sourceCode" id="cb39"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb39-1"><a href="#cb39-1" aria-hidden="true" tabindex="-1"></a><span class="fu">###### Header 6</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></td>
+<td><div class="sourceCode" id="cb41"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb41-1"><a href="#cb41-1" aria-hidden="true" tabindex="-1"></a><span class="fu">###### Header 6</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></td>
 <td><h6 id="header-6" class="heading-output">Header 6</h6></td>
 </tr>
 </tbody>
@@ -1651,15 +1661,16 @@
 </tr></thead>
 <tbody>
 <tr class="odd">
-<td><div class="sourceCode" id="cb40"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb40-1"><a href="#cb40-1" aria-hidden="true" tabindex="-1"></a><span class="ot">&lt;https://saraedu.netlify.app/&gt;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></td>
+<td><div class="sourceCode" id="cb42"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb42-1"><a href="#cb42-1" aria-hidden="true" tabindex="-1"></a><span class="ot">&lt;https://saraedu.netlify.app/&gt;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></td>
 <td><a href="https://saraedu.netlify.app/" class="uri">https://saraedu.netlify.app/</a></td>
 </tr>
 <tr class="even">
-<td><div class="sourceCode" id="cb41"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb41-1"><a href="#cb41-1" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">SARA</span><span class="co">](https://saraedu.netlify.app/)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></td>
+<td><div class="sourceCode" id="cb43"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb43-1"><a href="#cb43-1" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">SARA</span><span class="co">](https://saraedu.netlify.app/)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></td>
 <td><a href="https://saraedu.netlify.app/">SARA</a></td>
 </tr>
 </tbody>
 </table></section><section id="images" class="slide level2 scrollable"><h2>Images</h2>
+<p><br></p>
 <table>
 <thead><tr class="header">
 <th>Markdown Syntax</th>
@@ -1667,27 +1678,30 @@
 </tr></thead>
 <tbody>
 <tr class="odd">
-<td><div class="sourceCode" id="cb42"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb42-1"><a href="#cb42-1" aria-hidden="true" tabindex="-1"></a><span class="al">![Caption](rose.jpg)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></td>
+<td><div class="sourceCode" id="cb44"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb44-1"><a href="#cb44-1" aria-hidden="true" tabindex="-1"></a><span class="al">![Rose](rose.jpg)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></td>
 <td><div class="quarto-figure quarto-figure-center">
 <figure><p><img data-src="rose.jpg"></p>
-<figcaption>Caption</figcaption></figure>
+<figcaption>Rose</figcaption></figure>
 </div></td>
 </tr>
 <tr class="even">
-<td><div class="sourceCode" id="cb43"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb43-1"><a href="#cb43-1" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="al">![Caption](rose.jpg)</span><span class="co">](https://quarto.org)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></td>
-<td><a href="https://quarto.org"><img data-src="rose.jpg" alt="Caption"></a></td>
+<td><div class="sourceCode" id="cb45"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb45-1"><a href="#cb45-1" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="al">![Rose](rose.jpg)</span><span class="co">](https://quarto.org)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></td>
+<td><a href="https://quarto.org"><img data-src="rose.jpg" alt="Rose"></a></td>
 </tr>
 <tr class="odd">
-<td>
-<code>markdown                                                 | [![Caption](rose.jpg "An elephant"){fig-alt="A line drawing of an elephant."}](https://quarto.org) [![Caption](rose.jpg)](https://quarto.org "The Rose")     |                                                                                                        |</code> |</td>
-<td></td>
+<td><div class="sourceCode" id="cb46"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb46-1"><a href="#cb46-1" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="al">![Rose](rose.jpg)</span><span class="co">](https://quarto.org "The Rose")</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></td>
+<td><a href="https://quarto.org" title="The Rose"><img data-src="rose.jpg" alt="Rose"></a></td>
 </tr>
 <tr class="even">
-<td><div class="sourceCode" id="cb44"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb44-1"><a href="#cb44-1" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="al">![](rose.jpg)</span><span class="ot">{fig-alt="Alt text"}</span><span class="co">](https://quarto.org)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></td>
-<td><a href="https://quarto.org"><img data-src="rose.jpg" alt="A line drawing of an elephant."></a></td>
+<td><div class="sourceCode" id="cb47"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb47-1"><a href="#cb47-1" aria-hidden="true" tabindex="-1"></a><span class="al">![Rose](rose.jpg)</span>{fig-alt="A rose with dew drops."}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></td>
+<td><div class="quarto-figure quarto-figure-center">
+<figure><p><img data-src="rose.jpg"></p>
+<figcaption>Rose</figcaption></figure>
+</div></td>
 </tr>
 </tbody>
 </table></section><section id="lists" class="slide level2 scrollable"><h2>Lists</h2>
+<p><br></p>
 <div>
 <table style="width:97%;">
 <colgroup>
@@ -1698,12 +1712,11 @@
 <th>Markdown Syntax</th>
 <th>Output</th>
 </tr></thead>
-<tbody>
-<tr class="odd">
-<td><div class="sourceCode" id="cb45"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb45-1"><a href="#cb45-1" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span>unordered list</span>
-<span id="cb45-2"><a href="#cb45-2" aria-hidden="true" tabindex="-1"></a><span class="ss">    + </span>sub-item 1</span>
-<span id="cb45-3"><a href="#cb45-3" aria-hidden="true" tabindex="-1"></a><span class="ss">    + </span>sub-item 2</span>
-<span id="cb45-4"><a href="#cb45-4" aria-hidden="true" tabindex="-1"></a><span class="ss">        - </span>sub-sub-item 1</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></td>
+<tbody><tr class="odd">
+<td><div class="sourceCode" id="cb48"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb48-1"><a href="#cb48-1" aria-hidden="true" tabindex="-1"></a><span class="ss">* </span>unordered list</span>
+<span id="cb48-2"><a href="#cb48-2" aria-hidden="true" tabindex="-1"></a><span class="ss">    + </span>sub-item 1</span>
+<span id="cb48-3"><a href="#cb48-3" aria-hidden="true" tabindex="-1"></a><span class="ss">    + </span>sub-item 2</span>
+<span id="cb48-4"><a href="#cb48-4" aria-hidden="true" tabindex="-1"></a><span class="ss">        - </span>sub-sub-item 1</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></td>
 <td><ul>
 <li>unordered list
 <ul>
@@ -1716,42 +1729,49 @@
 </ul>
 </li>
 </ul></td>
-</tr>
-<tr class="even">
-<td><div class="sourceCode" id="cb46"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb46-1"><a href="#cb46-1" aria-hidden="true" tabindex="-1"></a><span class="ss">*   </span>item 2</span>
-<span id="cb46-2"><a href="#cb46-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb46-3"><a href="#cb46-3" aria-hidden="true" tabindex="-1"></a>    Continued (indent 4 spaces)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></td>
-<td><ul>
-<li>
-<p>item 2</p>
-<p>Continued (indent 4 spaces)</p>
-</li>
-</ul></td>
-</tr>
-<tr class="odd">
-<td><div class="sourceCode" id="cb47"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb47-1"><a href="#cb47-1" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>ordered list</span>
-<span id="cb47-2"><a href="#cb47-2" aria-hidden="true" tabindex="-1"></a><span class="ss">2. </span>item 2</span>
-<span id="cb47-3"><a href="#cb47-3" aria-hidden="true" tabindex="-1"></a>    i) sub-item 1</span>
-<span id="cb47-4"><a href="#cb47-4" aria-hidden="true" tabindex="-1"></a>         A.  sub-sub-item 1</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></td>
+</tr></tbody>
+</table>
+</div>
+</section><section id="lists-1" class="slide level2 scrollable"><h2>Lists</h2>
+<p><br></p>
+<div>
+<table style="width:97%;">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 47%">
+</colgroup>
+<thead><tr class="header">
+<th>Markdown Syntax</th>
+<th>Output</th>
+</tr></thead>
+<tbody><tr class="odd">
+<td><div class="sourceCode" id="cb49"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb49-1"><a href="#cb49-1" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>ordered list</span>
+<span id="cb49-2"><a href="#cb49-2" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>item 2</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></td>
 <td><ol type="1">
 <li>ordered list</li>
-<li>item 2
-<ol type="i">
-<li>sub-item 1
-<ol type="A">
-<li>sub-sub-item 1</li>
-</ol>
-</li>
-</ol>
-</li>
+<li>item 2</li>
 </ol></td>
-</tr>
-<tr class="even">
-<td><div class="sourceCode" id="cb48"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb48-1"><a href="#cb48-1" aria-hidden="true" tabindex="-1"></a>(@)  A list whose numbering</span>
-<span id="cb48-2"><a href="#cb48-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb48-3"><a href="#cb48-3" aria-hidden="true" tabindex="-1"></a>continues after</span>
-<span id="cb48-4"><a href="#cb48-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb48-5"><a href="#cb48-5" aria-hidden="true" tabindex="-1"></a>(@)  an interruption</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></td>
+</tr></tbody>
+</table>
+</div>
+</section><section id="lists-2" class="slide level2 scrollable"><h2>Lists</h2>
+<p><br></p>
+<div>
+<table style="width:97%;">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 47%">
+</colgroup>
+<thead><tr class="header">
+<th>Markdown Syntax</th>
+<th>Output</th>
+</tr></thead>
+<tbody><tr class="odd">
+<td><div class="sourceCode" id="cb50"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb50-1"><a href="#cb50-1" aria-hidden="true" tabindex="-1"></a>(@)  A list whose numbering</span>
+<span id="cb50-2"><a href="#cb50-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb50-3"><a href="#cb50-3" aria-hidden="true" tabindex="-1"></a>continues after</span>
+<span id="cb50-4"><a href="#cb50-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb50-5"><a href="#cb50-5" aria-hidden="true" tabindex="-1"></a>(@)  an interruption</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></td>
 <td>
 <ol type="1">
 <li>A list whose numbering</li>
@@ -1761,15 +1781,29 @@
 <li>an interruption</li>
 </ol>
 </td>
-</tr>
-<tr class="odd">
-<td><div class="sourceCode" id="cb49"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb49-1"><a href="#cb49-1" aria-hidden="true" tabindex="-1"></a>::: {}</span>
-<span id="cb49-2"><a href="#cb49-2" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>A list</span>
-<span id="cb49-3"><a href="#cb49-3" aria-hidden="true" tabindex="-1"></a>:::</span>
-<span id="cb49-4"><a href="#cb49-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb49-5"><a href="#cb49-5" aria-hidden="true" tabindex="-1"></a>::: {}</span>
-<span id="cb49-6"><a href="#cb49-6" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>Followed by another list</span>
-<span id="cb49-7"><a href="#cb49-7" aria-hidden="true" tabindex="-1"></a>:::</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></td>
+</tr></tbody>
+</table>
+</div>
+</section><section id="lists-3" class="slide level2 scrollable"><h2>Lists</h2>
+<p><br></p>
+<div>
+<table style="width:97%;">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 47%">
+</colgroup>
+<thead><tr class="header">
+<th>Markdown Syntax</th>
+<th>Output</th>
+</tr></thead>
+<tbody><tr class="odd">
+<td><div class="sourceCode" id="cb51"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb51-1"><a href="#cb51-1" aria-hidden="true" tabindex="-1"></a>::: {}</span>
+<span id="cb51-2"><a href="#cb51-2" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>A list</span>
+<span id="cb51-3"><a href="#cb51-3" aria-hidden="true" tabindex="-1"></a>:::</span>
+<span id="cb51-4"><a href="#cb51-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb51-5"><a href="#cb51-5" aria-hidden="true" tabindex="-1"></a>::: {}</span>
+<span id="cb51-6"><a href="#cb51-6" aria-hidden="true" tabindex="-1"></a><span class="ss">1. </span>Followed by another list</span>
+<span id="cb51-7"><a href="#cb51-7" aria-hidden="true" tabindex="-1"></a>:::</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></td>
 <td>
 <div>
 <ol type="1">
@@ -1782,27 +1816,41 @@
 </ol>
 </div>
 </td>
-</tr>
-<tr class="even">
-<td><div class="sourceCode" id="cb50"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb50-1"><a href="#cb50-1" aria-hidden="true" tabindex="-1"></a>term</span>
-<span id="cb50-2"><a href="#cb50-2" aria-hidden="true" tabindex="-1"></a>: definition</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></td>
+</tr></tbody>
+</table>
+</div>
+</section><section id="definition" class="slide level2 scrollable"><h2>Definition</h2>
+<p><br></p>
+<div>
+<table style="width:97%;">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 47%">
+</colgroup>
+<thead><tr class="header">
+<th>Markdown Syntax</th>
+<th>Output</th>
+</tr></thead>
+<tbody><tr class="odd">
+<td><div class="sourceCode" id="cb52"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb52-1"><a href="#cb52-1" aria-hidden="true" tabindex="-1"></a>term</span>
+<span id="cb52-2"><a href="#cb52-2" aria-hidden="true" tabindex="-1"></a>: definition</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></td>
 <td><dl>
 <dt>term</dt>
 <dd>
 definition
 </dd>
 </dl></td>
-</tr>
-</tbody>
+</tr></tbody>
 </table>
 </div>
 </section><section id="tables" class="slide level2 scrollable"><h2>Tables</h2>
+<p><br></p>
 <h4 id="markdown-syntax">Markdown Syntax</h4>
-<div class="sourceCode" id="cb51"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb51-1"><a href="#cb51-1" aria-hidden="true" tabindex="-1"></a>| Right | Left | Default | Center |</span>
-<span id="cb51-2"><a href="#cb51-2" aria-hidden="true" tabindex="-1"></a>|------:|:-----|---------|:------:|</span>
-<span id="cb51-3"><a href="#cb51-3" aria-hidden="true" tabindex="-1"></a>|   12  |  12  |    12   |    12  |</span>
-<span id="cb51-4"><a href="#cb51-4" aria-hidden="true" tabindex="-1"></a>|  123  |  123 |   123   |   123  |</span>
-<span id="cb51-5"><a href="#cb51-5" aria-hidden="true" tabindex="-1"></a>|    1  |    1 |     1   |     1  |</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb53"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb53-1"><a href="#cb53-1" aria-hidden="true" tabindex="-1"></a>| Right | Left | Default | Center |</span>
+<span id="cb53-2"><a href="#cb53-2" aria-hidden="true" tabindex="-1"></a>|------:|:-----|---------|:------:|</span>
+<span id="cb53-3"><a href="#cb53-3" aria-hidden="true" tabindex="-1"></a>|   12  |  12  |    12   |    12  |</span>
+<span id="cb53-4"><a href="#cb53-4" aria-hidden="true" tabindex="-1"></a>|  123  |  123 |   123   |   123  |</span>
+<span id="cb53-5"><a href="#cb53-5" aria-hidden="true" tabindex="-1"></a>|    1  |    1 |     1   |     1  |</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <h4 id="output-22">Output</h4>
 <table>
 <thead><tr class="header">
@@ -1832,7 +1880,8 @@ definition
 </tr>
 </tbody>
 </table></section><section id="equations" class="slide level2"><h2>Equations</h2>
-<p>Use <code>$</code> delimiters for inline math and <code>$$</code> delimiters for display math. For example:</p>
+<p><br></p>
+<p>Use <code>$</code> delimiters for inline math. For example:</p>
 <table style="width:75%;">
 <colgroup>
 <col style="width: 38%">
@@ -1842,67 +1891,1176 @@ definition
 <th>Markdown Syntax</th>
 <th>Output</th>
 </tr></thead>
-<tbody>
-<tr class="odd">
-<td><div class="sourceCode" id="cb52"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb52-1"><a href="#cb52-1" aria-hidden="true" tabindex="-1"></a><span class="an">inline math:</span><span class="co"> $E = mc^{2}$</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></td>
+<tbody><tr class="odd">
+<td><div class="sourceCode" id="cb54"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb54-1"><a href="#cb54-1" aria-hidden="true" tabindex="-1"></a><span class="an">inline math:</span><span class="co"> $E = mc^{2}$</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></td>
 <td>inline math: <span class="math inline">\(E=mc^{2}\)</span>
 </td>
-</tr>
-<tr class="even">
-<td><div class="sourceCode" id="cb53"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb53-1"><a href="#cb53-1" aria-hidden="true" tabindex="-1"></a><span class="an">display math:</span></span>
-<span id="cb53-2"><a href="#cb53-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb53-3"><a href="#cb53-3" aria-hidden="true" tabindex="-1"></a>$$E = mc^{2}$$</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></td>
+</tr></tbody>
+</table></section><section id="equations-1" class="slide level2"><h2>Equations</h2>
+<p><br></p>
+<p>Use <code>$$</code> delimiters for display math. For example:</p>
+<table style="width:75%;">
+<colgroup>
+<col style="width: 38%">
+<col style="width: 36%">
+</colgroup>
+<thead><tr class="header">
+<th>Markdown Syntax</th>
+<th>Output</th>
+</tr></thead>
+<tbody><tr class="odd">
+<td><div class="sourceCode" id="cb55"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb55-1"><a href="#cb55-1" aria-hidden="true" tabindex="-1"></a><span class="an">display math:</span></span>
+<span id="cb55-2"><a href="#cb55-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb55-3"><a href="#cb55-3" aria-hidden="true" tabindex="-1"></a>$$E = mc^{2}$$</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></td>
 <td>
 <p>display math:</p>
 <p><span class="math display">\[E = mc^{2}\]</span></p>
 </td>
-</tr>
-</tbody>
-</table></section><section id="diagrams" class="slide level2"><h2>Diagrams</h2>
-<div class="cell" data-reveal="true">
-<div class="sourceCode cell-code" id="cb54"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb54-1"><a href="#cb54-1" aria-hidden="true" tabindex="-1"></a><span class="in">```{mermaid}</span></span>
-<span id="cb54-2"><a href="#cb54-2" aria-hidden="true" tabindex="-1"></a><span class="in">flowchart LR</span></span>
-<span id="cb54-3"><a href="#cb54-3" aria-hidden="true" tabindex="-1"></a><span class="in">  A[Hard edge] --&gt; B(Round edge)</span></span>
-<span id="cb54-4"><a href="#cb54-4" aria-hidden="true" tabindex="-1"></a><span class="in">  B --&gt; C{Decision}</span></span>
-<span id="cb54-5"><a href="#cb54-5" aria-hidden="true" tabindex="-1"></a><span class="in">  C --&gt; D[Result one]</span></span>
-<span id="cb54-6"><a href="#cb54-6" aria-hidden="true" tabindex="-1"></a><span class="in">  C --&gt; E[Result two]</span></span>
-<span id="cb54-7"><a href="#cb54-7" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</tr></tbody>
+</table></section><section id="videos" class="slide level2"><h2>Videos</h2>
+<p><br></p>
+<p>You can include videos in documents using the <br><code>{{&lt; video &gt;}}</code> short code.</p>
+<div class="sourceCode" id="cb56" data-shortcodes="false"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb56-1"><a href="#cb56-1" aria-hidden="true" tabindex="-1"></a>{{&lt; video https://www.youtube.com/embed/wo9vZccmqwc &gt;}}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<iframe data-external="1" src="https://www.youtube.com/embed/wo9vZccmqwc" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+</section></section><section id="sec-viz" class="title-slide slide level1 center" data-background-image="images/viz.jpg" data-background-size="cover"><h1><span class="r-fit-text theme-tech">DATA <br> VISUALIZATION<br></span></h1>
+<p><br><br><br><br></p>
+
+<aside><div>
+<p><span class="small">Background image by <a href="https://unsplash.com/@jessbaileydesigns">Jess Bailey</a></span></p>
+</div></aside></section><section><section id="section-24" class="title-slide slide level1 inverse center" data-background-image="images/logo-ggplot.png" data-background-size="contain"><h1></h1>
+
+</section><section id="section-25" class="slide level2" data-background-color="#"><h2></h2>
+<p><br><br><br><br></p>
+<blockquote>
+<p>“The simple graph has brought more information to the data analyst’s mind than any other device.” — John Tukey</p>
+</blockquote>
+</section><section id="goal" class="slide level2"><h2>Goal</h2>
+<p>How to visualize data using R package ggplot2.</p>
+<p><br></p>
+
+<img data-src="https://r4ds.hadley.nz/data-visualize_files/figure-html/unnamed-chunk-7-1.png" class="r-stretch"></section><section id="section-26" class="slide level2" data-background-image="images/cake-ggplot.png" data-background-size="contain"><h2></h2>
+
+<aside><div>
+<p><span class="small">Source: <a href="https://twitter.com/tanya_shapiro/status/1576935152575340544/photo/1">Tanya Shapiro</a></span></p>
+</div></aside></section><section id="section-27" class="slide level2" data-background-image="images/layer3d.png" data-background-size="contain" data-background-color="#000"><h2></h2>
+</section><section id="ggplot2-layers" class="slide level2 center"><h2>ggplot2 Layers</h2>
+
+<img data-src="images/layer00.png" class="r-stretch"></section><section id="import-data" class="slide level2"><h2>Import Data</h2>
+<div class="panel-tabset">
+<ul id="tabset-15" class="panel-tabset-tabby">
+<li><a data-tabby-default="" href="#tabset-15-1">Task</a></li>
+<li><a href="#tabset-15-2">Code</a></li>
+<li><a href="#tabset-15-3">Output</a></li>
+</ul>
+<div class="tab-content">
+<div id="tabset-15-1">
+<p><img data-src="images/layer1.png" style="width:45.0%"></p>
+</div>
+<div id="tabset-15-2">
+<div class="cell">
+<div class="sourceCode" id="cb57"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://tidyverse.tidyverse.org">tidyverse</a></span><span class="op">)</span></span>
+<span><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://allisonhorst.github.io/palmerpenguins/">palmerpenguins</a></span><span class="op">)</span></span>
+<span></span>
+<span><span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggplot.html">ggplot</a></span><span class="op">(</span>data <span class="op">=</span> <span class="va">penguins</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+<div id="tabset-15-3">
+<div class="cell">
 <div class="cell-output-display">
-<div>
-<div>
-<pre class="mermaid mermaid-js">flowchart LR
-  A[Hard edge] --&gt; B(Round edge)
-  B --&gt; C{Decision}
-  C --&gt; D[Result one]
-  C --&gt; E[Result two]
-</pre>
+<div id="fig-data" class="quarto-figure quarto-figure-center" width="960">
+<figure class="quarto-float quarto-float-fig"><div aria-describedby="fig-data-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img data-src="index_files/figure-revealjs/fig-data-1.png" id="fig-data" width="960">
+</div>
+<figcaption class="figure quarto-float-caption quarto-float-fig quarto-uncaptioned" id="fig-data-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1
+</figcaption></figure>
 </div>
 </div>
 </div>
 </div>
-</section><section id="videos" class="slide level2"><h2>Videos</h2>
-<p>You can include videos in documents using the <code>{{&lt; video &gt;}}</code> shortcode.</p>
-<div class="sourceCode" id="cb55" data-shortcodes="false"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb55-1"><a href="#cb55-1" aria-hidden="true" tabindex="-1"></a>{{&lt; video https://www.youtube.com/embed/wo9vZccmqwc &gt;}}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</section><section id="divs" class="slide level2"><h2>Divs (<code>:::</code>)</h2>
-<p>“Divs are special entities that allow you to apply identifiers and/or styles to a <strong>region of a document.</strong> Divs are block elements (like paragraphs).”</p>
-<div class="sourceCode" id="cb56"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb56-1"><a href="#cb56-1" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb56-2"><a href="#cb56-2" aria-hidden="true" tabindex="-1"></a>::: {.aside}</span>
-<span id="cb56-3"><a href="#cb56-3" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">This content will be placed aside in the page.</span><span class="co">]</span>{.small}</span>
-<span id="cb56-4"><a href="#cb56-4" aria-hidden="true" tabindex="-1"></a>:::</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+</section><section id="map-variables-aesthetics" class="slide level2"><h2>Map Variables Aesthetics</h2>
+<div class="panel-tabset">
+<ul id="tabset-16" class="panel-tabset-tabby">
+<li><a data-tabby-default="" href="#tabset-16-1">Task</a></li>
+<li><a href="#tabset-16-2">Code</a></li>
+<li><a href="#tabset-16-3">Output</a></li>
+</ul>
+<div class="tab-content">
+<div id="tabset-16-1">
+<p><img data-src="images/layer2.png" style="width:45.0%"></p>
+</div>
+<div id="tabset-16-2">
+<div class="cell">
+<div class="sourceCode cell-code" id="cb58" data-code-line-numbers="2"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb58-1"><a href="#cb58-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> penguins,</span>
+<span id="cb58-2"><a href="#cb58-2"></a>       <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> species))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+<div id="tabset-16-3">
+<div class="cell">
+<div class="cell-output-display">
+<div id="fig-var" class="quarto-figure quarto-figure-center" width="960">
+<figure class="quarto-float quarto-float-fig"><div aria-describedby="fig-var-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img data-src="index_files/figure-revealjs/fig-var-1.png" id="fig-var" width="960">
+</div>
+<figcaption class="figure quarto-float-caption quarto-float-fig quarto-uncaptioned" id="fig-var-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;2
+</figcaption></figure>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section><section id="add-geometric-shapes" class="slide level2"><h2>Add Geometric Shapes</h2>
+<div class="panel-tabset">
+<ul id="tabset-17" class="panel-tabset-tabby">
+<li><a data-tabby-default="" href="#tabset-17-1">Task</a></li>
+<li><a href="#tabset-17-2">Code</a></li>
+<li><a href="#tabset-17-3">Output</a></li>
+</ul>
+<div class="tab-content">
+<div id="tabset-17-1">
+<p><img data-src="images/layer3.png" style="width:45.0%"></p>
+</div>
+<div id="tabset-17-2">
+<div class="cell">
+<div class="sourceCode cell-code" id="cb59" data-code-line-numbers="3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb59-1"><a href="#cb59-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> penguins,</span>
+<span id="cb59-2"><a href="#cb59-2"></a>       <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> species)) <span class="sc">+</span></span>
+<span id="cb59-3"><a href="#cb59-3"></a>  <span class="fu">geom_bar</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+<div id="tabset-17-3">
+<div class="cell">
+<div class="cell-output-display">
+<div id="fig-geoms" class="quarto-figure quarto-figure-center" width="960">
+<figure class="quarto-float quarto-float-fig"><div aria-describedby="fig-geoms-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img data-src="index_files/figure-revealjs/fig-geoms-1.png" id="fig-geoms" width="960">
+</div>
+<figcaption class="figure quarto-float-caption quarto-float-fig quarto-uncaptioned" id="fig-geoms-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;3
+</figcaption></figure>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section><section id="key-components-are" class="slide level2"><h2>Key Components are:</h2>
+<p><br></p>
+<ol type="1">
+<li class="fragment"><p><span class="rainbow-orange">data</span>,</p></li>
+<li class="fragment"><p>A set of <span class="rainbow-orange">aesthetic mappings</span> between variables in the data and visual properties, and</p></li>
+<li class="fragment"><p>At least one layer which describes how to render each observation. Layers are usually created with a <span class="rainbow-orange">geom</span> function.</p></li>
+</ol></section><section id="your-turn" class="slide level2 your-turn"><h2>🧠 YOUR TURN</h2>
+<div class="panel-tabset">
+<ul id="tabset-18" class="panel-tabset-tabby">
+<li><a data-tabby-default="" href="#tabset-18-1">Task</a></li>
+<li><a href="#tabset-18-2">Answer</a></li>
+</ul>
+<div class="tab-content">
+<div id="tabset-18-1">
+<div class="cell">
+<div class="cell-output-display">
+<p><img data-src="index_files/figure-revealjs/your-turn1-1.png" width="960"></p>
+</div>
+</div>
+</div>
+<div id="tabset-18-2">
+<div class="cell">
+<div class="sourceCode" id="cb60"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggplot.html">ggplot</a></span><span class="op">(</span>data <span class="op">=</span> <span class="va">penguins</span>,</span>
+<span>       mapping <span class="op">=</span> <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/aes.html">aes</a></span><span class="op">(</span>x <span class="op">=</span> <span class="va">island</span><span class="op">)</span><span class="op">)</span> <span class="op">+</span></span>
+<span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/geom_bar.html">geom_bar</a></span><span class="op">(</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="cell">
+<div class="cell-output-display">
+<div class="countdown" id="timer_e3b9eea3" data-update-every="1" tabindex="0" style="top:0;right:0;font-size:2em;">
+<div class="countdown-controls">
+<button class="countdown-bump-down">−</button><button class="countdown-bump-up">&amp;plus;</button>
+</div>
+<code class="countdown-time"><span class="countdown-digits minutes">05</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
+</div>
+</div>
+</div>
+</section><section id="fill-color" class="slide level2"><h2>“Fill” Color</h2>
+<div class="panel-tabset">
+<ul id="tabset-19" class="panel-tabset-tabby">
+<li><a data-tabby-default="" href="#tabset-19-1">Task</a></li>
+<li><a href="#tabset-19-2">Code</a></li>
+<li><a href="#tabset-19-3">Output</a></li>
+</ul>
+<div class="tab-content">
+<div id="tabset-19-1">
+<p><img data-src="images/layer3.png" style="width:45.0%"></p>
+</div>
+<div id="tabset-19-2">
+<div class="cell">
+<div class="sourceCode cell-code" id="cb61" data-code-line-numbers="3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb61-1"><a href="#cb61-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> penguins,</span>
+<span id="cb61-2"><a href="#cb61-2"></a>       <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> species)) <span class="sc">+</span></span>
+<span id="cb61-3"><a href="#cb61-3"></a>  <span class="fu">geom_bar</span>(<span class="at">fill =</span> <span class="st">"blue"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+<div id="tabset-19-3">
+<div class="cell">
+<div class="cell-output-display">
+<div id="fig-fill-colr" class="quarto-figure quarto-figure-center" width="960">
+<figure class="quarto-float quarto-float-fig"><div aria-describedby="fig-fill-colr-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img data-src="index_files/figure-revealjs/fig-fill-colr-1.png" id="fig-fill-colr" width="960">
+</div>
+<figcaption class="figure quarto-float-caption quarto-float-fig quarto-uncaptioned" id="fig-fill-colr-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;4
+</figcaption></figure>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section><section id="fill-colors" class="slide level2"><h2>“Fill” Colors</h2>
+<div class="panel-tabset">
+<ul id="tabset-20" class="panel-tabset-tabby">
+<li><a data-tabby-default="" href="#tabset-20-1">Task</a></li>
+<li><a href="#tabset-20-2">Code</a></li>
+<li><a href="#tabset-20-3">Output</a></li>
+</ul>
+<div class="tab-content">
+<div id="tabset-20-1">
+<p><img data-src="images/layer3.png" style="width:45.0%"></p>
+</div>
+<div id="tabset-20-2">
+<div class="cell">
+<div class="sourceCode cell-code" id="cb62" data-code-line-numbers="3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb62-1"><a href="#cb62-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> penguins,</span>
+<span id="cb62-2"><a href="#cb62-2"></a>       <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> species)) <span class="sc">+</span></span>
+<span id="cb62-3"><a href="#cb62-3"></a>  <span class="fu">geom_bar</span>(<span class="at">fill =</span> <span class="fu">c</span>(<span class="st">"blue"</span>, <span class="st">"green"</span>, <span class="st">"yellow"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+<div id="tabset-20-3">
+<div class="cell">
+<div class="cell-output-display">
+<div id="fig-colrs" class="quarto-figure quarto-figure-center" width="960">
+<figure class="quarto-float quarto-float-fig"><div aria-describedby="fig-colrs-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img data-src="index_files/figure-revealjs/fig-colrs-1.png" id="fig-colrs" width="960">
+</div>
+<figcaption class="figure quarto-float-caption quarto-float-fig quarto-uncaptioned" id="fig-colrs-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;5
+</figcaption></figure>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section><section id="fill-color-colors" class="slide level2"><h2>“Fill” &amp; “Color” Colors</h2>
+<div class="panel-tabset">
+<ul id="tabset-21" class="panel-tabset-tabby">
+<li><a data-tabby-default="" href="#tabset-21-1">Task</a></li>
+<li><a href="#tabset-21-2">Code</a></li>
+<li><a href="#tabset-21-3">Output</a></li>
+</ul>
+<div class="tab-content">
+<div id="tabset-21-1">
+<p><img data-src="images/layer3.png" style="width:45.0%"></p>
+</div>
+<div id="tabset-21-2">
+<div class="cell">
+<div class="sourceCode cell-code" id="cb63" data-code-line-numbers="4"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb63-1"><a href="#cb63-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> penguins,</span>
+<span id="cb63-2"><a href="#cb63-2"></a>       <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> species)) <span class="sc">+</span></span>
+<span id="cb63-3"><a href="#cb63-3"></a>  <span class="fu">geom_bar</span>(<span class="at">fill =</span> <span class="fu">c</span>(<span class="st">"blue"</span>, <span class="st">"green"</span>, <span class="st">"yellow"</span>),</span>
+<span id="cb63-4"><a href="#cb63-4"></a>           <span class="at">color =</span> <span class="st">"black"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+<div id="tabset-21-3">
+<div class="cell">
+<div class="cell-output-display">
+<div id="fig-color-colr" class="quarto-figure quarto-figure-center" width="960">
+<figure class="quarto-float quarto-float-fig"><div aria-describedby="fig-color-colr-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img data-src="index_files/figure-revealjs/fig-color-colr-1.png" id="fig-color-colr" width="960">
+</div>
+<figcaption class="figure quarto-float-caption quarto-float-fig quarto-uncaptioned" id="fig-color-colr-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;6
+</figcaption></figure>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section><section id="your-turn-1" class="slide level2 your-turn"><h2>🧠 YOUR TURN</h2>
+<div class="panel-tabset">
+<ul id="tabset-22" class="panel-tabset-tabby">
+<li><a data-tabby-default="" href="#tabset-22-1">Task</a></li>
+<li><a href="#tabset-22-2">Answer</a></li>
+</ul>
+<div class="tab-content">
+<div id="tabset-22-1">
+<div class="cell">
+<div class="cell-output-display">
+<p><img data-src="index_files/figure-revealjs/your-turn2-1.png" width="960"></p>
+</div>
+</div>
+</div>
+<div id="tabset-22-2">
+<div class="cell">
+<div class="sourceCode" id="cb64"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggplot.html">ggplot</a></span><span class="op">(</span>data <span class="op">=</span> <span class="va">penguins</span>,</span>
+<span>       mapping <span class="op">=</span> <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/aes.html">aes</a></span><span class="op">(</span>x <span class="op">=</span> <span class="va">island</span><span class="op">)</span><span class="op">)</span> <span class="op">+</span></span>
+<span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/geom_bar.html">geom_bar</a></span><span class="op">(</span>fill <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="st">"red"</span>, <span class="st">"yellow"</span>, <span class="st">"darkgreen"</span><span class="op">)</span>,</span>
+<span>           color <span class="op">=</span> <span class="st">"black"</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="cell">
+<div class="cell-output-display">
+<div class="countdown" id="timer_d597aa96" data-update-every="1" tabindex="0" style="top:0;right:0;font-size:2em;">
+<div class="countdown-controls">
+<button class="countdown-bump-down">−</button><button class="countdown-bump-up">&amp;plus;</button>
+</div>
+<code class="countdown-time"><span class="countdown-digits minutes">05</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
+</div>
+</div>
+</div>
+</section><section id="know-your-data" class="slide level2"><h2>Know Your Data</h2>
+<p><br></p>
+<div class="cell">
+<div class="sourceCode" id="cb65"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://pillar.r-lib.org/reference/glimpse.html">glimpse</a></span><span class="op">(</span><span class="va">penguins</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Rows: 344
+Columns: 8
+$ species           &lt;fct&gt; Adelie, Adelie, Adelie, Adelie, Adelie, Adelie, Adel…
+$ island            &lt;fct&gt; Torgersen, Torgersen, Torgersen, Torgersen, Torgerse…
+$ bill_length_mm    &lt;dbl&gt; 39.1, 39.5, 40.3, NA, 36.7, 39.3, 38.9, 39.2, 34.1, …
+$ bill_depth_mm     &lt;dbl&gt; 18.7, 17.4, 18.0, NA, 19.3, 20.6, 17.8, 19.6, 18.1, …
+$ flipper_length_mm &lt;int&gt; 181, 186, 195, NA, 193, 190, 181, 195, 193, 190, 186…
+$ body_mass_g       &lt;int&gt; 3750, 3800, 3250, NA, 3450, 3650, 3625, 4675, 3475, …
+$ sex               &lt;fct&gt; male, female, female, NA, female, male, female, male…
+$ year              &lt;int&gt; 2007, 2007, 2007, 2007, 2007, 2007, 2007, 2007, 2007…</code></pre>
+</div>
+</div>
+</section><section id="plot-a-continuous-variable" class="slide level2"><h2>Plot A Continuous Variable</h2>
+<div class="panel-tabset">
+<ul id="tabset-23" class="panel-tabset-tabby">
+<li><a data-tabby-default="" href="#tabset-23-1">Task</a></li>
+<li><a href="#tabset-23-2">Code</a></li>
+<li><a href="#tabset-23-3">Output</a></li>
+</ul>
+<div class="tab-content">
+<div id="tabset-23-1">
+<p><img data-src="images/layer3.png" style="width:45.0%"></p>
+</div>
+<div id="tabset-23-2">
+<div class="cell">
+<div class="sourceCode cell-code" id="cb67" data-code-line-numbers="2,3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb67-1"><a href="#cb67-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> penguins,</span>
+<span id="cb67-2"><a href="#cb67-2"></a>       <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> bill_length_mm)) <span class="sc">+</span></span>
+<span id="cb67-3"><a href="#cb67-3"></a>  <span class="fu">geom_histogram</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+<div id="tabset-23-3">
+<div class="cell">
+<div class="cell-output-display">
+<div id="fig-cont-var" class="quarto-figure quarto-figure-center" width="960">
+<figure class="quarto-float quarto-float-fig"><div aria-describedby="fig-cont-var-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img data-src="index_files/figure-revealjs/fig-cont-var-1.png" id="fig-cont-var" width="960">
+</div>
+<figcaption class="figure quarto-float-caption quarto-float-fig quarto-uncaptioned" id="fig-cont-var-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;7
+</figcaption></figure>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section><section id="your-turn-2" class="slide level2 your-turn"><h2>🧠 YOUR TURN</h2>
+<div class="panel-tabset">
+<ul id="tabset-24" class="panel-tabset-tabby">
+<li><a data-tabby-default="" href="#tabset-24-1">Task</a></li>
+<li><a href="#tabset-24-2">Answer</a></li>
+</ul>
+<div class="tab-content">
+<div id="tabset-24-1">
+<div class="cell">
+<div class="cell-output-display">
+<p><img data-src="index_files/figure-revealjs/your-turn3-1.png" width="960"></p>
+</div>
+</div>
+</div>
+<div id="tabset-24-2">
+<div class="cell">
+<div class="sourceCode" id="cb68"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggplot.html">ggplot</a></span><span class="op">(</span>data <span class="op">=</span> <span class="va">penguins</span>,</span>
+<span>       mapping <span class="op">=</span> <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/aes.html">aes</a></span><span class="op">(</span>x <span class="op">=</span> <span class="va">bill_length_mm</span><span class="op">)</span><span class="op">)</span> <span class="op">+</span></span>
+<span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/geom_histogram.html">geom_histogram</a></span><span class="op">(</span>fill <span class="op">=</span> <span class="st">"darkblue"</span>,</span>
+<span>                 color <span class="op">=</span> <span class="st">"white"</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="cell">
+<div class="cell-output-display">
+<div class="countdown" id="timer_53405092" data-update-every="1" tabindex="0" style="top:0;right:0;font-size:2em;">
+<div class="countdown-controls">
+<button class="countdown-bump-down">−</button><button class="countdown-bump-up">&amp;plus;</button>
+</div>
+<code class="countdown-time"><span class="countdown-digits minutes">05</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
+</div>
+</div>
+</div>
+</section><section id="two-continuous-variables" class="slide level2"><h2>Two Continuous Variables</h2>
+<div class="panel-tabset">
+<ul id="tabset-25" class="panel-tabset-tabby">
+<li><a data-tabby-default="" href="#tabset-25-1">Task</a></li>
+<li><a href="#tabset-25-2">Code</a></li>
+<li><a href="#tabset-25-3">Output</a></li>
+</ul>
+<div class="tab-content">
+<div id="tabset-25-1">
+<p><img data-src="images/layer3.png" style="width:45.0%"></p>
+</div>
+<div id="tabset-25-2">
+<div class="cell">
+<div class="sourceCode cell-code" id="cb69" data-code-line-numbers="2,3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb69-1"><a href="#cb69-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> penguins,</span>
+<span id="cb69-2"><a href="#cb69-2"></a>       <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> bill_length_mm, <span class="at">y =</span> bill_depth_mm)) <span class="sc">+</span></span>
+<span id="cb69-3"><a href="#cb69-3"></a>  <span class="fu">geom_point</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+<div id="tabset-25-3">
+<div class="cell">
+<div class="cell-output-display">
+<div id="fig-cont-vars" class="quarto-figure quarto-figure-center" width="960">
+<figure class="quarto-float quarto-float-fig"><div aria-describedby="fig-cont-vars-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img data-src="index_files/figure-revealjs/fig-cont-vars-1.png" id="fig-cont-vars" width="960">
+</div>
+<figcaption class="figure quarto-float-caption quarto-float-fig quarto-uncaptioned" id="fig-cont-vars-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;8
+</figcaption></figure>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section><section id="geom-size" class="slide level2"><h2>Geom Size</h2>
+<div class="panel-tabset">
+<ul id="tabset-26" class="panel-tabset-tabby">
+<li><a data-tabby-default="" href="#tabset-26-1">Task</a></li>
+<li><a href="#tabset-26-2">Code</a></li>
+<li><a href="#tabset-26-3">Output</a></li>
+</ul>
+<div class="tab-content">
+<div id="tabset-26-1">
+<div class="cell">
+<div class="cell-output-display">
+<p><img data-src="index_files/figure-revealjs/unnamed-chunk-77-1.png" width="960"></p>
+</div>
+</div>
+</div>
+<div id="tabset-26-2">
+<div class="cell">
+<div class="sourceCode cell-code" id="cb70" data-code-line-numbers="3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb70-1"><a href="#cb70-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> penguins,</span>
+<span id="cb70-2"><a href="#cb70-2"></a>       <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> bill_length_mm, <span class="at">y =</span> bill_depth_mm)) <span class="sc">+</span></span>
+<span id="cb70-3"><a href="#cb70-3"></a>  <span class="fu">geom_point</span>(<span class="at">size =</span> <span class="dv">5</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+<div id="tabset-26-3">
+<div class="cell">
+<div class="cell-output-display">
+<div id="fig-geom-size" class="quarto-figure quarto-figure-center" width="960">
+<figure class="quarto-float quarto-float-fig"><div aria-describedby="fig-geom-size-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img data-src="index_files/figure-revealjs/fig-geom-size-1.png" id="fig-geom-size" width="960">
+</div>
+<figcaption class="figure quarto-float-caption quarto-float-fig quarto-uncaptioned" id="fig-geom-size-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;9
+</figcaption></figure>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section><section id="geom-shape" class="slide level2"><h2>Geom Shape</h2>
+<div class="panel-tabset">
+<ul id="tabset-27" class="panel-tabset-tabby">
+<li><a data-tabby-default="" href="#tabset-27-1">Task</a></li>
+<li><a href="#tabset-27-2">Code</a></li>
+<li><a href="#tabset-27-3">Output</a></li>
+</ul>
+<div class="tab-content">
+<div id="tabset-27-1">
+<div class="cell">
+<div class="cell-output-display">
+<p><img data-src="index_files/figure-revealjs/unnamed-chunk-80-1.png" width="960"></p>
+</div>
+</div>
+</div>
+<div id="tabset-27-2">
+<div class="cell">
+<div class="sourceCode cell-code" id="cb71" data-code-line-numbers="4"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb71-1"><a href="#cb71-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> penguins,</span>
+<span id="cb71-2"><a href="#cb71-2"></a>       <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> bill_length_mm, <span class="at">y =</span> bill_depth_mm)) <span class="sc">+</span></span>
+<span id="cb71-3"><a href="#cb71-3"></a>  <span class="fu">geom_point</span>(<span class="at">size =</span> <span class="dv">5</span>,</span>
+<span id="cb71-4"><a href="#cb71-4"></a>             <span class="at">shape =</span> <span class="dv">8</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+<div id="tabset-27-3">
+<div class="cell">
+<div class="cell-output-display">
+<div id="fig-geom-shp" class="quarto-figure quarto-figure-center" width="960">
+<figure class="quarto-float quarto-float-fig"><div aria-describedby="fig-geom-shp-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img data-src="index_files/figure-revealjs/fig-geom-shp-1.png" id="fig-geom-shp" width="960">
+</div>
+<figcaption class="figure quarto-float-caption quarto-float-fig quarto-uncaptioned" id="fig-geom-shp-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;10
+</figcaption></figure>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section><section id="your-turn-3" class="slide level2 your-turn"><h2>🧠 YOUR TURN</h2>
+<div class="panel-tabset">
+<ul id="tabset-28" class="panel-tabset-tabby">
+<li><a data-tabby-default="" href="#tabset-28-1">Task</a></li>
+<li><a href="#tabset-28-2">Answer</a></li>
+</ul>
+<div class="tab-content">
+<div id="tabset-28-1">
+<div class="cell">
+<div class="cell-output-display">
+<p><img data-src="index_files/figure-revealjs/your-turn4-1.png" width="960"></p>
+</div>
+</div>
+</div>
+<div id="tabset-28-2">
+<div class="cell">
+<div class="sourceCode" id="cb72"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggplot.html">ggplot</a></span><span class="op">(</span>data <span class="op">=</span> <span class="va">penguins</span>,</span>
+<span>       mapping <span class="op">=</span> <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/aes.html">aes</a></span><span class="op">(</span>x <span class="op">=</span> <span class="va">body_mass_g</span>, y <span class="op">=</span> <span class="va">flipper_length_mm</span><span class="op">)</span><span class="op">)</span> <span class="op">+</span></span>
+<span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/geom_point.html">geom_point</a></span><span class="op">(</span>size <span class="op">=</span> <span class="fl">2</span>, shape <span class="op">=</span> <span class="fl">23</span>, color <span class="op">=</span> <span class="st">"red"</span>, fill <span class="op">=</span> <span class="st">"gold"</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="cell">
+<div class="cell-output-display">
+<div class="countdown" id="timer_706d2a32" data-update-every="1" tabindex="0" style="top:0;right:0;font-size:2em;">
+<div class="countdown-controls">
+<button class="countdown-bump-down">−</button><button class="countdown-bump-up">&amp;plus;</button>
+</div>
+<code class="countdown-time"><span class="countdown-digits minutes">05</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
+</div>
+</div>
+</div>
+</section><section id="plot-a-factor-factor" class="slide level2"><h2>Plot A Factor &amp; Factor</h2>
+<div class="panel-tabset">
+<ul id="tabset-29" class="panel-tabset-tabby">
+<li><a data-tabby-default="" href="#tabset-29-1">Task</a></li>
+<li><a href="#tabset-29-2">Code</a></li>
+<li><a href="#tabset-29-3">Output</a></li>
+</ul>
+<div class="tab-content">
+<div id="tabset-29-1">
+<p>Sometimes, we want to differentiate values of a factor/category variable on the basis of another factor/category variable.</p>
+</div>
+<div id="tabset-29-2">
+<div class="cell">
+<div class="sourceCode cell-code" id="cb73" data-code-line-numbers="4"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb73-1"><a href="#cb73-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> penguins,</span>
+<span id="cb73-2"><a href="#cb73-2"></a>       <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> island)) <span class="sc">+</span></span>
+<span id="cb73-3"><a href="#cb73-3"></a>  <span class="fu">geom_bar</span>(<span class="fu">aes</span>(<span class="at">fill =</span> sex))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+<div id="tabset-29-3">
+<div class="cell">
+<div class="cell-output-display">
+<div id="fig-fct-fct" class="quarto-figure quarto-figure-center" width="960">
+<figure class="quarto-float quarto-float-fig"><div aria-describedby="fig-fct-fct-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img data-src="index_files/figure-revealjs/fig-fct-fct-1.png" id="fig-fct-fct" width="960">
+</div>
+<figcaption class="figure quarto-float-caption quarto-float-fig quarto-uncaptioned" id="fig-fct-fct-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;11
+</figcaption></figure>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section><section id="plot-a-factor-continuous" class="slide level2"><h2>Plot A Factor &amp; Continuous</h2>
+<div class="panel-tabset">
+<ul id="tabset-30" class="panel-tabset-tabby">
+<li><a data-tabby-default="" href="#tabset-30-1">Task</a></li>
+<li><a href="#tabset-30-2">Code</a></li>
+<li><a href="#tabset-30-3">Output</a></li>
+</ul>
+<div class="tab-content">
+<div id="tabset-30-1">
+<p>Sometimes, we want to differentiate values from a continuous variable on the basis of factor/category variables.</p>
+</div>
+<div id="tabset-30-2">
+<div class="cell">
+<div class="sourceCode cell-code" id="cb74" data-code-line-numbers="4"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb74-1"><a href="#cb74-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> penguins,</span>
+<span id="cb74-2"><a href="#cb74-2"></a>       <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> bill_length_mm)) <span class="sc">+</span></span>
+<span id="cb74-3"><a href="#cb74-3"></a>  <span class="fu">geom_histogram</span>(<span class="fu">aes</span>(<span class="at">fill =</span> sex), <span class="at">color =</span> <span class="st">"black"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+<div id="tabset-30-3">
+<div class="cell">
+<div class="cell-output-display">
+<div id="fig-fct-int" class="quarto-figure quarto-figure-center" width="960">
+<figure class="quarto-float quarto-float-fig"><div aria-describedby="fig-fct-int-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img data-src="index_files/figure-revealjs/fig-fct-int-1.png" id="fig-fct-int" width="960">
+</div>
+<figcaption class="figure quarto-float-caption quarto-float-fig quarto-uncaptioned" id="fig-fct-int-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;12
+</figcaption></figure>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section><section id="a-factor-two-cont." class="slide level2"><h2>A Factor &amp; Two Cont.</h2>
+<div class="panel-tabset">
+<ul id="tabset-31" class="panel-tabset-tabby">
+<li><a data-tabby-default="" href="#tabset-31-1">Task</a></li>
+<li><a href="#tabset-31-2">Code</a></li>
+<li><a href="#tabset-31-3">Output</a></li>
+</ul>
+<div class="tab-content">
+<div id="tabset-31-1">
+<p><img data-src="images/layer3.png" style="width:45.0%"></p>
+</div>
+<div id="tabset-31-2">
+<div class="cell">
+<div class="sourceCode cell-code" id="cb75" data-code-line-numbers="2,3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb75-1"><a href="#cb75-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> penguins,</span>
+<span id="cb75-2"><a href="#cb75-2"></a>       <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> bill_length_mm, <span class="at">y =</span> bill_depth_mm)) <span class="sc">+</span></span>
+<span id="cb75-3"><a href="#cb75-3"></a>  <span class="fu">geom_point</span>(<span class="fu">aes</span>(<span class="at">color =</span> sex))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+<div id="tabset-31-3">
+<div class="cell">
+<div class="cell-output-display">
+<div id="fig-fct-2cont" class="quarto-figure quarto-figure-center" width="960">
+<figure class="quarto-float quarto-float-fig"><div aria-describedby="fig-fct-2cont-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img data-src="index_files/figure-revealjs/fig-fct-2cont-1.png" id="fig-fct-2cont" width="960">
+</div>
+<figcaption class="figure quarto-float-caption quarto-float-fig quarto-uncaptioned" id="fig-fct-2cont-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;13
+</figcaption></figure>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section><section id="a-factor-two-cont.-1" class="slide level2"><h2>A Factor &amp; Two Cont.</h2>
+<div class="panel-tabset">
+<ul id="tabset-32" class="panel-tabset-tabby">
+<li><a data-tabby-default="" href="#tabset-32-1">Task</a></li>
+<li><a href="#tabset-32-2">Code</a></li>
+<li><a href="#tabset-32-3">Output</a></li>
+</ul>
+<div class="tab-content">
+<div id="tabset-32-1">
+<p><img data-src="images/layer3.png" style="width:45.0%"></p>
+</div>
+<div id="tabset-32-2">
+<div class="cell">
+<div class="sourceCode cell-code" id="cb76" data-code-line-numbers="2,3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb76-1"><a href="#cb76-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> penguins,</span>
+<span id="cb76-2"><a href="#cb76-2"></a>       <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> bill_length_mm, <span class="at">y =</span> bill_depth_mm)) <span class="sc">+</span></span>
+<span id="cb76-3"><a href="#cb76-3"></a>  <span class="fu">geom_point</span>(<span class="fu">aes</span>(<span class="at">color =</span> species))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+<div id="tabset-32-3">
+<div class="cell">
+<div class="cell-output-display">
+<div id="fig-fct-2cont2" class="quarto-figure quarto-figure-center" width="960">
+<figure class="quarto-float quarto-float-fig"><div aria-describedby="fig-fct-2cont2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img data-src="index_files/figure-revealjs/fig-fct-2cont2-1.png" id="fig-fct-2cont2" width="960">
+</div>
+<figcaption class="figure quarto-float-caption quarto-float-fig quarto-uncaptioned" id="fig-fct-2cont2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;14
+</figcaption></figure>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section><section id="write-labels" class="slide level2"><h2>Write Labels</h2>
+<div class="panel-tabset">
+<ul id="tabset-33" class="panel-tabset-tabby">
+<li><a data-tabby-default="" href="#tabset-33-1">Task</a></li>
+<li><a href="#tabset-33-2">Code</a></li>
+<li><a href="#tabset-33-3">Output</a></li>
+</ul>
+<div class="tab-content">
+<div id="tabset-33-1">
+<ul>
+<li class="fragment"><p>Title of the plot</p></li>
+<li class="fragment"><p>Subtitle of the plot with more information</p></li>
+<li class="fragment"><p>Title of the x-axis</p></li>
+<li class="fragment"><p>Title of the y-axis</p></li>
+</ul>
+</div>
+<div id="tabset-33-2">
+<div class="cell">
+<div class="sourceCode cell-code" id="cb77" data-code-line-numbers="2,3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb77-1"><a href="#cb77-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> penguins,</span>
+<span id="cb77-2"><a href="#cb77-2"></a>       <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> bill_length_mm, <span class="at">y =</span> bill_depth_mm)) <span class="sc">+</span></span>
+<span id="cb77-3"><a href="#cb77-3"></a>  <span class="fu">geom_point</span>(<span class="fu">aes</span>(<span class="at">color =</span> species)) <span class="sc">+</span></span>
+<span id="cb77-4"><a href="#cb77-4"></a>  <span class="fu">labs</span>(</span>
+<span id="cb77-5"><a href="#cb77-5"></a>    <span class="at">title =</span> <span class="st">"The title of the plot"</span>,</span>
+<span id="cb77-6"><a href="#cb77-6"></a>    <span class="at">subtitle =</span> <span class="st">"The subtitle of the plot"</span>,</span>
+<span id="cb77-7"><a href="#cb77-7"></a>    <span class="at">x =</span> <span class="st">"Bill length (mm)"</span>,</span>
+<span id="cb77-8"><a href="#cb77-8"></a>    <span class="at">y =</span> <span class="st">"Bill depth (mm)"</span></span>
+<span id="cb77-9"><a href="#cb77-9"></a>  )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+<div id="tabset-33-3">
+<div class="cell">
+<div class="cell-output-display">
+<div id="fig-lbs" class="quarto-figure quarto-figure-center" width="960">
+<figure class="quarto-float quarto-float-fig"><div aria-describedby="fig-lbs-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img data-src="index_files/figure-revealjs/fig-lbs-1.png" id="fig-lbs" width="960">
+</div>
+<figcaption class="figure quarto-float-caption quarto-float-fig quarto-uncaptioned" id="fig-lbs-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;15
+</figcaption></figure>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section><section id="different-shapes" class="slide level2"><h2>Different Shapes</h2>
+<div class="panel-tabset">
+<ul id="tabset-34" class="panel-tabset-tabby">
+<li><a data-tabby-default="" href="#tabset-34-1">Task</a></li>
+<li><a href="#tabset-34-2">Code</a></li>
+<li><a href="#tabset-34-3">Output</a></li>
+</ul>
+<div class="tab-content">
+<div id="tabset-34-1">
+<p>Each level of the factor/category can be shown using a different shape of different color.</p>
+</div>
+<div id="tabset-34-2">
+<div class="cell">
+<div class="sourceCode cell-code" id="cb78" data-code-line-numbers="2,3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb78-1"><a href="#cb78-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> penguins,</span>
+<span id="cb78-2"><a href="#cb78-2"></a>       <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> bill_length_mm, <span class="at">y =</span> bill_depth_mm)) <span class="sc">+</span></span>
+<span id="cb78-3"><a href="#cb78-3"></a>  <span class="fu">geom_point</span>(<span class="fu">aes</span>(<span class="at">color =</span> species, <span class="at">shape =</span> species)) <span class="sc">+</span></span>
+<span id="cb78-4"><a href="#cb78-4"></a>  <span class="fu">labs</span>(</span>
+<span id="cb78-5"><a href="#cb78-5"></a>    <span class="at">title =</span> <span class="st">"The title of the plot"</span>,</span>
+<span id="cb78-6"><a href="#cb78-6"></a>    <span class="at">subtitle =</span> <span class="st">"The subtitle of the plot"</span>,</span>
+<span id="cb78-7"><a href="#cb78-7"></a>    <span class="at">x =</span> <span class="st">"Bill length (mm)"</span>,</span>
+<span id="cb78-8"><a href="#cb78-8"></a>    <span class="at">y =</span> <span class="st">"Bill depth (mm)"</span></span>
+<span id="cb78-9"><a href="#cb78-9"></a>  )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+<div id="tabset-34-3">
+<div class="cell">
+<div class="cell-output-display">
+<div id="fig-fct-shps" class="quarto-figure quarto-figure-center" width="960">
+<figure class="quarto-float quarto-float-fig"><div aria-describedby="fig-fct-shps-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img data-src="index_files/figure-revealjs/fig-fct-shps-1.png" id="fig-fct-shps" width="960">
+</div>
+<figcaption class="figure quarto-float-caption quarto-float-fig quarto-uncaptioned" id="fig-fct-shps-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;16
+</figcaption></figure>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section><section id="various-themes" class="slide level2"><h2>Various Themes</h2>
+<div class="panel-tabset">
+<ul id="tabset-35" class="panel-tabset-tabby">
+<li><a data-tabby-default="" href="#tabset-35-1">Task</a></li>
+<li><a href="#tabset-35-2">Code</a></li>
+<li><a href="#tabset-35-3">Output</a></li>
+</ul>
+<div class="tab-content">
+<div id="tabset-35-1">
+<p>Source: <a href="https://yutannihilation.github.io/allYourFigureAreBelongToUs/ggthemes/">ggthemes</a></p>
+<div class="cell">
+<div class="sourceCode" id="cb79"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://github.com/jrnold/ggthemes">ggthemes</a></span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+<div id="tabset-35-2">
+<div class="cell">
+<div class="sourceCode cell-code" id="cb80" data-code-line-numbers="2,3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb80-1"><a href="#cb80-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> penguins,</span>
+<span id="cb80-2"><a href="#cb80-2"></a>       <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> bill_length_mm, <span class="at">y =</span> bill_depth_mm)) <span class="sc">+</span></span>
+<span id="cb80-3"><a href="#cb80-3"></a>  <span class="fu">geom_point</span>(<span class="fu">aes</span>(<span class="at">color =</span> species, <span class="at">shape =</span> species)) <span class="sc">+</span></span>
+<span id="cb80-4"><a href="#cb80-4"></a>  <span class="fu">labs</span>(</span>
+<span id="cb80-5"><a href="#cb80-5"></a>    <span class="at">title =</span> <span class="st">"The title of the plot"</span>,</span>
+<span id="cb80-6"><a href="#cb80-6"></a>    <span class="at">subtitle =</span> <span class="st">"The subtitle of the plot"</span>,</span>
+<span id="cb80-7"><a href="#cb80-7"></a>    <span class="at">x =</span> <span class="st">"Bill length (mm)"</span>,</span>
+<span id="cb80-8"><a href="#cb80-8"></a>    <span class="at">y =</span> <span class="st">"Bill depth (mm)"</span></span>
+<span id="cb80-9"><a href="#cb80-9"></a>  ) <span class="sc">+</span></span>
+<span id="cb80-10"><a href="#cb80-10"></a>  <span class="fu">theme_economist</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+<div id="tabset-35-3">
+<div class="cell">
+<div class="cell-output-display">
+<div id="fig-theme-eco" class="quarto-figure quarto-figure-center" width="960">
+<figure class="quarto-float quarto-float-fig"><div aria-describedby="fig-theme-eco-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img data-src="index_files/figure-revealjs/fig-theme-eco-1.png" id="fig-theme-eco" width="960">
+</div>
+<figcaption class="figure quarto-float-caption quarto-float-fig quarto-uncaptioned" id="fig-theme-eco-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;17
+</figcaption></figure>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section><section id="various-themes-1" class="slide level2"><h2>Various Themes</h2>
+<div class="panel-tabset">
+<ul id="tabset-36" class="panel-tabset-tabby">
+<li><a data-tabby-default="" href="#tabset-36-1">Task</a></li>
+<li><a href="#tabset-36-2">Code</a></li>
+<li><a href="#tabset-36-3">Output</a></li>
+</ul>
+<div class="tab-content">
+<div id="tabset-36-1">
+<p>Source: <a href="https://yutannihilation.github.io/allYourFigureAreBelongToUs/ggthemes/">ggthemes</a></p>
+<div class="cell">
+<div class="sourceCode" id="cb81"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://github.com/jrnold/ggthemes">ggthemes</a></span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+<div id="tabset-36-2">
+<div class="cell">
+<div class="sourceCode cell-code" id="cb82" data-code-line-numbers="2,3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb82-1"><a href="#cb82-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> penguins,</span>
+<span id="cb82-2"><a href="#cb82-2"></a>       <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> bill_length_mm, <span class="at">y =</span> bill_depth_mm)) <span class="sc">+</span></span>
+<span id="cb82-3"><a href="#cb82-3"></a>  <span class="fu">geom_point</span>(<span class="fu">aes</span>(<span class="at">color =</span> species, <span class="at">shape =</span> species)) <span class="sc">+</span></span>
+<span id="cb82-4"><a href="#cb82-4"></a>  <span class="fu">labs</span>(</span>
+<span id="cb82-5"><a href="#cb82-5"></a>    <span class="at">title =</span> <span class="st">"The title of the plot"</span>,</span>
+<span id="cb82-6"><a href="#cb82-6"></a>    <span class="at">subtitle =</span> <span class="st">"The subtitle of the plot"</span>,</span>
+<span id="cb82-7"><a href="#cb82-7"></a>    <span class="at">x =</span> <span class="st">"Bill length (mm)"</span>,</span>
+<span id="cb82-8"><a href="#cb82-8"></a>    <span class="at">y =</span> <span class="st">"Bill depth (mm)"</span></span>
+<span id="cb82-9"><a href="#cb82-9"></a>  ) <span class="sc">+</span></span>
+<span id="cb82-10"><a href="#cb82-10"></a>  <span class="fu">theme_solarized_2</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+<div id="tabset-36-3">
+<div class="cell">
+<div class="cell-output-display">
+<div id="fig-theme-solar" class="quarto-figure quarto-figure-center" width="960">
+<figure class="quarto-float quarto-float-fig"><div aria-describedby="fig-theme-solar-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img data-src="index_files/figure-revealjs/fig-theme-solar-1.png" id="fig-theme-solar" width="960">
+</div>
+<figcaption class="figure quarto-float-caption quarto-float-fig quarto-uncaptioned" id="fig-theme-solar-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;18
+</figcaption></figure>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section><section id="various-themes-2" class="slide level2"><h2>Various Themes</h2>
+<div class="panel-tabset">
+<ul id="tabset-37" class="panel-tabset-tabby">
+<li><a data-tabby-default="" href="#tabset-37-1">Task</a></li>
+<li><a href="#tabset-37-2">Code</a></li>
+<li><a href="#tabset-37-3">Output</a></li>
+</ul>
+<div class="tab-content">
+<div id="tabset-37-1">
+<p>Source: <a href="https://yutannihilation.github.io/allYourFigureAreBelongToUs/ggthemes/">ggthemes</a></p>
+<div class="cell">
+<div class="sourceCode" id="cb83"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://github.com/jrnold/ggthemes">ggthemes</a></span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+<div id="tabset-37-2">
+<div class="cell">
+<div class="sourceCode cell-code" id="cb84" data-code-line-numbers="2,3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb84-1"><a href="#cb84-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> penguins,</span>
+<span id="cb84-2"><a href="#cb84-2"></a>       <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> bill_length_mm, <span class="at">y =</span> bill_depth_mm)) <span class="sc">+</span></span>
+<span id="cb84-3"><a href="#cb84-3"></a>  <span class="fu">geom_point</span>(<span class="fu">aes</span>(<span class="at">color =</span> species, <span class="at">shape =</span> species)) <span class="sc">+</span></span>
+<span id="cb84-4"><a href="#cb84-4"></a>  <span class="fu">labs</span>(</span>
+<span id="cb84-5"><a href="#cb84-5"></a>    <span class="at">title =</span> <span class="st">"The title of the plot"</span>,</span>
+<span id="cb84-6"><a href="#cb84-6"></a>    <span class="at">subtitle =</span> <span class="st">"The subtitle of the plot"</span>,</span>
+<span id="cb84-7"><a href="#cb84-7"></a>    <span class="at">x =</span> <span class="st">"Bill length (mm)"</span>,</span>
+<span id="cb84-8"><a href="#cb84-8"></a>    <span class="at">y =</span> <span class="st">"Bill depth (mm)"</span></span>
+<span id="cb84-9"><a href="#cb84-9"></a>  ) <span class="sc">+</span></span>
+<span id="cb84-10"><a href="#cb84-10"></a>  <span class="fu">theme_tufte</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+<div id="tabset-37-3">
+<div class="cell">
+<div class="cell-output-display">
+<div id="fig-theme-tufte" class="quarto-figure quarto-figure-center" width="960">
+<figure class="quarto-float quarto-float-fig"><div aria-describedby="fig-theme-tufte-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img data-src="index_files/figure-revealjs/fig-theme-tufte-1.png" id="fig-theme-tufte" width="960">
+</div>
+<figcaption class="figure quarto-float-caption quarto-float-fig quarto-uncaptioned" id="fig-theme-tufte-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;19
+</figcaption></figure>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section><section id="various-themes-3" class="slide level2"><h2>Various Themes</h2>
+<div class="panel-tabset">
+<ul id="tabset-38" class="panel-tabset-tabby">
+<li><a data-tabby-default="" href="#tabset-38-1">Task</a></li>
+<li><a href="#tabset-38-2">Code</a></li>
+<li><a href="#tabset-38-3">Output</a></li>
+</ul>
+<div class="tab-content">
+<div id="tabset-38-1">
+<p>Source: <a href="https://yutannihilation.github.io/allYourFigureAreBelongToUs/ggthemes/">ggthemes</a></p>
+<div class="cell">
+<div class="sourceCode" id="cb85"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://github.com/jrnold/ggthemes">ggthemes</a></span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+<div id="tabset-38-2">
+<div class="cell">
+<div class="sourceCode cell-code" id="cb86" data-code-line-numbers="2,3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb86-1"><a href="#cb86-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> penguins,</span>
+<span id="cb86-2"><a href="#cb86-2"></a>       <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> bill_length_mm, <span class="at">y =</span> bill_depth_mm)) <span class="sc">+</span></span>
+<span id="cb86-3"><a href="#cb86-3"></a>  <span class="fu">geom_point</span>(<span class="fu">aes</span>(<span class="at">color =</span> species, <span class="at">shape =</span> species)) <span class="sc">+</span></span>
+<span id="cb86-4"><a href="#cb86-4"></a>  <span class="fu">labs</span>(</span>
+<span id="cb86-5"><a href="#cb86-5"></a>    <span class="at">title =</span> <span class="st">"The title of the plot"</span>,</span>
+<span id="cb86-6"><a href="#cb86-6"></a>    <span class="at">subtitle =</span> <span class="st">"The subtitle of the plot"</span>,</span>
+<span id="cb86-7"><a href="#cb86-7"></a>    <span class="at">x =</span> <span class="st">"Bill length (mm)"</span>,</span>
+<span id="cb86-8"><a href="#cb86-8"></a>    <span class="at">y =</span> <span class="st">"Bill depth (mm)"</span></span>
+<span id="cb86-9"><a href="#cb86-9"></a>  ) <span class="sc">+</span></span>
+<span id="cb86-10"><a href="#cb86-10"></a>  <span class="fu">theme_clean</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+<div id="tabset-38-3">
+<div class="cell">
+<div class="cell-output-display">
+<div id="fig-theme-clean" class="quarto-figure quarto-figure-center" width="960">
+<figure class="quarto-float quarto-float-fig"><div aria-describedby="fig-theme-clean-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img data-src="index_files/figure-revealjs/fig-theme-clean-1.png" id="fig-theme-clean" width="960">
+</div>
+<figcaption class="figure quarto-float-caption quarto-float-fig quarto-uncaptioned" id="fig-theme-clean-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;20
+</figcaption></figure>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section><section id="color-palette" class="slide level2 center"><h2>Color Palette</h2>
+
+<img data-src="https://r-graph-gallery.com/38-rcolorbrewers-palettes_files/figure-html/thecode-1.png" class="r-stretch"></section><section id="color-palette-1" class="slide level2"><h2>Color Palette</h2>
+<div class="panel-tabset">
+<ul id="tabset-39" class="panel-tabset-tabby">
+<li><a data-tabby-default="" href="#tabset-39-1">Task</a></li>
+<li><a href="#tabset-39-2">Code</a></li>
+<li><a href="#tabset-39-3">Output</a></li>
+</ul>
+<div class="tab-content">
+<div id="tabset-39-1">
+<ul>
+<li class="fragment">R package <code>ggthemes</code> have function to use color scheme for colorblindness. <a href="https://rdrr.io/cran/ggthemes/man/colorblind.html">Know more</a>
+</li>
+</ul>
+</div>
+<div id="tabset-39-2">
+<div class="cell">
+<div class="sourceCode cell-code" id="cb87" data-code-line-numbers="2,3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb87-1"><a href="#cb87-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> penguins,</span>
+<span id="cb87-2"><a href="#cb87-2"></a>       <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> bill_length_mm, <span class="at">y =</span> bill_depth_mm)) <span class="sc">+</span></span>
+<span id="cb87-3"><a href="#cb87-3"></a>  <span class="fu">geom_point</span>(<span class="fu">aes</span>(<span class="at">color =</span> species, <span class="at">shape =</span> species)) <span class="sc">+</span></span>
+<span id="cb87-4"><a href="#cb87-4"></a>  <span class="fu">labs</span>(</span>
+<span id="cb87-5"><a href="#cb87-5"></a>    <span class="at">title =</span> <span class="st">"The title of the plot"</span>,</span>
+<span id="cb87-6"><a href="#cb87-6"></a>    <span class="at">subtitle =</span> <span class="st">"The subtitle of the plot"</span>,</span>
+<span id="cb87-7"><a href="#cb87-7"></a>    <span class="at">x =</span> <span class="st">"Bill length (mm)"</span>,</span>
+<span id="cb87-8"><a href="#cb87-8"></a>    <span class="at">y =</span> <span class="st">"Bill depth (mm)"</span></span>
+<span id="cb87-9"><a href="#cb87-9"></a>  ) <span class="sc">+</span></span>
+<span id="cb87-10"><a href="#cb87-10"></a>  <span class="fu">theme_clean</span>() <span class="sc">+</span></span>
+<span id="cb87-11"><a href="#cb87-11"></a>  <span class="fu">scale_color_colorblind</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+<div id="tabset-39-3">
+<div class="cell">
+<div class="cell-output-display">
+<div id="fig-col-blind" class="quarto-figure quarto-figure-center" width="960">
+<figure class="quarto-float quarto-float-fig"><div aria-describedby="fig-col-blind-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img data-src="index_files/figure-revealjs/fig-col-blind-1.png" id="fig-col-blind" width="960">
+</div>
+<figcaption class="figure quarto-float-caption quarto-float-fig quarto-uncaptioned" id="fig-col-blind-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;21
+</figcaption></figure>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section><section id="color-palette-2" class="slide level2"><h2>Color Palette</h2>
+<div class="panel-tabset">
+<ul id="tabset-40" class="panel-tabset-tabby">
+<li><a data-tabby-default="" href="#tabset-40-1">Task</a></li>
+<li><a href="#tabset-40-2">Code</a></li>
+<li><a href="#tabset-40-3">Output</a></li>
+</ul>
+<div class="tab-content">
+<div id="tabset-40-1">
+<div class="cell">
+<div class="sourceCode" id="cb88"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va">RColorBrewer</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+<div id="tabset-40-2">
+<div class="cell">
+<div class="sourceCode cell-code" id="cb89" data-code-line-numbers="11"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb89-1"><a href="#cb89-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> penguins,</span>
+<span id="cb89-2"><a href="#cb89-2"></a>       <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> bill_length_mm, <span class="at">y =</span> bill_depth_mm)) <span class="sc">+</span></span>
+<span id="cb89-3"><a href="#cb89-3"></a>  <span class="fu">geom_point</span>(<span class="fu">aes</span>(<span class="at">color =</span> species, <span class="at">shape =</span> species)) <span class="sc">+</span></span>
+<span id="cb89-4"><a href="#cb89-4"></a>  <span class="fu">labs</span>(</span>
+<span id="cb89-5"><a href="#cb89-5"></a>    <span class="at">title =</span> <span class="st">"The title of the plot"</span>,</span>
+<span id="cb89-6"><a href="#cb89-6"></a>    <span class="at">subtitle =</span> <span class="st">"The subtitle of the plot"</span>,</span>
+<span id="cb89-7"><a href="#cb89-7"></a>    <span class="at">x =</span> <span class="st">"Bill length (mm)"</span>,</span>
+<span id="cb89-8"><a href="#cb89-8"></a>    <span class="at">y =</span> <span class="st">"Bill depth (mm)"</span></span>
+<span id="cb89-9"><a href="#cb89-9"></a>  ) <span class="sc">+</span></span>
+<span id="cb89-10"><a href="#cb89-10"></a>  <span class="fu">theme_clean</span>() <span class="sc">+</span></span>
+<span id="cb89-11"><a href="#cb89-11"></a>  <span class="fu">scale_color_brewer</span>(<span class="at">palette =</span> <span class="st">"Dark2"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+<div id="tabset-40-3">
+<div class="cell">
+<div class="cell-output-display">
+<div id="fig-col-palt" class="quarto-figure quarto-figure-center" width="960">
+<figure class="quarto-float quarto-float-fig"><div aria-describedby="fig-col-palt-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img data-src="index_files/figure-revealjs/fig-col-palt-1.png" id="fig-col-palt" width="960">
+</div>
+<figcaption class="figure quarto-float-caption quarto-float-fig quarto-uncaptioned" id="fig-col-palt-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;22
+</figcaption></figure>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section><section id="color-palette-3" class="slide level2"><h2>Color Palette</h2>
+<div class="panel-tabset">
+<ul id="tabset-41" class="panel-tabset-tabby">
+<li><a data-tabby-default="" href="#tabset-41-1">Task</a></li>
+<li><a href="#tabset-41-2">Code</a></li>
+<li><a href="#tabset-41-3">Output</a></li>
+</ul>
+<div class="tab-content">
+<div id="tabset-41-1">
+<div class="cell">
+<div class="sourceCode" id="cb90"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://github.com/karthik/wesanderson">wesanderson</a></span><span class="op">)</span></span>
+<span></span>
+<span><span class="fu"><a href="https://rdrr.io/r/base/names.html">names</a></span><span class="op">(</span><span class="va">wes_palettes</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code> [1] "BottleRocket1"     "BottleRocket2"     "Rushmore1"        
+ [4] "Rushmore"          "Royal1"            "Royal2"           
+ [7] "Zissou1"           "Zissou1Continuous" "Darjeeling1"      
+[10] "Darjeeling2"       "Chevalier1"        "FantasticFox1"    
+[13] "Moonrise1"         "Moonrise2"         "Moonrise3"        
+[16] "Cavalcanti1"       "GrandBudapest1"    "GrandBudapest2"   
+[19] "IsleofDogs1"       "IsleofDogs2"       "FrenchDispatch"   
+[22] "AsteroidCity1"     "AsteroidCity2"     "AsteroidCity3"    </code></pre>
+</div>
+</div>
+</div>
+<div id="tabset-41-2">
+<div class="cell">
+<div class="sourceCode cell-code" id="cb92" data-code-line-numbers="11"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb92-1"><a href="#cb92-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> penguins,</span>
+<span id="cb92-2"><a href="#cb92-2"></a>       <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> bill_length_mm, <span class="at">y =</span> bill_depth_mm)) <span class="sc">+</span></span>
+<span id="cb92-3"><a href="#cb92-3"></a>  <span class="fu">geom_point</span>(<span class="fu">aes</span>(<span class="at">color =</span> species, <span class="at">shape =</span> species)) <span class="sc">+</span></span>
+<span id="cb92-4"><a href="#cb92-4"></a>  <span class="fu">labs</span>(</span>
+<span id="cb92-5"><a href="#cb92-5"></a>    <span class="at">title =</span> <span class="st">"The title of the plot"</span>,</span>
+<span id="cb92-6"><a href="#cb92-6"></a>    <span class="at">subtitle =</span> <span class="st">"The subtitle of the plot"</span>,</span>
+<span id="cb92-7"><a href="#cb92-7"></a>    <span class="at">x =</span> <span class="st">"Bill length (mm)"</span>,</span>
+<span id="cb92-8"><a href="#cb92-8"></a>    <span class="at">y =</span> <span class="st">"Bill depth (mm)"</span></span>
+<span id="cb92-9"><a href="#cb92-9"></a>  ) <span class="sc">+</span></span>
+<span id="cb92-10"><a href="#cb92-10"></a>  <span class="fu">theme_clean</span>() <span class="sc">+</span></span>
+<span id="cb92-11"><a href="#cb92-11"></a>  <span class="fu">scale_color_manual</span>(<span class="at">values =</span> <span class="fu">wes_palette</span>(<span class="st">"BottleRocket2"</span>, <span class="at">n =</span> <span class="dv">3</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+<div id="tabset-41-3">
+<div class="cell">
+<div class="cell-output-display">
+<div id="fig-col-wes" class="quarto-figure quarto-figure-center" width="960">
+<figure class="quarto-float quarto-float-fig"><div aria-describedby="fig-col-wes-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img data-src="index_files/figure-revealjs/fig-col-wes-1.png" id="fig-col-wes" width="960">
+</div>
+<figcaption class="figure quarto-float-caption quarto-float-fig quarto-uncaptioned" id="fig-col-wes-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;23
+</figcaption></figure>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section><section id="export-plot" class="slide level2"><h2>Export Plot</h2>
+<div class="panel-tabset">
+<ul id="tabset-42" class="panel-tabset-tabby">
+<li><a data-tabby-default="" href="#tabset-42-1">Task</a></li>
+<li><a href="#tabset-42-2">Code</a></li>
+<li><a href="#tabset-42-3">Output</a></li>
+</ul>
+<div class="tab-content">
+<div id="tabset-42-1">
+<ul>
+<li class="fragment">Export/save plot as pdf, jpg or png file.</li>
+</ul>
+</div>
+<div id="tabset-42-2">
+<div class="cell">
+<div class="sourceCode cell-code" id="cb93" data-code-line-numbers="11"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb93-1"><a href="#cb93-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> penguins,</span>
+<span id="cb93-2"><a href="#cb93-2"></a>       <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> bill_length_mm, <span class="at">y =</span> bill_depth_mm)) <span class="sc">+</span></span>
+<span id="cb93-3"><a href="#cb93-3"></a>  <span class="fu">geom_point</span>(<span class="fu">aes</span>(<span class="at">color =</span> species, <span class="at">shape =</span> species)) <span class="sc">+</span></span>
+<span id="cb93-4"><a href="#cb93-4"></a>  <span class="fu">labs</span>(</span>
+<span id="cb93-5"><a href="#cb93-5"></a>    <span class="at">title =</span> <span class="st">"The title of the plot"</span>,</span>
+<span id="cb93-6"><a href="#cb93-6"></a>    <span class="at">subtitle =</span> <span class="st">"The subtitle of the plot"</span>,</span>
+<span id="cb93-7"><a href="#cb93-7"></a>    <span class="at">x =</span> <span class="st">"Bill length (mm)"</span>,</span>
+<span id="cb93-8"><a href="#cb93-8"></a>    <span class="at">y =</span> <span class="st">"Bill depth (mm)"</span></span>
+<span id="cb93-9"><a href="#cb93-9"></a>  ) <span class="sc">+</span></span>
+<span id="cb93-10"><a href="#cb93-10"></a>  <span class="fu">theme_clean</span>() <span class="sc">+</span></span>
+<span id="cb93-11"><a href="#cb93-11"></a>  <span class="fu">scale_color_manual</span>(<span class="at">values =</span> <span class="fu">wes_palette</span>(<span class="st">"BottleRocket2"</span>, <span class="at">n =</span> <span class="dv">3</span>))</span>
+<span id="cb93-12"><a href="#cb93-12"></a></span>
+<span id="cb93-13"><a href="#cb93-13"></a><span class="fu">ggsave</span>(<span class="st">"penguins-plot.pdf"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+<div id="tabset-42-3">
+<div class="cell">
+<div class="cell-output-display">
+<div id="fig-save" class="quarto-figure quarto-figure-center" width="960">
+<figure class="quarto-float quarto-float-fig"><div aria-describedby="fig-save-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img data-src="index_files/figure-revealjs/fig-save-1.png" id="fig-save" width="960">
+</div>
+<figcaption class="figure quarto-float-caption quarto-float-fig quarto-uncaptioned" id="fig-save-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;24
+</figcaption></figure>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section><section id="common-mistakes" class="slide level2"><h2>Common Mistakes</h2>
+<ul>
+<li class="fragment"><p>Make sure that every <code>(</code> is matched with a <code>)</code> and every <code>"</code> is paired with another <code>"</code>.</p></li>
+<li class="fragment"><p>Console shows no results but a <code>+</code> sign that means your code is incomplete and R is waiting for you to complete the code.</p></li>
+<li class="fragment"><p>in ggplot <code>+</code> has to come at the end of the line, not the start</p></li>
+</ul></section><section id="section-28" class="slide level2 center"><h2></h2>
+<p><span class="r-fit-text">🧑🏽‍💻👨🏽‍💻<br>Question &amp; Answer</span></p>
+</section></section><section><section id="sec-wrangle" class="title-slide slide level1 center" data-background-image="https://images.unsplash.com/photo-1586864143550-e78342051c9c?q=80&amp;w=2070&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" data-background-size="cover"><h1></h1>
+<div class="columns">
+<div class="column" style="width:20%;">
+
+</div><div class="column" style="width:80%;">
+<p><br><br><span class="r-fit-text theme-tech centering">DATA <br> WRANGLING</span></p>
+</div>
+</div>
+<p><br><br><br><br></p>
 
 <aside><div>
-<p><span class="small">Source: <a href="https://quarto.org/docs/visual-editor/content.html">Quarto guide</a></span></p>
-</div></aside></section><section id="spans" class="slide level2"><h2>Spans</h2>
-<p>“Spans are special entities that allow you to apply identifiers and/or style to a <strong>region of text</strong>. Spans are inline formatting marks (like bold and italic).”</p>
-<p><br></p>
-<div class="sourceCode" id="cb57"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb57-1"><a href="#cb57-1" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb57-2"><a href="#cb57-2" aria-hidden="true" tabindex="-1"></a><span class="co">[</span><span class="ot">This text color becomes tomato red color.</span><span class="co">]</span>{.theme-red}</span>
-<span id="cb57-3"><a href="#cb57-3" aria-hidden="true" tabindex="-1"></a></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p><br></p>
-<p><span class="theme-red">This text color becomes tomato red color.</span></p>
-
-<aside><div>
-<p><span class="small">Source: <a href="https://quarto.org/docs/visual-editor/content.html">Quarto guide</a></span></p>
+<p><span class="small">Background Image By <a href="https://unsplash.com/@imattsmart">Matt Smart</a></span></p>
 </div></aside></section><section id="references" class="slide level2 scrollable small"><h2>References</h2>
 <div>
 <ul>
@@ -1914,10 +3072,12 @@ definition
 <li><p>R packages for data science <a href="https://www.tidyverse.org/" class="uri">https://www.tidyverse.org/</a></p></li>
 </ul>
 </div>
-</section></section><section id="section-24" class="title-slide slide level1 center" data-background-image="https://images.unsplash.com/photo-1553379762-ff913d5513b5?q=80&amp;w=2070&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" data-background-size="cover"><h1></h1>
+</section></section><section id="section-29" class="title-slide slide level1 center" data-background-image="https://images.unsplash.com/photo-1553379762-ff913d5513b5?q=80&amp;w=2070&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" data-background-size="cover"><h1></h1>
 <div class="columns">
 <div class="column" style="width:70%;">
-<p><span class="r-fit-text theme-cursive theme-navy-blue">Thank<br>You</span></p>
+<p><span class="r-fit-text theme-cursive theme-navy-blue left">Thank<br>You</span></p>
+</div><div class="column" style="width:30%;">
+
 </div>
 </div>
 
@@ -1936,7 +3096,7 @@ definition
       // Full list of configuration options available at:
       // https://revealjs.com/config/
       Reveal.initialize({
-'controlsAuto': false,
+'controlsAuto': true,
 'previewLinksAuto': false,
 'pdfSeparateFragments': false,
 'autoAnimateEasing': "ease",
@@ -1946,7 +3106,7 @@ definition
 'smaller': false,
  
         // Display controls in the bottom right corner
-        controls: true,
+        controls: false,
 
         // Help the user learn the controls by providing hints, for example by
         // bouncing the down arrow when they first encounter a vertical slide
@@ -1960,7 +3120,7 @@ definition
         controlsBackArrows: 'faded',
 
         // Display a presentation progress bar
-        progress: false,
+        progress: true,
 
         // Display the page number of the current slide
         slideNumber: 'c/t',
