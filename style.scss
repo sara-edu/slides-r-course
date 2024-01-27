@@ -126,9 +126,9 @@ $code-block-bg: #fff;
 
 // your turn exercise slide style.
 .your-turn {
-  color: #fff;
+  color: #36454F;
   h1, h2, h3 {
-    color: #fff;
+    color: #36454F;
     font-size: 2.5em;
   }
 
@@ -141,7 +141,7 @@ $code-block-bg: #fff;
   }
   
   .slide-background-content {
-    background-color: #ffffed;
+    background-color: $theme-blue;
   }
   
 }

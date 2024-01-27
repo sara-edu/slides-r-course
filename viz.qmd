@@ -171,7 +171,10 @@ ggplot(data = penguins,
 :::
 
 ```{r echo=FALSE}
-countdown(minutes = 5, top = 0, font_size = "2em")
+countdown(minutes = 5,
+          play_sound = TRUE,
+          top = "-5%", 
+          font_size = "2em")
 ```
 
 ## "Fill" Color
@@ -285,7 +288,10 @@ ggplot(data = penguins,
 :::
 
 ```{r echo=FALSE}
-countdown(minutes = 5, top = 0, font_size = "2em")
+countdown(minutes = 5,
+          play_sound = TRUE,
+          top = "-5%", 
+          font_size = "2em")
 ```
 
 ## Know Your Data
@@ -308,7 +314,9 @@ glimpse(penguins)
 ```{r}
 #| label: fig-cont-var
 #| eval: false
-#| code-line-numbers: "2,3"
+#| code-line-numbers: "4,5"
+
+# bill_length_mm is dbl type variable/column
 
 ggplot(data = penguins,
        mapping = aes(x = bill_length_mm)) +
@@ -350,7 +358,10 @@ ggplot(data = penguins,
 :::
 
 ```{r echo=FALSE}
-countdown(minutes = 5, top = 0, font_size = "2em")
+countdown(minutes = 5,
+          play_sound = TRUE,
+          top = "-5%", 
+          font_size = "2em")
 ```
 
 ## Two Continuous Variables

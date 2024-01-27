@@ -16,6 +16,7 @@ format:
     #controls: true
     touch: true
     menu: true
+code-copy: hover
 knitr:
   opts_chunk: 
     echo: true
@@ -35,6 +36,8 @@ knitr:
 library(downlit) #to create link of r function
 library(tidyverse)
 library(palmerpenguins)
+library(knitr)
+library(countdown)
 ```
 
 ## 
@@ -653,16 +656,31 @@ R follows the BODMAS (bracket, order, division, multiplication, addition and sub
 :::
 :::
 
-## Plot Using R
+## R Console
 
-::: panel-tabset
-### Code
+<br>
+
+::: columns
+::: {.column width="50%"}
+### [Code]{.center}
 
 ```{r}
-#| label: plot1
+#| label: misc1
 #| eval: false
-plot(1:100)
+12:18
 ```
+:::
+
+::: {.column width="50%"}
+### [Output]{.center}
+
+```{r}
+#| label: misc1
+#| echo: false
+#| output: asis
+```
+:::
+:::
 
 <br>
 <br>
@@ -673,9 +691,20 @@ R Miscellaneous Operators: Miscellaneous operators are used to manipulate data.
 |          |                                           |            |
 |----------|-------------------------------------------|------------|
 | Operator | Description                               | Example    |
-| `:`      | Creates a series of numbers in a sequence | x <- 1:10  |
+| `:`      | Creates a series of numbers in a sequence | 1:10       |
 
 :::
+
+## Plot Using R
+
+::: panel-tabset
+### Code
+
+```{r}
+#| label: plot1
+#| eval: false
+plot(1:100)
+```
 
 ### Output
 
@@ -739,13 +768,13 @@ R Miscellaneous Operators: Miscellaneous operators are used to manipulate data.
 
 ## RStudio IDE {.center}
 
-![](images/rstd_ide.png){.r-stretch}
+![](images/rstd_ide.png){fig-align=center}
 
 ## RStudio IDE
 
 "It includes a console, syntax-highlighting editor that supports direct code execution, and tools for plotting, history, debugging, and workspace management." 
 
-![](images/rstd_ide.png){fig-align="right" width="70%"}
+![](images/rstd_ide.png){fig-align=right width="50%"}
 
 ::: aside
 [Source: [posit](https://posit.co/products/open-source/rstudio/)]{.small}
@@ -1026,7 +1055,7 @@ Function with a specific value of an argument.
 #| label: fun-round3
 #| eval: false
 
-round(46.587, digits = 2)
+round(x = 46.587, digits = 2)
 ```
 
 ### Output
@@ -1115,7 +1144,7 @@ seq.int(from = 10,
 -   In R, `#` is used as a commenting symbol.
 
 ::: aside
-[[Source](https://en.wikipedia.org/wiki/Comment_computer_programming)]{.small}
+[[Source: Wikipedia](https://en.wikipedia.org/wiki/Comment_computer_programming)]{.small}
 :::
 
 #  {.inverse}
@@ -1132,7 +1161,7 @@ seq.int(from = 10,
 
 ## R Packages 
 
-![](images/metacran.png){.r-stretch}
+![](images/metacran.png){width=75%}
 
 ::: aside
 <br>[Source: [Metacran](https://www.r-pkg.org/)]{.small}
@@ -1764,7 +1793,7 @@ Quarto can produce a wide variety of output formats:
 | ```             |                                   |
 +-----------------+-----------------------------------+
 
-## Links {.scrollable}
+## Insert Links {.scrollable}
 
 <br>
 
@@ -1775,36 +1804,78 @@ Quarto can produce a wide variety of output formats:
 | <https://saraedu.netlify.app/>       |                                      |
 | ```                                  |                                      |
 +--------------------------------------+--------------------------------------+
-| ``` markdown                         | [SARA](https://saraedu.netlify.app/) |
-| [SARA](https://saraedu.netlify.app/) |                                      |
-| ```                                  |                                      |
-+--------------------------------------+--------------------------------------+
 
-## Images {.scrollable}
+## Insert Links {.scrollable}
 
 <br>
 
-+--------------------------------------------------------------+--------------------------------------------------------------------------------------------------------+
-| Markdown Syntax                                              | Output                                                                                                 |
-+==============================================================+========================================================================================================+
-| ``` markdown                                                 | ![Rose](rose.jpg)                                                                                      |
-| ![Rose](rose.jpg)                                            |                                                                                                        |
-| ```                                                          |                                                                                                        |
-+--------------------------------------------------------------+--------------------------------------------------------------------------------------------------------+
-| ``` markdown                                                 | [![Rose](rose.jpg)](https://quarto.org)                                                                |
-| [![Rose](rose.jpg)](https://quarto.org)                      |                                                                                                        |
-| ```                                                          |                                                                                                        |
-+--------------------------------------------------------------+--------------------------------------------------------------------------------------------------------+
-| ``` markdown                                                 | [![Rose](rose.jpg)](https://quarto.org "The Rose")                                                     |
-| [![Rose](rose.jpg)](https://quarto.org "The Rose")           |                                                                                                        |
-| ```                                                          |                                                                                                        |
-+--------------------------------------------------------------+--------------------------------------------------------------------------------------------------------+
-| ``` markdown                                                 | ![Rose](rose.jpg){fig-alt="A rose with dew drops."}                                                    |
-| ![Rose](rose.jpg){fig-alt="A rose with dew drops."}          |                                                                                                        |
-| ```                                                          |                                                                                                        |
-+--------------------------------------------------------------+--------------------------------------------------------------------------------------------------------+
++----------------------------------------+--------------------------------------+
+| Markdown syntax                        | Output                               |
++========================================+======================================+
+| ``` markdown                           | [SARA](https://saraedu.netlify.app/) |
+| [SARA](https://saraedu.netlify.app/)   |                                      |
+| ```                                    |                                      |
++----------------------------------------+--------------------------------------+
 
-## Lists {.scrollable} 
+## Add Images {.scrollable}
+
+> If image is saved in your computer, <br>`![](add image path here)`
+
+. . .
+
+<br>
+
++-------------------------+-----------------------+
+| Markdown Syntax         | Output                |
++=========================+=======================+
+| ``` markdown            | ![](rose.jpg)         |
+| ![](rose.jpg)           |                       |
+| ```                     |                       |
++-------------------------+-----------------------+
+
+## Add Images {.scrollable}
+
+> If image is taken from the internet, <br>`![](add image link here)`
+
+. . .
+
+<br>
+
+:::: {.columns}
+
+::: {.column width="70%"}
+
+``` markdown                                                 
+![Smile everyday](https://images.unsplash.com/photo-1627130595904-ebeeb6540a93?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)
+```
+
+:::
+
+::: {.column width="30%"}
+![](https://images.unsplash.com/photo-1627130595904-ebeeb6540a93?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D){width=70%}
+:::
+
+::::
+
+## Unordered List {.scrollable} 
+
+<br>
+
+::: nonincremental
+
++-------------------------+---------------------------------+
+| Markdown Syntax         | Output                          |
++=========================+=================================+
+| ``` markdown            |                                 |
+| * Item 1                | * Item 1                        |
+| * Item 2                | * Item 2                        |
+| * Item 3                | * Item 3                        |
+| ```                     |                                 |
++-------------------------+---------------------------------+
+
+:::
+
+## Unordered List: Sub-items {.scrollable} 
 
 <br>
 
@@ -1814,17 +1885,17 @@ Quarto can produce a wide variety of output formats:
 | Markdown Syntax                   | Output                          |
 +===================================+=================================+
 | ``` markdown                      |                                 |
-| * unordered list                  | * unordered list                |
-|     + sub-item 1                  |     + sub-item 1                |
-|     + sub-item 2                  |     + sub-item 2                |
-|         - sub-sub-item 1          |         - sub-sub-item 1        |
+| * Main items                      | * Main items                    |
+|     + Sub-item 1                  |     + Sub-item 1                |
+|     + Sub-item 2                  |     + Sub-item 2                |
+|         - Sub-sub-item 1          |         - Sub-sub-item 1        |
 | ```                               |                                 |
 +-----------------------------------+---------------------------------+
 
 :::
 
 
-## Lists {.scrollable} 
+## Ordered List {.scrollable} 
 
 <br>
 
@@ -1834,14 +1905,16 @@ Quarto can produce a wide variety of output formats:
 | Markdown Syntax                   | Output                          |
 +===================================+=================================+
 | ``` markdown                      |                                 |
-| 1. ordered list                   |  1. ordered list                |
-| 1. item 2                         |  1. item 2                      |
+| 1. Eggs                           |  1. Eggs                        |
+| 1. Tea                            |  1. Tea                         |
+| 1. Fish                           |  1. Fish                        |
+| 1. Milk                           |  1. Milk                        |
 | ```                               |                                 |
 +-----------------------------------+---------------------------------+
 
 :::
 
-## Lists {.scrollable} 
+## List {.scrollable} 
 
 <br>
 
@@ -1861,7 +1934,7 @@ Quarto can produce a wide variety of output formats:
 
 :::
 
-## Lists {.scrollable} 
+## List {.scrollable} 
 
 <br>
 
@@ -1885,6 +1958,13 @@ Quarto can produce a wide variety of output formats:
 
 ## Definition {.scrollable} 
 
+```markdown
+term
+: definition
+```
+
+. . .
+
 <br>
 
 ::: nonincremental
@@ -1892,13 +1972,100 @@ Quarto can produce a wide variety of output formats:
 +-----------------------------------+---------------------------------+
 | Markdown Syntax                   | Output                          |
 +===================================+=================================+
-| ``` markdown                      |                                 |
-| term                              | term                            |
-| : definition                      | : definition                    |
+|                                   | Power                           |
+| ```markdown                       | : Power is power.               |
+| Power                             |                                 |
+| : Power is power.                 |                                 |
 | ```                               |                                 |
 +-----------------------------------+---------------------------------+
 
 :::
+
+## Equations
+
+> Use `$` delimiters for inline math.
+
+<br>
+
+. . .
+
++-------------------------------------+-----------------------------------+
+| Markdown Syntax                     | Output                            |
++=====================================+===================================+
+| ``` markdown                        |                                   |
+| It is a great equation $E = mc^{2}$ | It is a great equation $E=mc^{2}$ |
+| ```                                 |                                   |
++-------------------------------------+-----------------------------------+
+
+## Equations
+
+> Use `$$` delimiters for display math.
+
+<br>
+
+. . .
+
++---------------------------------------+-------------------------------------+
+| Markdown Syntax                       | Output                              |
++=======================================+=====================================+
+| ``` markdown                          |                                     |
+| It is a great equation $$E = mc^{2}$$ | It is a great equation $$E=mc^{2}$$ |
+| ```                                   |                                     |
++---------------------------------------+-------------------------------------+
+
+::: {.aside}
+[Learn more about [Latex](https://www.overleaf.com/learn/latex/Mathematical_expressions) math expressions]{.small}
+:::
+
+## In-line Coding
+
+> `` `r ` ``
+
+<br>
+
+. . .
+
+:::: {.columns}
+
+::: {.column width="50%"}
+### Code
+
+`` `r knitr::inline_expr("1+1")` ``
+:::
+
+::: {.column width="50%"}
+### Output
+
+`r 1 + 1`
+:::
+
+::::
+
+## Videos
+
+> You can include videos in documents using the <br>`{{{< video >}}}` short code.
+
+<br>
+
+. . .
+
+:::: {.columns}
+
+::: {.column width="70%"}
+### Code
+
+``` {.markdown shortcodes="false"}
+{{< video https://www.youtube.com/embed/wo9vZccmqwc >}}
+```
+:::
+
+::: {.column width="30%"}
+### Output
+
+{{< video https://www.youtube.com/embed/wo9vZccmqwc >}}
+:::
+
+::::
 
 ## Tables {.scrollable}
 
@@ -1922,48 +2089,243 @@ Quarto can produce a wide variety of output formats:
 |   123 | 123  | 123     |  123   |
 |     1 | 1    | 1       |   1    |
 
+#  {.inverse .center}
 
-## Equations
+![](images/data_cowboy.png)
 
-<br>
+[Know Your Data]{.r-fit-text}
 
-Use `$` delimiters for inline math. For example:
-
-+---------------------------+-------------------------+
-| Markdown Syntax           | Output                  |
-+===========================+=========================+
-| ``` markdown              |                         |
-| inline math: $E = mc^{2}$ | inline math: $E=mc^{2}$ |
-| ```                       |                         |
-+---------------------------+-------------------------+
-
-## Equations
+## {background-color=#}
 
 <br>
-
-Use `$$` delimiters for display math. For example:
-
-+---------------------------+-------------------------+
-| Markdown Syntax           | Output                  |
-+===========================+=========================+
-| ``` markdown              |                         |
-| display math:             | display math:           |
-|                           |                         |
-| $$E = mc^{2}$$            | $$E = mc^{2}$$          |
-| ```                       |                         |
-+---------------------------+-------------------------+
-
-## Videos
-
+<br>
+<br>
 <br>
 
-You can include videos in documents using the <br>`{{{< video >}}}` short code.
+> "Happy families are all alike; every unhappy family is unhappy in its own way." — Leo Tolstoy
 
-``` {.markdown shortcodes="false"}
-{{< video https://www.youtube.com/embed/wo9vZccmqwc >}}
+## Know Your Data
+
+::: panel-tabset
+### Code
+
+```{r}
+#| label: example_df
+#| eval: false
+
+example_df
 ```
 
-{{< video https://www.youtube.com/embed/wo9vZccmqwc >}}
+### Output
+
+```{r}
+#| label: example_df
+#| echo: false 
+```
+:::
+
+## Data: Variables
+
+:::: {.columns}
+
+::: {.column width="50%"}
+<br>
+```{r}
+#| label: example_df
+#| echo: false 
+```
+:::
+
+::: {.column width="50%"}
+![](images/tidy-var.png)
+:::
+
+::::
+
+## Data: Observations
+
+:::: {.columns}
+
+::: {.column width="50%"}
+<br>
+```{r}
+#| label: example_df
+#| echo: false 
+```
+:::
+
+::: {.column width="50%"}
+![](images/tidy-obs.png)
+:::
+
+::::
+
+## Data: Values
+
+:::: {.columns}
+
+::: {.column width="50%"}
+<br>
+```{r}
+#| label: example_df
+#| echo: false 
+```
+:::
+
+::: {.column width="50%"}
+![](images/tidy-value.png)
+:::
+
+::::
+
+## Numeric Value Types {.center}
+
+<br>
+
+![](images/continuous_discrete.png)
+
+## Data Summary
+
+::: panel-tabset
+### Code
+
+```{r}
+#| label: summ_df
+#| eval: false
+
+summary(example_df)
+```
+
+### Output
+
+```{r}
+#| label: summ_df
+#| echo: false 
+```
+:::
+
+
+## Data Summary
+
+::: panel-tabset
+### Code
+
+```{r}
+#| label: str_df
+#| eval: false
+
+str(example_df)
+```
+
+### Output
+
+```{r}
+#| label: str_df
+#| echo: false 
+```
+:::
+
+## Data Summary
+
+::: panel-tabset
+### Code
+
+```{r}
+#| label: glimpse_df
+#| eval: false
+
+glimpse(example_df)
+```
+
+### Output
+
+```{r}
+#| label: glimpse_df
+#| echo: false 
+```
+:::
+
+## Data Summary {.scrollable}
+
+::: panel-tabset
+### Code
+
+```{r}
+#| label: skim_df
+#| eval: false
+
+library(skimr)
+
+skim(example_df)
+```
+
+### Output
+
+```{r}
+#| label: skim_df
+#| echo: false 
+```
+:::
+
+## palmerpenguins
+
+R package name `palmerpenguins` & dataset name is `penguins` more information [here](https://allisonhorst.github.io/palmerpenguins/).
+
+<br>
+
+:::: {.columns}
+
+::: {.column width="25%"}
+![](https://allisonhorst.github.io/palmerpenguins/reference/figures/palmerpenguins.png)
+:::
+
+::: {.column width="50%"}
+![](https://allisonhorst.github.io/palmerpenguins/reference/figures/lter_penguins.png)
+:::
+
+::: {.column width="25%"}
+![](https://allisonhorst.github.io/palmerpenguins/reference/figures/culmen_depth.png)
+:::
+
+::::
+
+## Data Summary {.scrollable}
+
+::: panel-tabset
+### Code
+
+```{r}
+#| label: glimpse_peng
+#| eval: false
+
+library(palmerpenguins) #do not forget to call the pkg
+
+glimpse(penguins)
+```
+
+### Output
+
+```{r}
+#| label: glimpse_peng
+#| echo: false 
+```
+:::
+
+## `r emo::ji("brain")` YOUR TURN {.your-turn}
+
+<br>
+<br>
+
+How to summarize the `penguins` data using the `summary()`, `skim()`, & `str()` functions?
+
+```{r echo=FALSE}
+countdown(minutes = 5,
+          play_sound = TRUE,
+          top = "-5%", 
+          font_size = "2em")
+```
+
+
 
 # [DATA <br> VISUALIZATION<br>]{.r-fit-text .theme-tech}  {#sec-viz background-image="images/viz.jpg" background-size="cover"}
 
