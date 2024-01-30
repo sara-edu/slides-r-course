@@ -177,6 +177,14 @@ countdown(minutes = 5,
           font_size = "2em")
 ```
 
+## Common Mistakes
+
+-   Make sure that every `(` is matched with a `)` and every `"` is paired with another `"`.
+
+-   Console shows no results but a `+` sign that means your code is incomplete and R is waiting for you to complete the code.
+
+-   in ggplot `+` has to come at the end of the line, not the start
+
 ## "Fill" Color
 
 ::: {.panel-tabset}
@@ -626,7 +634,7 @@ ggplot(data = penguins,
 ```{r}
 #| label: fig-lbs
 #| eval: false
-#| code-line-numbers: "2,3"
+#| code-line-numbers: "4,9"
 
 ggplot(data = penguins,
        mapping = aes(x = bill_length_mm, y = bill_depth_mm)) +
@@ -699,7 +707,7 @@ library(ggthemes)
 ```{r}
 #| label: fig-theme-eco
 #| eval: false
-#| code-line-numbers: "2,3"
+#| code-line-numbers: "10"
 
 ggplot(data = penguins,
        mapping = aes(x = bill_length_mm, y = bill_depth_mm)) +
@@ -739,7 +747,7 @@ library(ggthemes)
 ```{r}
 #| label: fig-theme-solar
 #| eval: false
-#| code-line-numbers: "2,3"
+#| code-line-numbers: "10"
 
 ggplot(data = penguins,
        mapping = aes(x = bill_length_mm, y = bill_depth_mm)) +
@@ -778,7 +786,7 @@ library(ggthemes)
 ```{r}
 #| label: fig-theme-tufte
 #| eval: false
-#| code-line-numbers: "2,3"
+#| code-line-numbers: "10"
 
 ggplot(data = penguins,
        mapping = aes(x = bill_length_mm, y = bill_depth_mm)) +
@@ -818,7 +826,7 @@ library(ggthemes)
 ```{r}
 #| label: fig-theme-clean
 #| eval: false
-#| code-line-numbers: "2,3"
+#| code-line-numbers: "10"
 
 ggplot(data = penguins,
        mapping = aes(x = bill_length_mm, y = bill_depth_mm)) +
@@ -850,14 +858,14 @@ ggplot(data = penguins,
 ::: {.panel-tabset}
 ### Task
 
-- R package `ggthemes` have function to use color scheme for colorblindness. [Know more](https://rdrr.io/cran/ggthemes/man/colorblind.html)
+R package `ggthemes` have function to use color scheme for colorblindness. [Know more](https://rdrr.io/cran/ggthemes/man/colorblind.html)
 
 ### Code
 
 ```{r}
 #| label: fig-col-blind
 #| eval: false
-#| code-line-numbers: "2,3"
+#| code-line-numbers: "11"
 
 ggplot(data = penguins,
        mapping = aes(x = bill_length_mm, y = bill_depth_mm)) +
@@ -964,14 +972,14 @@ ggplot(data = penguins,
 ::: {.panel-tabset}
 ### Task
 
-- Export/save plot as pdf, jpg or png file.
+Export/save plot as pdf, jpg or png file.
 
 ### Code
 
 ```{r}
 #| label: fig-save
 #| eval: false
-#| code-line-numbers: "11"
+#| code-line-numbers: "13"
 
 ggplot(data = penguins,
        mapping = aes(x = bill_length_mm, y = bill_depth_mm)) +
@@ -996,14 +1004,6 @@ ggsave("penguins-plot.pdf")
 ```
 
 :::
-
-## Common Mistakes
-
--   Make sure that every `(` is matched with a `)` and every `"` is paired with another `"`.
-
--   Console shows no results but a `+` sign that means your code is incomplete and R is waiting for you to complete the code.
-
--   in ggplot `+` has to come at the end of the line, not the start
 
 ## {.center}
 

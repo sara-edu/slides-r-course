@@ -2102,7 +2102,14 @@ Power is power.
 <p><img data-src="images/tidy-value.png"></p>
 </div>
 </div>
-</section><section id="numeric-value-types" class="slide level2 center"><h2>Numeric Value Types</h2>
+</section><section id="columnvariabledata-types" class="slide level2"><h2>Column/Variable/Data Types</h2>
+<ul>
+<li class="fragment"><p><code>chr</code> = character, example <code>"A"</code></p></li>
+<li class="fragment"><p><code>int</code> = integer, example <code>1L</code></p></li>
+<li class="fragment"><p><code>dbl</code> = double, example <code>1.5</code></p></li>
+<li class="fragment"><p><code>lgl</code> = logical, example <code>TRUE</code></p></li>
+<li class="fragment"><p><code>fct</code> = factor, example <code>factor("A")</code></p></li>
+</ul></section><section id="numeric-value-types" class="slide level2 center"><h2>Numeric Value Types</h2>
 <p><br></p>
 
 <img data-src="images/continuous_discrete.png" class="r-stretch"></section><section id="data-summary" class="slide level2"><h2>Data Summary</h2>
@@ -2419,7 +2426,7 @@ $ year              &lt;int&gt; 2007, 2007, 2007, 2007, 2007, 2007, 2007, 2007, 
 <p>How to summarize the <code>penguins</code> data using the <code><a href="https://rdrr.io/r/base/summary.html">summary()</a></code>, <code><a href="https://docs.ropensci.org/skimr/reference/skim.html">skim()</a></code>, &amp; <code><a href="https://rdrr.io/r/utils/str.html">str()</a></code> functions?</p>
 <div class="cell">
 <div class="cell-output-display">
-<div class="countdown" id="timer_46cce036" data-update-every="1" data-play-sound="true" tabindex="0" style="top:-5%;right:0;font-size:2em;">
+<div class="countdown" id="timer_452cda9f" data-update-every="1" data-play-sound="true" tabindex="0" style="top:-5%;right:0;font-size:2em;">
 <div class="countdown-controls">
 <button class="countdown-bump-down">−</button><button class="countdown-bump-up">&amp;plus;</button>
 </div>
@@ -2583,7 +2590,7 @@ Figure&nbsp;3
 </div>
 <div class="cell">
 <div class="cell-output-display">
-<div class="countdown" id="timer_69c39802" data-update-every="1" data-play-sound="true" tabindex="0" style="top:-5%;right:0;font-size:2em;">
+<div class="countdown" id="timer_083c406f" data-update-every="1" data-play-sound="true" tabindex="0" style="top:-5%;right:0;font-size:2em;">
 <div class="countdown-controls">
 <button class="countdown-bump-down">−</button><button class="countdown-bump-up">&amp;plus;</button>
 </div>
@@ -2591,7 +2598,12 @@ Figure&nbsp;3
 </div>
 </div>
 </div>
-</section><section id="fill-color" class="slide level2"><h2>“Fill” Color</h2>
+</section><section id="common-mistakes" class="slide level2"><h2>Common Mistakes</h2>
+<ul>
+<li class="fragment"><p>Make sure that every <code>(</code> is matched with a <code>)</code> and every <code>"</code> is paired with another <code>"</code>.</p></li>
+<li class="fragment"><p>Console shows no results but a <code>+</code> sign that means your code is incomplete and R is waiting for you to complete the code.</p></li>
+<li class="fragment"><p>in ggplot <code>+</code> has to come at the end of the line, not the start</p></li>
+</ul></section><section id="fill-color" class="slide level2"><h2>“Fill” Color</h2>
 <div class="panel-tabset">
 <ul id="tabset-25" class="panel-tabset-tabby">
 <li><a data-tabby-default="" href="#tabset-25-1">Task</a></li>
@@ -2720,7 +2732,7 @@ Figure&nbsp;6
 </div>
 <div class="cell">
 <div class="cell-output-display">
-<div class="countdown" id="timer_1e02369a" data-update-every="1" data-play-sound="true" tabindex="0" style="top:-5%;right:0;font-size:2em;">
+<div class="countdown" id="timer_58f5a413" data-update-every="1" data-play-sound="true" tabindex="0" style="top:-5%;right:0;font-size:2em;">
 <div class="countdown-controls">
 <button class="countdown-bump-down">−</button><button class="countdown-bump-up">&amp;plus;</button>
 </div>
@@ -2807,7 +2819,7 @@ Figure&nbsp;7
 </div>
 <div class="cell">
 <div class="cell-output-display">
-<div class="countdown" id="timer_37a7738c" data-update-every="1" data-play-sound="true" tabindex="0" style="top:-5%;right:0;font-size:2em;">
+<div class="countdown" id="timer_fdbf54f6" data-update-every="1" data-play-sound="true" tabindex="0" style="top:-5%;right:0;font-size:2em;">
 <div class="countdown-controls">
 <button class="countdown-bump-down">−</button><button class="countdown-bump-up">&amp;plus;</button>
 </div>
@@ -2951,7 +2963,7 @@ Figure&nbsp;10
 </div>
 <div class="cell">
 <div class="cell-output-display">
-<div class="countdown" id="timer_9fd3cc6c" data-update-every="1" tabindex="0" style="top:0;right:0;font-size:2em;">
+<div class="countdown" id="timer_9c3eb73e" data-update-every="1" tabindex="0" style="top:0;right:0;font-size:2em;">
 <div class="countdown-controls">
 <button class="countdown-bump-down">−</button><button class="countdown-bump-up">&amp;plus;</button>
 </div>
@@ -3113,7 +3125,7 @@ Figure&nbsp;14
 </div>
 <div id="tabset-39-2">
 <div class="cell">
-<div class="sourceCode cell-code" id="cb92" data-code-line-numbers="2,3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb92-1"><a href="#cb92-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> penguins,</span>
+<div class="sourceCode cell-code" id="cb92" data-code-line-numbers="4,9"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb92-1"><a href="#cb92-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> penguins,</span>
 <span id="cb92-2"><a href="#cb92-2"></a>       <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> bill_length_mm, <span class="at">y =</span> bill_depth_mm)) <span class="sc">+</span></span>
 <span id="cb92-3"><a href="#cb92-3"></a>  <span class="fu">geom_point</span>(<span class="fu">aes</span>(<span class="at">color =</span> species)) <span class="sc">+</span></span>
 <span id="cb92-4"><a href="#cb92-4"></a>  <span class="fu">labs</span>(</span>
@@ -3196,7 +3208,7 @@ Figure&nbsp;16
 </div>
 <div id="tabset-41-2">
 <div class="cell">
-<div class="sourceCode cell-code" id="cb95" data-code-line-numbers="2,3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb95-1"><a href="#cb95-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> penguins,</span>
+<div class="sourceCode cell-code" id="cb95" data-code-line-numbers="10"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb95-1"><a href="#cb95-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> penguins,</span>
 <span id="cb95-2"><a href="#cb95-2"></a>       <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> bill_length_mm, <span class="at">y =</span> bill_depth_mm)) <span class="sc">+</span></span>
 <span id="cb95-3"><a href="#cb95-3"></a>  <span class="fu">geom_point</span>(<span class="fu">aes</span>(<span class="at">color =</span> species, <span class="at">shape =</span> species)) <span class="sc">+</span></span>
 <span id="cb95-4"><a href="#cb95-4"></a>  <span class="fu">labs</span>(</span>
@@ -3240,7 +3252,7 @@ Figure&nbsp;17
 </div>
 <div id="tabset-42-2">
 <div class="cell">
-<div class="sourceCode cell-code" id="cb97" data-code-line-numbers="2,3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb97-1"><a href="#cb97-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> penguins,</span>
+<div class="sourceCode cell-code" id="cb97" data-code-line-numbers="10"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb97-1"><a href="#cb97-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> penguins,</span>
 <span id="cb97-2"><a href="#cb97-2"></a>       <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> bill_length_mm, <span class="at">y =</span> bill_depth_mm)) <span class="sc">+</span></span>
 <span id="cb97-3"><a href="#cb97-3"></a>  <span class="fu">geom_point</span>(<span class="fu">aes</span>(<span class="at">color =</span> species, <span class="at">shape =</span> species)) <span class="sc">+</span></span>
 <span id="cb97-4"><a href="#cb97-4"></a>  <span class="fu">labs</span>(</span>
@@ -3284,7 +3296,7 @@ Figure&nbsp;18
 </div>
 <div id="tabset-43-2">
 <div class="cell">
-<div class="sourceCode cell-code" id="cb99" data-code-line-numbers="2,3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb99-1"><a href="#cb99-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> penguins,</span>
+<div class="sourceCode cell-code" id="cb99" data-code-line-numbers="10"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb99-1"><a href="#cb99-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> penguins,</span>
 <span id="cb99-2"><a href="#cb99-2"></a>       <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> bill_length_mm, <span class="at">y =</span> bill_depth_mm)) <span class="sc">+</span></span>
 <span id="cb99-3"><a href="#cb99-3"></a>  <span class="fu">geom_point</span>(<span class="fu">aes</span>(<span class="at">color =</span> species, <span class="at">shape =</span> species)) <span class="sc">+</span></span>
 <span id="cb99-4"><a href="#cb99-4"></a>  <span class="fu">labs</span>(</span>
@@ -3328,7 +3340,7 @@ Figure&nbsp;19
 </div>
 <div id="tabset-44-2">
 <div class="cell">
-<div class="sourceCode cell-code" id="cb101" data-code-line-numbers="2,3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb101-1"><a href="#cb101-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> penguins,</span>
+<div class="sourceCode cell-code" id="cb101" data-code-line-numbers="10"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb101-1"><a href="#cb101-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> penguins,</span>
 <span id="cb101-2"><a href="#cb101-2"></a>       <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> bill_length_mm, <span class="at">y =</span> bill_depth_mm)) <span class="sc">+</span></span>
 <span id="cb101-3"><a href="#cb101-3"></a>  <span class="fu">geom_point</span>(<span class="fu">aes</span>(<span class="at">color =</span> species, <span class="at">shape =</span> species)) <span class="sc">+</span></span>
 <span id="cb101-4"><a href="#cb101-4"></a>  <span class="fu">labs</span>(</span>
@@ -3367,14 +3379,11 @@ Figure&nbsp;20
 </ul>
 <div class="tab-content">
 <div id="tabset-45-1">
-<ul>
-<li class="fragment">R package <code>ggthemes</code> have function to use color scheme for colorblindness. <a href="https://rdrr.io/cran/ggthemes/man/colorblind.html">Know more</a>
-</li>
-</ul>
+<p>R package <code>ggthemes</code> have function to use color scheme for colorblindness. <a href="https://rdrr.io/cran/ggthemes/man/colorblind.html">Know more</a></p>
 </div>
 <div id="tabset-45-2">
 <div class="cell">
-<div class="sourceCode cell-code" id="cb102" data-code-line-numbers="2,3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb102-1"><a href="#cb102-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> penguins,</span>
+<div class="sourceCode cell-code" id="cb102" data-code-line-numbers="11"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb102-1"><a href="#cb102-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> penguins,</span>
 <span id="cb102-2"><a href="#cb102-2"></a>       <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> bill_length_mm, <span class="at">y =</span> bill_depth_mm)) <span class="sc">+</span></span>
 <span id="cb102-3"><a href="#cb102-3"></a>  <span class="fu">geom_point</span>(<span class="fu">aes</span>(<span class="at">color =</span> species, <span class="at">shape =</span> species)) <span class="sc">+</span></span>
 <span id="cb102-4"><a href="#cb102-4"></a>  <span class="fu">labs</span>(</span>
@@ -3512,13 +3521,11 @@ Figure&nbsp;23
 </ul>
 <div class="tab-content">
 <div id="tabset-48-1">
-<ul>
-<li class="fragment">Export/save plot as pdf, jpg or png file.</li>
-</ul>
+<p>Export/save plot as pdf, jpg or png file.</p>
 </div>
 <div id="tabset-48-2">
 <div class="cell">
-<div class="sourceCode cell-code" id="cb108" data-code-line-numbers="11"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb108-1"><a href="#cb108-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> penguins,</span>
+<div class="sourceCode cell-code" id="cb108" data-code-line-numbers="13"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb108-1"><a href="#cb108-1"></a><span class="fu">ggplot</span>(<span class="at">data =</span> penguins,</span>
 <span id="cb108-2"><a href="#cb108-2"></a>       <span class="at">mapping =</span> <span class="fu">aes</span>(<span class="at">x =</span> bill_length_mm, <span class="at">y =</span> bill_depth_mm)) <span class="sc">+</span></span>
 <span id="cb108-3"><a href="#cb108-3"></a>  <span class="fu">geom_point</span>(<span class="fu">aes</span>(<span class="at">color =</span> species, <span class="at">shape =</span> species)) <span class="sc">+</span></span>
 <span id="cb108-4"><a href="#cb108-4"></a>  <span class="fu">labs</span>(</span>
@@ -3549,12 +3556,7 @@ Figure&nbsp;24
 </div>
 </div>
 </div>
-</section><section id="common-mistakes" class="slide level2"><h2>Common Mistakes</h2>
-<ul>
-<li class="fragment"><p>Make sure that every <code>(</code> is matched with a <code>)</code> and every <code>"</code> is paired with another <code>"</code>.</p></li>
-<li class="fragment"><p>Console shows no results but a <code>+</code> sign that means your code is incomplete and R is waiting for you to complete the code.</p></li>
-<li class="fragment"><p>in ggplot <code>+</code> has to come at the end of the line, not the start</p></li>
-</ul></section><section id="section-30" class="slide level2 center"><h2></h2>
+</section><section id="section-30" class="slide level2 center"><h2></h2>
 <p><span class="r-fit-text">🧑🏽‍💻👨🏽‍💻<br>Question &amp; Answer</span></p>
 </section></section><section><section id="sec-wrangle" class="title-slide slide level1 center" data-background-image="https://images.unsplash.com/photo-1586864143550-e78342051c9c?q=80&amp;w=2070&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" data-background-size="cover"><h1></h1>
 <div class="columns">
@@ -3603,7 +3605,7 @@ Figure&nbsp;24
       // Full list of configuration options available at:
       // https://revealjs.com/config/
       Reveal.initialize({
-'controlsAuto': true,
+'controlsAuto': false,
 'previewLinksAuto': false,
 'pdfSeparateFragments': false,
 'autoAnimateEasing': "ease",
@@ -3613,7 +3615,7 @@ Figure&nbsp;24
 'smaller': false,
  
         // Display controls in the bottom right corner
-        controls: false,
+        controls: true,
 
         // Help the user learn the controls by providing hints, for example by
         // bouncing the down arrow when they first encounter a vertical slide

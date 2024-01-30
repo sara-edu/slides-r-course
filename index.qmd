@@ -13,7 +13,7 @@ format:
     transition: convex
     background-transition: convex
     progress: true
-    #controls: true
+    controls: true
     touch: true
     menu: true
 code-copy: hover
@@ -2178,6 +2178,18 @@ example_df
 
 ::::
 
+## Column/Variable/Data Types
+
+- `chr` = character, example `"A"`
+
+- `int` = integer, example `1L`
+
+- `dbl` = double, example `1.5` 
+
+- `lgl` = logical, example `TRUE`
+
+- `fct` = factor, example `factor("A")`
+
 ## Numeric Value Types {.center}
 
 <br>
@@ -2203,7 +2215,6 @@ summary(example_df)
 #| echo: false 
 ```
 :::
-
 
 ## Data Summary
 
