@@ -2375,6 +2375,8 @@ countdown(minutes = 5,
 [Background Image By [Matt Smart](https://unsplash.com/@imattsmart)]{.small}
 :::
 
+{{< include wrangle.qmd >}}
+
 ## References {.scrollable .small}
 
 ::: {.nonincremental}

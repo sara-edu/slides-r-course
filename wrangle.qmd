@@ -9,251 +9,750 @@ knitr:
     fig.retina: 3
 ---
 
-#  {.inverse background-image=images/logo-ggplot.png background-size=contain}
+## Data Wrangling
 
-## {background-color=#}
+- "data exploration and data manipulation" by [Jesse Mostipak](https://www.kaggle.com/jessemostipak/dive-into-dplyr-tutorial-1)
 
-<br>
-<br>
-<br>
-<br>
+- "tidying and transforming" by [Hadley & Garrett](https://r4ds.had.co.nz/index.html)
 
-> “The simple graph has brought more information to the data analyst’s mind than any other device.” — John Tukey
+## Transforming Data
 
-```{r}
-#| label: packages-used2
-#| echo: false
-#| warning: false
-#| message: false
+- "narrowing in on observations of interest ...
 
-#library(palmerpenguins)
-library(emoji)
-library(countdown)
-```
+- creating new variables that are functions of existing variables and ...
 
-## Goal
-
-How to visualize data using R package ggplot2.
-
-<br>
-
-![](https://r4ds.hadley.nz/data-visualize_files/figure-html/unnamed-chunk-7-1.png)
-
-## {background-image=images/cake-ggplot.png background-size=contain}
+- calculating a set of summary statistics."
 
 ::: aside
-
-[Source: [Tanya Shapiro](https://twitter.com/tanya_shapiro/status/1576935152575340544/photo/1)]{.small}
-
+Source: <https://r4ds.had.co.nz/index.html>
 :::
 
-## {background-image=images/layer3d.png background-size=contain background-color=#000}
+#  {.inverse background-image=images/dplyr.svg background-size=48%}
 
-## ggplot2 Layers {.center}
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 
-![](images/layer00.png)
+[R Package dplyr]{.r-fit-text}
 
-## Import Data
+## `dplyr` Package
+
+- "dplyr is a grammar of data manipulation"
+
+- "providing a consistent set of verbs that help you solve the most common data manipulation challenges:"
+
+## `dplyr` Functions:
+
+- `filter()`
+
+- `select()` 
+  
+- `mutate()` 
+  
+- `arrange()` 
+  
+- `summarise()`
+
+::: aside
+Source: <https://dplyr.tidyverse.org/>
+:::
+
+## `filter()` Function: 
+
+> Picks cases/observations based on their values.
+
+![](images/01-filter.png)
+
+## `filter()` Function
 
 ::: {.panel-tabset}
 ### Task
 
-![](images/layer1.png){width=45%}
+> How to have a data of only Gentoo penguins?
+
+![](https://allisonhorst.github.io/palmerpenguins/reference/figures/lter_penguins.png){width=50%}
 
 ### Code
 
 ```{r}
-#| label: fig-data
+#| label: filter-fun
 #| eval: false
 
 library(tidyverse)
 library(palmerpenguins)
+library(countdown)
 
-ggplot(data = penguins)
+penguins |> 
+  filter(species == "Gentoo")
 ```
 
 ### Output
 
 ```{r }
-#| label: fig-data
+#| label: filter-fun
 #| echo: false
 ```
 
 :::
 
-## Map Variables Aesthetics
+## Wait! What the f* is `|>` 
+
+- This is called native **pipe** operator
+
+- `|>` let you "pipe" an object forward to a function or call expression
+
+- allowing you to express a sequence of operations that transform an object.
+
+- ctrl + shift + m = `|>`
+
+
+::: aside
+Read more about pipes [here](https://www.tidyverse.org/blog/2023/04/base-vs-magrittr-pipe/)
+:::
+
+## `filter()` Function
 
 ::: {.panel-tabset}
 ### Task
 
-![](images/layer2.png){width=45%}
+> How to have a data of penguins of bill length more than 43 mm?
+
+![](https://allisonhorst.github.io/palmerpenguins/reference/figures/culmen_depth.png){width=50%}
 
 ### Code
 
 ```{r}
-#| label: fig-var
+#| label: filter-fun2
+#| eval: false
+
+penguins |> 
+  filter(bill_length_mm > 43)
+```
+
+### Output
+
+```{r }
+#| label: filter-fun2
+#| echo: false
+```
+
+:::
+
+## `r emo::ji("brain")` YOUR TURN {.your-turn}
+
+::: {.panel-tabset}
+### Task
+
+1. How to have a data of only Adele penguins?
+
+1. How to have a data of penguins of bill depth more than 10 mm?
+
+### Answer
+
+```{r}
+#| label: your-turn6
+#| eval: false
+#| echo: true
+
+# question number 1
+penguins |> 
+  filter(species == "Adelie")
+
+# question number 2
+penguins |> 
+  filter(bill_depth_mm > 10)
+```
+
+### Output
+
+```{r}
+#| label: your-turn6
+#| echo: false
+
+```
+
+:::
+
+```{r echo=FALSE}
+countdown(minutes = 10,
+          play_sound = TRUE,
+          top = "-5%", 
+          font_size = "2em")
+```
+
+## `filter()` Function
+
+::: {.panel-tabset}
+### Task
+
+> How to have a data of Gentoo penguins of bill length more than 50 mm?
+
+### Code
+
+```{r}
+#| label: filter-fun3
+#| eval: false
+
+penguins |> 
+  filter(species == "Gentoo",
+         bill_length_mm > 50)
+```
+
+### Output
+
+```{r }
+#| label: filter-fun3
+#| echo: false
+```
+
+:::
+
+## `filter()` Function
+
+::: {.panel-tabset}
+### Task
+
+> How to have a data of non-Gentoo penguins of bill length more than 50 mm and weight more than 4 kg?
+
+### Code
+
+```{r}
+#| label: filter-fun4
+#| eval: false
+
+penguins |> 
+  filter(species != "Gentoo",
+         bill_length_mm > 50,
+         body_mass_g > 4000)
+```
+
+### Output
+
+```{r }
+#| label: filter-fun4
+#| echo: false
+```
+
+:::
+
+## `r emo::ji("brain")` YOUR TURN {.your-turn}
+
+::: {.panel-tabset}
+### Task
+
+How to have a data of penguins only from the Dream island which have bill depth more than 7 mm and weight more than 3 kg?
+
+### Answer
+
+```{r}
+#| label: your-turn7
+#| eval: false
+#| echo: true
+
+penguins |> 
+  filter(island == "Dream",
+         bill_depth_mm > 7,
+         body_mass_g > 3000)
+```
+
+### Output
+
+```{r}
+#| label: your-turn7
+#| echo: false
+
+```
+
+:::
+
+```{r echo=FALSE}
+countdown(minutes = 7,
+          play_sound = TRUE,
+          top = "-5%", 
+          font_size = "2em")
+```
+
+## `select()` Function:
+
+> Picks variables/columns based on their names.
+
+![](images/03-select.png)
+
+## `select()` Function
+
+::: {.panel-tabset}
+### Task
+
+> How to keep only species variable in the data?
+
+### Code
+
+```{r}
+#| label: select-fun1
+#| eval: false
+
+penguins |> 
+  select(species)
+```
+
+### Output
+
+```{r }
+#| label: select-fun1
+#| echo: false
+```
+
+:::
+
+## `select()` Function
+
+::: {.panel-tabset}
+### Task
+
+> How to keep only bill related variables in the data?
+
+### Code
+
+```{r}
+#| label: select-fun2
+#| eval: false
+
+penguins |> 
+  select(bill_length_mm, bill_depth_mm)
+```
+
+### Output
+
+```{r }
+#| label: select-fun2
+#| echo: false
+```
+
+:::
+
+## `r emo::ji("brain")` YOUR TURN {.your-turn}
+
+::: {.panel-tabset}
+### Task
+
+How to have a data of variables sex, year, island and flipper length?
+
+### Answer
+
+```{r}
+#| label: your-turn8
+#| eval: false
+#| echo: true
+
+penguins |> 
+  select(sex, year, island, flipper_length_mm)
+```
+
+### Output
+
+```{r}
+#| label: your-turn8
+#| echo: false
+
+```
+
+:::
+
+```{r echo=FALSE}
+countdown(minutes = 5,
+          play_sound = TRUE,
+          top = "-5%", 
+          font_size = "2em")
+```
+
+## `r emo::ji("bulb")` Tips for variable selection
+
+(@) Use `names()` function to see the exact names and the order of the variables.
+
+(@) Use `:` operator to select the range of variables.
+
+```{r}
+#| echo: true
+#| results: hide
+
+penguins |> 
+  select(island : flipper_length_mm)
+```
+
+
+(@) Use location value of the variable. 
+
+```{r}
+#| echo: true
+#| results: hide
+
+penguins |> 
+  select(3 : 7)
+```
+
+(@) Use `-` operator to not to select the range of variables.
+
+```{r}
+#| echo: true
+# results: hide
+
+penguins |> 
+  select(-c(island : flipper_length_mm))
+```
+
+## `r emo::ji("brain")` YOUR TURN {.your-turn}
+
+::: {.panel-tabset}
+### Task
+
+How to have a data of variables from location first to fifth but without the variable island?
+
+### Answer
+
+```{r}
+#| label: your-turn9
+#| eval: false
+#| echo: true
+
+penguins |> 
+  select(c(1, 3:5))
+```
+
+### Output
+
+```{r}
+#| label: your-turn9
+#| echo: false
+
+```
+
+:::
+
+```{r echo=FALSE}
+countdown(minutes = 5,
+          play_sound = TRUE,
+          top = "-5%", 
+          font_size = "2em")
+```
+
+## `mutate()` Function:
+
+> Adds new variables that are functions of existing variables.
+
+![](images/04-mutate.png)
+
+## `mutate()` Function
+
+::: {.panel-tabset}
+### Task
+
+> How to convert body mass of penguins from grams to kilograms?
+
+### Code
+
+```{r}
+#| label: mutate-fun1
+#| eval: false
+
+penguins |> 
+  select(body_mass_g) |> 
+  mutate(body_mass_kg = body_mass_g / 1000)
+```
+
+### Output
+
+```{r }
+#| label: mutate-fun1
+#| echo: false
+```
+
+:::
+
+## `mutate()` Function
+
+::: {.panel-tabset}
+### Task
+
+> How to measure the penguin's bill size using length and depth?
+
+### Code
+
+```{r}
+#| label: mutate-fun2
+#| eval: false
+
+penguins |> 
+  mutate(bill_size = bill_length_mm * bill_depth_mm) |> 
+  select(bill_size)
+```
+
+### Output
+
+```{r }
+#| label: mutate-fun2
+#| echo: false
+```
+
+:::
+
+## `r emo::ji("brain")` YOUR TURN {.your-turn}
+
+::: {.panel-tabset}
+### Task
+
+How to convert the bill dimensions from mm to cm?
+
+### Answer
+
+```{r}
+#| label: your-turn10
+#| eval: false
+#| echo: true
+
+penguins |> 
+  select(bill_length_mm, bill_depth_mm) |> 
+  mutate(bill_length_cm = bill_length_mm / 10, bill_depth_mm / 10)
+```
+
+### Output
+
+```{r}
+#| label: your-turn10
+#| echo: false
+
+```
+
+:::
+
+```{r echo=FALSE}
+countdown(minutes = 5,
+          play_sound = TRUE,
+          top = "-5%", 
+          font_size = "2em")
+```
+
+## `arrange()` Function:
+
+> Changes the ordering of the rows.
+
+![](images/02-arrange.png)
+
+## `arrange()` Function
+
+::: {.panel-tabset}
+### Task
+
+> How to arrange data as per the bill length of the penguins?
+
+### Code
+
+```{r}
+#| label: arrange-fun1
+#| eval: false
+
+penguins |> 
+  arrange(bill_length_mm) #default is ascending order
+```
+
+### Output
+
+```{r }
+#| label: arrange-fun1
+#| echo: false
+```
+
+:::
+
+## `arrange()` Function
+
+::: {.panel-tabset}
+### Task
+
+> How to see five penguins of the least bill length?
+
+### Code
+
+```{r}
+#| label: arrange-fun2
+#| eval: false
+#| code-line-numbers: "3"
+
+penguins |> 
+  arrange(bill_length_mm) |> 
+  head(5) 
+
+#tail function to see the bottom of the data
+```
+
+### Output
+
+```{r }
+#| label: arrange-fun2
+#| echo: false
+```
+
+:::
+
+## `r emo::ji("brain")` YOUR TURN {.your-turn}
+
+::: {.panel-tabset}
+### Task
+
+> How to see five penguins of the highest bill length?
+
+### Answer
+
+```{r}
+#| label: your-turn11
+#| eval: false
+#| echo: true
+
+penguins |> 
+  arrange(bill_length_mm) |> 
+  tail(5)
+```
+
+### Output
+
+```{r}
+#| label: your-turn11
+#| echo: false
+
+```
+
+:::
+
+```{r echo=FALSE}
+countdown(minutes = 5,
+          play_sound = TRUE,
+          top = "-5%", 
+          font_size = "2em")
+```
+
+## `summarise()` Function:
+
+> Reduces multiple values down to a single summary.
+
+![](images/05-summarise.png)
+
+## `summarise()` Function
+
+::: {.panel-tabset}
+### Task
+
+> What is the mean bill length of penguins?
+
+### Code
+
+```{r}
+#| label: summarise-fun1
+#| eval: false
+#| code-line-numbers: "3"
+
+penguins |> 
+  summarise(mean(bill_length_mm))
+```
+
+### Output
+
+```{r }
+#| label: summarise-fun1
+#| echo: false
+```
+
+:::
+
+## `summarise()` Function
+
+::: {.panel-tabset}
+### Task
+
+> What is the mean bill length of penguins after removing the missing values?
+
+### Code
+
+```{r}
+#| label: summarise-fun2
 #| eval: false
 #| code-line-numbers: "2"
 
-ggplot(data = penguins,
-       mapping = aes(x = species))
+penguins |>
+  drop_na() |> 
+  summarise(mean(bill_length_mm))
 ```
 
 ### Output
 
 ```{r }
-#| label: fig-var
+#| label: summarise-fun2
 #| echo: false
 ```
 
 :::
 
-## Add Geometric Shapes
+## `summarise()` Function
 
 ::: {.panel-tabset}
 ### Task
 
-![](images/layer3.png){width=45%}
+> What is the species wise mean bill length of penguins?
 
 ### Code
 
 ```{r}
-#| label: fig-geoms
+#| label: summarise-fun3
 #| eval: false
 #| code-line-numbers: "3"
 
-ggplot(data = penguins,
-       mapping = aes(x = species)) +
-  geom_bar()
+penguins |>
+  drop_na() |> 
+  group_by(species) |> 
+  summarise(mean(bill_length_mm))
 ```
 
 ### Output
 
 ```{r }
-#| label: fig-geoms
+#| label: summarise-fun3
 #| echo: false
 ```
 
 :::
 
-## Key Components are:
-
-<br>
-
-1. [data]{.rainbow-orange},
-
-1. A set of [aesthetic mappings]{.rainbow-orange} between variables in the data and visual properties, and
-
-1. At least one layer which describes how to render each observation. Layers are usually created with a [geom]{.rainbow-orange} function.
-
-## `r emo::ji("brain")` YOUR TURN {.your-turn}
+## `summarise()` Function
 
 ::: {.panel-tabset}
 ### Task
 
-```{r }
-#| label: your-turn1
-#| echo: false
-```
-
-### Answer
-
-```{r}
-#| label: your-turn1
-#| eval: false
-#| echo: true
-
-ggplot(data = penguins,
-       mapping = aes(x = island)) +
-  geom_bar()
-```
-
-:::
-
-```{r echo=FALSE}
-countdown(minutes = 5, top = 0, font_size = "2em")
-```
-
-## "Fill" Color
-
-::: {.panel-tabset}
-### Task
-
-![](images/layer3.png){width=45%}
+> What is the species wise mean bill length of penguins and total number of penguins in each specie?
 
 ### Code
 
 ```{r}
-#| label: fig-fill-colr
+#| label: summarise-fun4
 #| eval: false
 #| code-line-numbers: "3"
 
-ggplot(data = penguins,
-       mapping = aes(x = species)) +
-  geom_bar(fill = "blue")
+penguins |>
+  drop_na() |> 
+  group_by(species) |> 
+  summarise(mean(bill_length_mm),
+            n = n())
+
+# n() function to know the number of observations in the current group
 ```
 
 ### Output
 
 ```{r }
-#| label: fig-fill-colr
-#| echo: false
-```
-
-:::
-
-## "Fill" Colors
-
-::: {.panel-tabset}
-### Task
-
-![](images/layer3.png){width=45%}
-
-### Code
-
-```{r}
-#| label: fig-colrs
-#| eval: false
-#| code-line-numbers: "3"
-
-ggplot(data = penguins,
-       mapping = aes(x = species)) +
-  geom_bar(fill = c("blue", "green", "yellow"))
-```
-
-### Output
-
-```{r }
-#| label: fig-colrs
-#| echo: false
-```
-
-:::
-
-## "Fill" & "Color" Colors
-
-::: {.panel-tabset}
-### Task
-
-![](images/layer3.png){width=45%}
-
-### Code
-
-```{r}
-#| label: fig-color-colr
-#| eval: false
-#| code-line-numbers: "4"
-
-ggplot(data = penguins,
-       mapping = aes(x = species)) +
-  geom_bar(fill = c("blue", "green", "yellow"),
-           color = "black")
-```
-
-### Output
-
-```{r }
-#| label: fig-color-colr
+#| label: summarise-fun4
 #| echo: false
 ```
 
@@ -264,736 +763,57 @@ ggplot(data = penguins,
 ::: {.panel-tabset}
 ### Task
 
-```{r }
-#| label: your-turn2
-#| echo: false
-```
+Who are of more weight male or female penguins?
 
 ### Answer
 
 ```{r}
-#| label: your-turn2
+#| label: your-turn12
 #| eval: false
 #| echo: true
 
-ggplot(data = penguins,
-       mapping = aes(x = island)) +
-  geom_bar(fill = c("red", "yellow", "darkgreen"),
-           color = "black")
+penguins |>
+  drop_na() |> 
+  group_by(sex) |> 
+  summarise(mean(body_mass_g),
+            n = n())
+```
+
+### Output
+
+```{r}
+#| label: your-turn12
+#| echo: false
+
 ```
 
 :::
 
 ```{r echo=FALSE}
-countdown(minutes = 5, top = 0, font_size = "2em")
-```
-
-## Know Your Data
-
-<br>
-
-```{r}
-glimpse(penguins)
-```
-
-## Plot A Continuous Variable
-
-::: {.panel-tabset}
-### Task
-
-![](images/layer3.png){width=45%}
-
-### Code
-
-```{r}
-#| label: fig-cont-var
-#| eval: false
-#| code-line-numbers: "2,3"
-
-ggplot(data = penguins,
-       mapping = aes(x = bill_length_mm)) +
-  geom_histogram()
-```
-
-### Output
-
-```{r }
-#| label: fig-cont-var
-#| echo: false
-```
-
-:::
-
-## `r emo::ji("brain")` YOUR TURN {.your-turn}
-
-::: {.panel-tabset}
-### Task
-
-```{r }
-#| label: your-turn3
-#| echo: false
-```
-
-### Answer
-
-```{r}
-#| label: your-turn3
-#| eval: false
-#| echo: true
-
-ggplot(data = penguins,
-       mapping = aes(x = bill_length_mm)) +
-  geom_histogram(fill = "darkblue",
-                 color = "white")
-```
-
-:::
-
-```{r echo=FALSE}
-countdown(minutes = 5, top = 0, font_size = "2em")
-```
-
-## Two Continuous Variables
-
-::: {.panel-tabset}
-### Task
-
-![](images/layer3.png){width=45%}
-
-### Code
-
-```{r}
-#| label: fig-cont-vars
-#| eval: false
-#| code-line-numbers: "2,3"
-
-ggplot(data = penguins,
-       mapping = aes(x = bill_length_mm, y = bill_depth_mm)) +
-  geom_point()
-```
-
-### Output
-
-```{r }
-#| label: fig-cont-vars
-#| echo: false
-```
-
-:::
-
-## Geom Size
-
-::: {.panel-tabset}
-### Task
-
-```{r echo=FALSE}
-sizes <- expand.grid(size = (0:3) * 2, stroke = (0:3) * 2)
-ggplot(sizes, aes(size, stroke, size = size, stroke = stroke)) + 
-  geom_abline(slope = -1, intercept = 6, colour = "white", linewidth = 6) + 
-  geom_point(shape = 21, fill = "red") +
-  scale_size_identity()
-```
-
-### Code
-
-```{r}
-#| label: fig-geom-size
-#| eval: false
-#| code-line-numbers: "3"
-
-ggplot(data = penguins,
-       mapping = aes(x = bill_length_mm, y = bill_depth_mm)) +
-  geom_point(size = 5)
-```
-
-### Output
-
-```{r }
-#| label: fig-geom-size
-#| echo: false
-```
-
-:::
-
-## Geom Shape
-
-::: {.panel-tabset}
-### Task
-
-```{r echo=FALSE}
-shapes <- data.frame(
-  shape = c(0:19, 22, 21, 24, 23, 20),
-  x = 0:24 %/% 5,
-  y = -(0:24 %% 5)
-)
-ggplot(shapes, aes(x, y)) + 
-  geom_point(aes(shape = shape), size = 5, fill = "red") +
-  geom_text(aes(label = shape), hjust = 0, nudge_x = 0.15) +
-  scale_shape_identity() +
-  expand_limits(x = 4.1) +
-  theme_void()
+countdown(minutes = 5,
+          play_sound = TRUE,
+          top = "-5%", 
+          font_size = "2em")
 ```
 
 
-### Code
 
-```{r}
-#| label: fig-geom-shp
-#| eval: false
-#| code-line-numbers: "4"
 
-ggplot(data = penguins,
-       mapping = aes(x = bill_length_mm, y = bill_depth_mm)) +
-  geom_point(size = 5,
-             shape = 8)
-```
 
-### Output
 
-```{r }
-#| label: fig-geom-shp
-#| echo: false
-```
 
-:::
 
-## `r emo::ji("brain")` YOUR TURN {.your-turn}
 
-::: {.panel-tabset}
-### Task
 
-```{r }
-#| label: your-turn4
-#| echo: false
-```
 
-### Answer
 
-```{r}
-#| label: your-turn4
-#| eval: false
-#| echo: true
 
-ggplot(data = penguins,
-       mapping = aes(x = body_mass_g, y = flipper_length_mm)) +
-  geom_point(size = 2, shape = 23, color = "red", fill = "gold")
-```
 
-:::
 
-```{r echo=FALSE}
-countdown(minutes = 5, top = 0, font_size = "2em")
-```
 
-## Plot A Factor & Factor
 
-::: {.panel-tabset}
-### Task
 
-Sometimes, we want to differentiate values of a factor/category variable on the basis of another factor/category variable.
 
-### Code
 
-```{r}
-#| label: fig-fct-fct
-#| eval: false
-#| code-line-numbers: "4"
 
-ggplot(data = penguins,
-       mapping = aes(x = island)) +
-  geom_bar(aes(fill = sex))
-```
 
-### Output
-
-```{r }
-#| label: fig-fct-fct
-#| echo: false
-```
-
-:::
-
-## Plot A Factor & Continuous
-
-::: {.panel-tabset}
-### Task
-
-Sometimes, we want to differentiate values from a continuous variable on the basis of factor/category variables.
-
-### Code
-
-```{r}
-#| label: fig-fct-int
-#| eval: false
-#| code-line-numbers: "4"
-
-ggplot(data = penguins,
-       mapping = aes(x = bill_length_mm)) +
-  geom_histogram(aes(fill = sex), color = "black")
-```
-
-### Output
-
-```{r }
-#| label: fig-fct-int
-#| echo: false
-```
-
-:::
-
-## A Factor & Two Cont.
-
-::: {.panel-tabset}
-### Task
-
-![](images/layer3.png){width=45%}
-
-### Code
-
-```{r}
-#| label: fig-fct-2cont
-#| eval: false
-#| code-line-numbers: "2,3"
-
-ggplot(data = penguins,
-       mapping = aes(x = bill_length_mm, y = bill_depth_mm)) +
-  geom_point(aes(color = sex))
-```
-
-### Output
-
-```{r }
-#| label: fig-fct-2cont
-#| echo: false
-```
-
-:::
-
-## A Factor & Two Cont.
-
-::: {.panel-tabset}
-### Task
-
-![](images/layer3.png){width=45%}
-
-### Code
-
-```{r}
-#| label: fig-fct-2cont2
-#| eval: false
-#| code-line-numbers: "2,3"
-
-ggplot(data = penguins,
-       mapping = aes(x = bill_length_mm, y = bill_depth_mm)) +
-  geom_point(aes(color = species))
-```
-
-### Output
-
-```{r }
-#| label: fig-fct-2cont2
-#| echo: false
-```
-
-:::
-
-## Write Labels
-
-::: {.panel-tabset}
-### Task
-
-- Title of the plot
-
-- Subtitle of the plot with more information
-
-- Title of the x-axis
-
-- Title of the y-axis
-
-### Code
-
-```{r}
-#| label: fig-lbs
-#| eval: false
-#| code-line-numbers: "2,3"
-
-ggplot(data = penguins,
-       mapping = aes(x = bill_length_mm, y = bill_depth_mm)) +
-  geom_point(aes(color = species)) +
-  labs(
-    title = "The title of the plot",
-    subtitle = "The subtitle of the plot",
-    x = "Bill length (mm)",
-    y = "Bill depth (mm)"
-  )
-```
-
-### Output
-
-```{r }
-#| label: fig-lbs
-#| echo: false
-```
-
-:::
-
-## Different Shapes
-
-::: {.panel-tabset}
-### Task
-
-Each level of the factor/category can be shown using a different shape of different color.
-
-### Code
-
-```{r}
-#| label: fig-fct-shps
-#| eval: false
-#| code-line-numbers: "2,3"
-
-ggplot(data = penguins,
-       mapping = aes(x = bill_length_mm, y = bill_depth_mm)) +
-  geom_point(aes(color = species, shape = species)) +
-  labs(
-    title = "The title of the plot",
-    subtitle = "The subtitle of the plot",
-    x = "Bill length (mm)",
-    y = "Bill depth (mm)"
-  )
-```
-
-### Output
-
-```{r }
-#| label: fig-fct-shps
-#| echo: false
-```
-
-:::
-
-## Various Themes
-
-::: {.panel-tabset}
-### Task
-
-Source: [ggthemes](https://yutannihilation.github.io/allYourFigureAreBelongToUs/ggthemes/)
-
-```{r}
-library(ggthemes)
-```
-
-
-### Code
-
-```{r}
-#| label: fig-theme-eco
-#| eval: false
-#| code-line-numbers: "2,3"
-
-ggplot(data = penguins,
-       mapping = aes(x = bill_length_mm, y = bill_depth_mm)) +
-  geom_point(aes(color = species, shape = species)) +
-  labs(
-    title = "The title of the plot",
-    subtitle = "The subtitle of the plot",
-    x = "Bill length (mm)",
-    y = "Bill depth (mm)"
-  ) +
-  theme_economist()
-```
-
-### Output
-
-```{r }
-#| label: fig-theme-eco
-#| echo: false
-```
-
-:::
-
-## Various Themes
-
-::: {.panel-tabset}
-### Task
-
-Source: [ggthemes](https://yutannihilation.github.io/allYourFigureAreBelongToUs/ggthemes/)
-
-```{r}
-library(ggthemes)
-```
-
-
-### Code
-
-```{r}
-#| label: fig-theme-solar
-#| eval: false
-#| code-line-numbers: "2,3"
-
-ggplot(data = penguins,
-       mapping = aes(x = bill_length_mm, y = bill_depth_mm)) +
-  geom_point(aes(color = species, shape = species)) +
-  labs(
-    title = "The title of the plot",
-    subtitle = "The subtitle of the plot",
-    x = "Bill length (mm)",
-    y = "Bill depth (mm)"
-  ) +
-  theme_solarized_2()
-```
-
-### Output
-
-```{r }
-#| label: fig-theme-solar
-#| echo: false
-```
-
-:::
-
-## Various Themes
-
-::: {.panel-tabset}
-### Task
-
-Source: [ggthemes](https://yutannihilation.github.io/allYourFigureAreBelongToUs/ggthemes/)
-
-```{r}
-library(ggthemes)
-```
-
-### Code
-
-```{r}
-#| label: fig-theme-tufte
-#| eval: false
-#| code-line-numbers: "2,3"
-
-ggplot(data = penguins,
-       mapping = aes(x = bill_length_mm, y = bill_depth_mm)) +
-  geom_point(aes(color = species, shape = species)) +
-  labs(
-    title = "The title of the plot",
-    subtitle = "The subtitle of the plot",
-    x = "Bill length (mm)",
-    y = "Bill depth (mm)"
-  ) +
-  theme_tufte()
-```
-
-### Output
-
-```{r }
-#| label: fig-theme-tufte
-#| echo: false
-```
-
-:::
-
-## Various Themes
-
-::: {.panel-tabset}
-### Task
-
-Source: [ggthemes](https://yutannihilation.github.io/allYourFigureAreBelongToUs/ggthemes/)
-
-```{r}
-library(ggthemes)
-```
-
-
-### Code
-
-```{r}
-#| label: fig-theme-clean
-#| eval: false
-#| code-line-numbers: "2,3"
-
-ggplot(data = penguins,
-       mapping = aes(x = bill_length_mm, y = bill_depth_mm)) +
-  geom_point(aes(color = species, shape = species)) +
-  labs(
-    title = "The title of the plot",
-    subtitle = "The subtitle of the plot",
-    x = "Bill length (mm)",
-    y = "Bill depth (mm)"
-  ) +
-  theme_clean()
-```
-
-### Output
-
-```{r }
-#| label: fig-theme-clean
-#| echo: false
-```
-
-:::
-
-## Color Palette {.center}
-
-![](https://r-graph-gallery.com/38-rcolorbrewers-palettes_files/figure-html/thecode-1.png)
-
-## Color Palette
-
-::: {.panel-tabset}
-### Task
-
-- R package `ggthemes` have function to use color scheme for colorblindness. [Know more](https://rdrr.io/cran/ggthemes/man/colorblind.html)
-
-### Code
-
-```{r}
-#| label: fig-col-blind
-#| eval: false
-#| code-line-numbers: "2,3"
-
-ggplot(data = penguins,
-       mapping = aes(x = bill_length_mm, y = bill_depth_mm)) +
-  geom_point(aes(color = species, shape = species)) +
-  labs(
-    title = "The title of the plot",
-    subtitle = "The subtitle of the plot",
-    x = "Bill length (mm)",
-    y = "Bill depth (mm)"
-  ) +
-  theme_clean() +
-  scale_color_colorblind()
-```
-
-### Output
-
-```{r }
-#| label: fig-col-blind
-#| echo: false
-```
-
-:::
-
-## Color Palette
-
-::: {.panel-tabset}
-### Task
-
-```{r}
-library(RColorBrewer)
-```
-
-### Code
-
-```{r}
-#| label: fig-col-palt
-#| eval: false
-#| code-line-numbers: "11"
-
-ggplot(data = penguins,
-       mapping = aes(x = bill_length_mm, y = bill_depth_mm)) +
-  geom_point(aes(color = species, shape = species)) +
-  labs(
-    title = "The title of the plot",
-    subtitle = "The subtitle of the plot",
-    x = "Bill length (mm)",
-    y = "Bill depth (mm)"
-  ) +
-  theme_clean() +
-  scale_color_brewer(palette = "Dark2")
-```
-
-### Output
-
-```{r }
-#| label: fig-col-palt
-#| echo: false
-```
-
-:::
-
-## Color Palette
-
-::: {.panel-tabset}
-### Task
-
-```{r}
-library(wesanderson)
-
-names(wes_palettes)
-```
-
-### Code
-
-```{r}
-#| label: fig-col-wes
-#| eval: false
-#| code-line-numbers: "11"
-
-ggplot(data = penguins,
-       mapping = aes(x = bill_length_mm, y = bill_depth_mm)) +
-  geom_point(aes(color = species, shape = species)) +
-  labs(
-    title = "The title of the plot",
-    subtitle = "The subtitle of the plot",
-    x = "Bill length (mm)",
-    y = "Bill depth (mm)"
-  ) +
-  theme_clean() +
-  scale_color_manual(values = wes_palette("BottleRocket2", n = 3))
-```
-
-### Output
-
-```{r }
-#| label: fig-col-wes
-#| echo: false
-```
-
-:::
-
-## Export Plot
-
-::: {.panel-tabset}
-### Task
-
-- Export/save plot as pdf, jpg or png file.
-
-### Code
-
-```{r}
-#| label: fig-save
-#| eval: false
-#| code-line-numbers: "11"
-
-ggplot(data = penguins,
-       mapping = aes(x = bill_length_mm, y = bill_depth_mm)) +
-  geom_point(aes(color = species, shape = species)) +
-  labs(
-    title = "The title of the plot",
-    subtitle = "The subtitle of the plot",
-    x = "Bill length (mm)",
-    y = "Bill depth (mm)"
-  ) +
-  theme_clean() +
-  scale_color_manual(values = wes_palette("BottleRocket2", n = 3))
-
-ggsave("penguins-plot.pdf")
-```
-
-### Output
-
-```{r }
-#| label: fig-save
-#| echo: false
-```
-
-:::
-
-## Common Mistakes
-
--   Make sure that every `(` is matched with a `)` and every `"` is paired with another `"`.
-
--   Console shows no results but a `+` sign that means your code is incomplete and R is waiting for you to complete the code.
-
--   in ggplot `+` has to come at the end of the line, not the start
-
-## {.center}
-
-[🧑🏽‍💻👨🏽‍💻<br>Question & Answer]{.r-fit-text}

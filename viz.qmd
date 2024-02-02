@@ -501,7 +501,10 @@ ggplot(data = penguins,
 :::
 
 ```{r echo=FALSE}
-countdown(minutes = 5, top = 0, font_size = "2em")
+countdown(minutes = 5,
+          play_sound = TRUE,
+          top = "-5%", 
+          font_size = "2em")
 ```
 
 ## Plot A Factor & Factor

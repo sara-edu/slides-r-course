@@ -2426,7 +2426,7 @@ $ year              &lt;int&gt; 2007, 2007, 2007, 2007, 2007, 2007, 2007, 2007, 
 <p>How to summarize the <code>penguins</code> data using the <code><a href="https://rdrr.io/r/base/summary.html">summary()</a></code>, <code><a href="https://docs.ropensci.org/skimr/reference/skim.html">skim()</a></code>, &amp; <code><a href="https://rdrr.io/r/utils/str.html">str()</a></code> functions?</p>
 <div class="cell">
 <div class="cell-output-display">
-<div class="countdown" id="timer_452cda9f" data-update-every="1" data-play-sound="true" tabindex="0" style="top:-5%;right:0;font-size:2em;">
+<div class="countdown" id="timer_e4e8d2bd" data-update-every="1" data-play-sound="true" tabindex="0" style="top:-5%;right:0;font-size:2em;">
 <div class="countdown-controls">
 <button class="countdown-bump-down">−</button><button class="countdown-bump-up">&amp;plus;</button>
 </div>
@@ -2590,7 +2590,7 @@ Figure&nbsp;3
 </div>
 <div class="cell">
 <div class="cell-output-display">
-<div class="countdown" id="timer_083c406f" data-update-every="1" data-play-sound="true" tabindex="0" style="top:-5%;right:0;font-size:2em;">
+<div class="countdown" id="timer_91381d24" data-update-every="1" data-play-sound="true" tabindex="0" style="top:-5%;right:0;font-size:2em;">
 <div class="countdown-controls">
 <button class="countdown-bump-down">−</button><button class="countdown-bump-up">&amp;plus;</button>
 </div>
@@ -2732,7 +2732,7 @@ Figure&nbsp;6
 </div>
 <div class="cell">
 <div class="cell-output-display">
-<div class="countdown" id="timer_58f5a413" data-update-every="1" data-play-sound="true" tabindex="0" style="top:-5%;right:0;font-size:2em;">
+<div class="countdown" id="timer_4f55f12d" data-update-every="1" data-play-sound="true" tabindex="0" style="top:-5%;right:0;font-size:2em;">
 <div class="countdown-controls">
 <button class="countdown-bump-down">−</button><button class="countdown-bump-up">&amp;plus;</button>
 </div>
@@ -2819,7 +2819,7 @@ Figure&nbsp;7
 </div>
 <div class="cell">
 <div class="cell-output-display">
-<div class="countdown" id="timer_fdbf54f6" data-update-every="1" data-play-sound="true" tabindex="0" style="top:-5%;right:0;font-size:2em;">
+<div class="countdown" id="timer_c424957e" data-update-every="1" data-play-sound="true" tabindex="0" style="top:-5%;right:0;font-size:2em;">
 <div class="countdown-controls">
 <button class="countdown-bump-down">−</button><button class="countdown-bump-up">&amp;plus;</button>
 </div>
@@ -2963,7 +2963,7 @@ Figure&nbsp;10
 </div>
 <div class="cell">
 <div class="cell-output-display">
-<div class="countdown" id="timer_9c3eb73e" data-update-every="1" tabindex="0" style="top:0;right:0;font-size:2em;">
+<div class="countdown" id="timer_ff02b765" data-update-every="1" data-play-sound="true" tabindex="0" style="top:-5%;right:0;font-size:2em;">
 <div class="countdown-controls">
 <button class="countdown-bump-down">−</button><button class="countdown-bump-up">&amp;plus;</button>
 </div>
@@ -3570,7 +3570,1061 @@ Figure&nbsp;24
 
 <aside><div>
 <p><span class="small">Background Image By <a href="https://unsplash.com/@imattsmart">Matt Smart</a></span></p>
-</div></aside></section><section id="references" class="slide level2 scrollable small"><h2>References</h2>
+</div></aside></section><section id="data-wrangling" class="slide level2"><h2>Data Wrangling</h2>
+<ul>
+<li class="fragment"><p>“data exploration and data manipulation” by <a href="https://www.kaggle.com/jessemostipak/dive-into-dplyr-tutorial-1">Jesse Mostipak</a></p></li>
+<li class="fragment"><p>“tidying and transforming” by <a href="https://r4ds.had.co.nz/index.html">Hadley &amp; Garrett</a></p></li>
+</ul></section><section id="transforming-data" class="slide level2"><h2>Transforming Data</h2>
+<ul>
+<li class="fragment"><p>“narrowing in on observations of interest …</p></li>
+<li class="fragment"><p>creating new variables that are functions of existing variables and …</p></li>
+<li class="fragment"><p>calculating a set of summary statistics.”</p></li>
+</ul>
+
+<aside><div>
+<p>Source: <a href="https://r4ds.had.co.nz/index.html" class="uri">https://r4ds.had.co.nz/index.html</a></p>
+</div></aside></section></section><section><section id="section-31" class="title-slide slide level1 inverse center" data-background-image="images/dplyr.svg" data-background-size="48%"><h1></h1>
+<p><br><br><br><br><br><br><br><br><br><br></p>
+<p><span class="r-fit-text">R Package dplyr</span></p>
+</section><section id="dplyr-package" class="slide level2"><h2>
+<code>dplyr</code> Package</h2>
+<ul>
+<li class="fragment"><p>“dplyr is a grammar of data manipulation”</p></li>
+<li class="fragment"><p>“providing a consistent set of verbs that help you solve the most common data manipulation challenges:”</p></li>
+</ul></section><section id="dplyr-functions" class="slide level2"><h2>
+<code>dplyr</code> Functions:</h2>
+<ul>
+<li class="fragment"><p><code><a href="https://dplyr.tidyverse.org/reference/filter.html">filter()</a></code></p></li>
+<li class="fragment"><p><code><a href="https://dplyr.tidyverse.org/reference/select.html">select()</a></code></p></li>
+<li class="fragment"><p><code><a href="https://dplyr.tidyverse.org/reference/mutate.html">mutate()</a></code></p></li>
+<li class="fragment"><p><code><a href="https://dplyr.tidyverse.org/reference/arrange.html">arrange()</a></code></p></li>
+<li class="fragment"><p><code><a href="https://dplyr.tidyverse.org/reference/summarise.html">summarise()</a></code></p></li>
+</ul>
+
+<aside><div>
+<p>Source: <a href="https://dplyr.tidyverse.org/" class="uri">https://dplyr.tidyverse.org/</a></p>
+</div></aside></section><section id="filter-function" class="slide level2"><h2>
+<code>filter()</code> Function:</h2>
+<blockquote>
+<p>Picks cases/observations based on their values.</p>
+</blockquote>
+
+<img data-src="images/01-filter.png" class="r-stretch"></section><section id="filter-function-1" class="slide level2"><h2>
+<code>filter()</code> Function</h2>
+<div class="panel-tabset">
+<ul id="tabset-49" class="panel-tabset-tabby">
+<li><a data-tabby-default="" href="#tabset-49-1">Task</a></li>
+<li><a href="#tabset-49-2">Code</a></li>
+<li><a href="#tabset-49-3">Output</a></li>
+</ul>
+<div class="tab-content">
+<div id="tabset-49-1">
+<blockquote>
+<p>How to have a data of only Gentoo penguins?</p>
+</blockquote>
+<p><img data-src="https://allisonhorst.github.io/palmerpenguins/reference/figures/lter_penguins.png" style="width:50.0%"></p>
+</div>
+<div id="tabset-49-2">
+<div class="cell">
+<div class="sourceCode" id="cb109"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://tidyverse.tidyverse.org">tidyverse</a></span><span class="op">)</span></span>
+<span><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://allisonhorst.github.io/palmerpenguins/">palmerpenguins</a></span><span class="op">)</span></span>
+<span><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://pkg.garrickadenbuie.com/countdown/">countdown</a></span><span class="op">)</span></span>
+<span></span>
+<span><span class="va">penguins</span> <span class="op">|&gt;</span> </span>
+<span>  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/filter.html">filter</a></span><span class="op">(</span><span class="va">species</span> <span class="op">==</span> <span class="st">"Gentoo"</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+<div id="tabset-49-3">
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 124 × 8
+   species island bill_length_mm bill_depth_mm flipper_length_mm body_mass_g
+   &lt;fct&gt;   &lt;fct&gt;           &lt;dbl&gt;         &lt;dbl&gt;             &lt;int&gt;       &lt;int&gt;
+ 1 Gentoo  Biscoe           46.1          13.2               211        4500
+ 2 Gentoo  Biscoe           50            16.3               230        5700
+ 3 Gentoo  Biscoe           48.7          14.1               210        4450
+ 4 Gentoo  Biscoe           50            15.2               218        5700
+ 5 Gentoo  Biscoe           47.6          14.5               215        5400
+ 6 Gentoo  Biscoe           46.5          13.5               210        4550
+ 7 Gentoo  Biscoe           45.4          14.6               211        4800
+ 8 Gentoo  Biscoe           46.7          15.3               219        5200
+ 9 Gentoo  Biscoe           43.3          13.4               209        4400
+10 Gentoo  Biscoe           46.8          15.4               215        5150
+# ℹ 114 more rows
+# ℹ 2 more variables: sex &lt;fct&gt;, year &lt;int&gt;</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section><section id="wait-what-the-f-is" class="slide level2"><h2>Wait! What the f* is <code>|&gt;</code>
+</h2>
+<ul>
+<li class="fragment"><p>This is called native <strong>pipe</strong> operator</p></li>
+<li class="fragment"><p><code>|&gt;</code> let you “pipe” an object forward to a function or call expression</p></li>
+<li class="fragment"><p>allowing you to express a sequence of operations that transform an object.</p></li>
+<li class="fragment"><p>ctrl + shift + m = <code>|&gt;</code></p></li>
+</ul>
+
+<aside><div>
+<p>Read more about pipes <a href="https://www.tidyverse.org/blog/2023/04/base-vs-magrittr-pipe/">here</a></p>
+</div></aside></section><section id="filter-function-2" class="slide level2"><h2>
+<code>filter()</code> Function</h2>
+<div class="panel-tabset">
+<ul id="tabset-50" class="panel-tabset-tabby">
+<li><a data-tabby-default="" href="#tabset-50-1">Task</a></li>
+<li><a href="#tabset-50-2">Code</a></li>
+<li><a href="#tabset-50-3">Output</a></li>
+</ul>
+<div class="tab-content">
+<div id="tabset-50-1">
+<blockquote>
+<p>How to have a data of penguins of bill length more than 43 mm?</p>
+</blockquote>
+<p><img data-src="https://allisonhorst.github.io/palmerpenguins/reference/figures/culmen_depth.png" style="width:50.0%"></p>
+</div>
+<div id="tabset-50-2">
+<div class="cell">
+<div class="sourceCode" id="cb111"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">penguins</span> <span class="op">|&gt;</span> </span>
+<span>  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/filter.html">filter</a></span><span class="op">(</span><span class="va">bill_length_mm</span> <span class="op">&gt;</span> <span class="fl">43</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+<div id="tabset-50-3">
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 188 × 8
+   species island    bill_length_mm bill_depth_mm flipper_length_mm body_mass_g
+   &lt;fct&gt;   &lt;fct&gt;              &lt;dbl&gt;         &lt;dbl&gt;             &lt;int&gt;       &lt;int&gt;
+ 1 Adelie  Torgersen           46            21.5               194        4200
+ 2 Adelie  Dream               44.1          19.7               196        4400
+ 3 Adelie  Torgersen           45.8          18.9               197        4150
+ 4 Adelie  Dream               43.2          18.5               192        4100
+ 5 Adelie  Biscoe              43.2          19                 197        4775
+ 6 Adelie  Biscoe              45.6          20.3               191        4600
+ 7 Adelie  Torgersen           44.1          18                 210        4000
+ 8 Adelie  Torgersen           43.1          19.2               197        3500
+ 9 Gentoo  Biscoe              46.1          13.2               211        4500
+10 Gentoo  Biscoe              50            16.3               230        5700
+# ℹ 178 more rows
+# ℹ 2 more variables: sex &lt;fct&gt;, year &lt;int&gt;</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section><section id="your-turn-5" class="slide level2 your-turn"><h2>🧠 YOUR TURN</h2>
+<div class="panel-tabset">
+<ul id="tabset-51" class="panel-tabset-tabby">
+<li><a data-tabby-default="" href="#tabset-51-1">Task</a></li>
+<li><a href="#tabset-51-2">Answer</a></li>
+<li><a href="#tabset-51-3">Output</a></li>
+</ul>
+<div class="tab-content">
+<div id="tabset-51-1">
+<ol type="1">
+<li class="fragment"><p>How to have a data of only Adele penguins?</p></li>
+<li class="fragment"><p>How to have a data of penguins of bill depth more than 10 mm?</p></li>
+</ol>
+</div>
+<div id="tabset-51-2">
+<div class="cell">
+<div class="sourceCode" id="cb113"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="co"># question number 1</span></span>
+<span><span class="va">penguins</span> <span class="op">|&gt;</span> </span>
+<span>  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/filter.html">filter</a></span><span class="op">(</span><span class="va">species</span> <span class="op">==</span> <span class="st">"Adelie"</span><span class="op">)</span></span>
+<span></span>
+<span><span class="co"># question number 2</span></span>
+<span><span class="va">penguins</span> <span class="op">|&gt;</span> </span>
+<span>  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/filter.html">filter</a></span><span class="op">(</span><span class="va">bill_depth_mm</span> <span class="op">&gt;</span> <span class="fl">10</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+<div id="tabset-51-3">
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 152 × 8
+   species island    bill_length_mm bill_depth_mm flipper_length_mm body_mass_g
+   &lt;fct&gt;   &lt;fct&gt;              &lt;dbl&gt;         &lt;dbl&gt;             &lt;int&gt;       &lt;int&gt;
+ 1 Adelie  Torgersen           39.1          18.7               181        3750
+ 2 Adelie  Torgersen           39.5          17.4               186        3800
+ 3 Adelie  Torgersen           40.3          18                 195        3250
+ 4 Adelie  Torgersen           NA            NA                  NA          NA
+ 5 Adelie  Torgersen           36.7          19.3               193        3450
+ 6 Adelie  Torgersen           39.3          20.6               190        3650
+ 7 Adelie  Torgersen           38.9          17.8               181        3625
+ 8 Adelie  Torgersen           39.2          19.6               195        4675
+ 9 Adelie  Torgersen           34.1          18.1               193        3475
+10 Adelie  Torgersen           42            20.2               190        4250
+# ℹ 142 more rows
+# ℹ 2 more variables: sex &lt;fct&gt;, year &lt;int&gt;</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 342 × 8
+   species island    bill_length_mm bill_depth_mm flipper_length_mm body_mass_g
+   &lt;fct&gt;   &lt;fct&gt;              &lt;dbl&gt;         &lt;dbl&gt;             &lt;int&gt;       &lt;int&gt;
+ 1 Adelie  Torgersen           39.1          18.7               181        3750
+ 2 Adelie  Torgersen           39.5          17.4               186        3800
+ 3 Adelie  Torgersen           40.3          18                 195        3250
+ 4 Adelie  Torgersen           36.7          19.3               193        3450
+ 5 Adelie  Torgersen           39.3          20.6               190        3650
+ 6 Adelie  Torgersen           38.9          17.8               181        3625
+ 7 Adelie  Torgersen           39.2          19.6               195        4675
+ 8 Adelie  Torgersen           34.1          18.1               193        3475
+ 9 Adelie  Torgersen           42            20.2               190        4250
+10 Adelie  Torgersen           37.8          17.1               186        3300
+# ℹ 332 more rows
+# ℹ 2 more variables: sex &lt;fct&gt;, year &lt;int&gt;</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="cell">
+<div class="cell-output-display">
+<div class="countdown" id="timer_16af0768" data-update-every="1" data-play-sound="true" tabindex="0" style="top:-5%;right:0;font-size:2em;">
+<div class="countdown-controls">
+<button class="countdown-bump-down">−</button><button class="countdown-bump-up">&amp;plus;</button>
+</div>
+<code class="countdown-time"><span class="countdown-digits minutes">10</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
+</div>
+</div>
+</div>
+</section><section id="filter-function-3" class="slide level2"><h2>
+<code>filter()</code> Function</h2>
+<div class="panel-tabset">
+<ul id="tabset-52" class="panel-tabset-tabby">
+<li><a data-tabby-default="" href="#tabset-52-1">Task</a></li>
+<li><a href="#tabset-52-2">Code</a></li>
+<li><a href="#tabset-52-3">Output</a></li>
+</ul>
+<div class="tab-content">
+<div id="tabset-52-1">
+<blockquote>
+<p>How to have a data of Gentoo penguins of bill length more than 50 mm?</p>
+</blockquote>
+</div>
+<div id="tabset-52-2">
+<div class="cell">
+<div class="sourceCode" id="cb116"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">penguins</span> <span class="op">|&gt;</span> </span>
+<span>  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/filter.html">filter</a></span><span class="op">(</span><span class="va">species</span> <span class="op">==</span> <span class="st">"Gentoo"</span>,</span>
+<span>         <span class="va">bill_length_mm</span> <span class="op">&gt;</span> <span class="fl">50</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+<div id="tabset-52-3">
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 22 × 8
+   species island bill_length_mm bill_depth_mm flipper_length_mm body_mass_g
+   &lt;fct&gt;   &lt;fct&gt;           &lt;dbl&gt;         &lt;dbl&gt;             &lt;int&gt;       &lt;int&gt;
+ 1 Gentoo  Biscoe           50.2          14.3               218        5700
+ 2 Gentoo  Biscoe           59.6          17                 230        6050
+ 3 Gentoo  Biscoe           50.5          15.9               222        5550
+ 4 Gentoo  Biscoe           50.5          15.9               225        5400
+ 5 Gentoo  Biscoe           50.1          15                 225        5000
+ 6 Gentoo  Biscoe           50.4          15.3               224        5550
+ 7 Gentoo  Biscoe           54.3          15.7               231        5650
+ 8 Gentoo  Biscoe           50.7          15                 223        5550
+ 9 Gentoo  Biscoe           51.1          16.3               220        6000
+10 Gentoo  Biscoe           52.5          15.6               221        5450
+# ℹ 12 more rows
+# ℹ 2 more variables: sex &lt;fct&gt;, year &lt;int&gt;</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section><section id="filter-function-4" class="slide level2"><h2>
+<code>filter()</code> Function</h2>
+<div class="panel-tabset">
+<ul id="tabset-53" class="panel-tabset-tabby">
+<li><a data-tabby-default="" href="#tabset-53-1">Task</a></li>
+<li><a href="#tabset-53-2">Code</a></li>
+<li><a href="#tabset-53-3">Output</a></li>
+</ul>
+<div class="tab-content">
+<div id="tabset-53-1">
+<blockquote>
+<p>How to have a data of non-Gentoo penguins of bill length more than 50 mm and weight more than 4 kg?</p>
+</blockquote>
+</div>
+<div id="tabset-53-2">
+<div class="cell">
+<div class="sourceCode" id="cb118"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">penguins</span> <span class="op">|&gt;</span> </span>
+<span>  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/filter.html">filter</a></span><span class="op">(</span><span class="va">species</span> <span class="op">!=</span> <span class="st">"Gentoo"</span>,</span>
+<span>         <span class="va">bill_length_mm</span> <span class="op">&gt;</span> <span class="fl">50</span>,</span>
+<span>         <span class="va">body_mass_g</span> <span class="op">&gt;</span> <span class="fl">4000</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+<div id="tabset-53-3">
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 11 × 8
+   species   island bill_length_mm bill_depth_mm flipper_length_mm body_mass_g
+   &lt;fct&gt;     &lt;fct&gt;           &lt;dbl&gt;         &lt;dbl&gt;             &lt;int&gt;       &lt;int&gt;
+ 1 Chinstrap Dream            52            18.1               201        4050
+ 2 Chinstrap Dream            50.5          19.6               201        4050
+ 3 Chinstrap Dream            52            19                 197        4150
+ 4 Chinstrap Dream            52.8          20                 205        4550
+ 5 Chinstrap Dream            54.2          20.8               201        4300
+ 6 Chinstrap Dream            51            18.8               203        4100
+ 7 Chinstrap Dream            52            20.7               210        4800
+ 8 Chinstrap Dream            53.5          19.9               205        4500
+ 9 Chinstrap Dream            50.8          18.5               201        4450
+10 Chinstrap Dream            50.7          19.7               203        4050
+11 Chinstrap Dream            50.8          19                 210        4100
+# ℹ 2 more variables: sex &lt;fct&gt;, year &lt;int&gt;</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section><section id="your-turn-6" class="slide level2 your-turn"><h2>🧠 YOUR TURN</h2>
+<div class="panel-tabset">
+<ul id="tabset-54" class="panel-tabset-tabby">
+<li><a data-tabby-default="" href="#tabset-54-1">Task</a></li>
+<li><a href="#tabset-54-2">Answer</a></li>
+<li><a href="#tabset-54-3">Output</a></li>
+</ul>
+<div class="tab-content">
+<div id="tabset-54-1">
+<p>How to have a data of penguins only from the Dream island which have bill depth more than 7 mm and weight more than 3 kg?</p>
+</div>
+<div id="tabset-54-2">
+<div class="cell">
+<div class="sourceCode" id="cb120"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">penguins</span> <span class="op">|&gt;</span> </span>
+<span>  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/filter.html">filter</a></span><span class="op">(</span><span class="va">island</span> <span class="op">==</span> <span class="st">"Dream"</span>,</span>
+<span>         <span class="va">bill_depth_mm</span> <span class="op">&gt;</span> <span class="fl">7</span>,</span>
+<span>         <span class="va">body_mass_g</span> <span class="op">&gt;</span> <span class="fl">3000</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+<div id="tabset-54-3">
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 118 × 8
+   species island bill_length_mm bill_depth_mm flipper_length_mm body_mass_g
+   &lt;fct&gt;   &lt;fct&gt;           &lt;dbl&gt;         &lt;dbl&gt;             &lt;int&gt;       &lt;int&gt;
+ 1 Adelie  Dream            39.5          16.7               178        3250
+ 2 Adelie  Dream            37.2          18.1               178        3900
+ 3 Adelie  Dream            39.5          17.8               188        3300
+ 4 Adelie  Dream            40.9          18.9               184        3900
+ 5 Adelie  Dream            36.4          17                 195        3325
+ 6 Adelie  Dream            39.2          21.1               196        4150
+ 7 Adelie  Dream            38.8          20                 190        3950
+ 8 Adelie  Dream            42.2          18.5               180        3550
+ 9 Adelie  Dream            37.6          19.3               181        3300
+10 Adelie  Dream            39.8          19.1               184        4650
+# ℹ 108 more rows
+# ℹ 2 more variables: sex &lt;fct&gt;, year &lt;int&gt;</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="cell">
+<div class="cell-output-display">
+<div class="countdown" id="timer_0cf4dc01" data-update-every="1" data-play-sound="true" tabindex="0" style="top:-5%;right:0;font-size:2em;">
+<div class="countdown-controls">
+<button class="countdown-bump-down">−</button><button class="countdown-bump-up">&amp;plus;</button>
+</div>
+<code class="countdown-time"><span class="countdown-digits minutes">07</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
+</div>
+</div>
+</div>
+</section><section id="select-function" class="slide level2"><h2>
+<code>select()</code> Function:</h2>
+<blockquote>
+<p>Picks variables/columns based on their names.</p>
+</blockquote>
+
+<img data-src="images/03-select.png" class="r-stretch"></section><section id="select-function-1" class="slide level2"><h2>
+<code>select()</code> Function</h2>
+<div class="panel-tabset">
+<ul id="tabset-55" class="panel-tabset-tabby">
+<li><a data-tabby-default="" href="#tabset-55-1">Task</a></li>
+<li><a href="#tabset-55-2">Code</a></li>
+<li><a href="#tabset-55-3">Output</a></li>
+</ul>
+<div class="tab-content">
+<div id="tabset-55-1">
+<blockquote>
+<p>How to keep only species variable in the data?</p>
+</blockquote>
+</div>
+<div id="tabset-55-2">
+<div class="cell">
+<div class="sourceCode" id="cb122"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">penguins</span> <span class="op">|&gt;</span> </span>
+<span>  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/select.html">select</a></span><span class="op">(</span><span class="va">species</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+<div id="tabset-55-3">
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 344 × 1
+   species
+   &lt;fct&gt;  
+ 1 Adelie 
+ 2 Adelie 
+ 3 Adelie 
+ 4 Adelie 
+ 5 Adelie 
+ 6 Adelie 
+ 7 Adelie 
+ 8 Adelie 
+ 9 Adelie 
+10 Adelie 
+# ℹ 334 more rows</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section><section id="select-function-2" class="slide level2"><h2>
+<code>select()</code> Function</h2>
+<div class="panel-tabset">
+<ul id="tabset-56" class="panel-tabset-tabby">
+<li><a data-tabby-default="" href="#tabset-56-1">Task</a></li>
+<li><a href="#tabset-56-2">Code</a></li>
+<li><a href="#tabset-56-3">Output</a></li>
+</ul>
+<div class="tab-content">
+<div id="tabset-56-1">
+<blockquote>
+<p>How to keep only bill related variables in the data?</p>
+</blockquote>
+</div>
+<div id="tabset-56-2">
+<div class="cell">
+<div class="sourceCode" id="cb124"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">penguins</span> <span class="op">|&gt;</span> </span>
+<span>  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/select.html">select</a></span><span class="op">(</span><span class="va">bill_length_mm</span>, <span class="va">bill_depth_mm</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+<div id="tabset-56-3">
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 344 × 2
+   bill_length_mm bill_depth_mm
+            &lt;dbl&gt;         &lt;dbl&gt;
+ 1           39.1          18.7
+ 2           39.5          17.4
+ 3           40.3          18  
+ 4           NA            NA  
+ 5           36.7          19.3
+ 6           39.3          20.6
+ 7           38.9          17.8
+ 8           39.2          19.6
+ 9           34.1          18.1
+10           42            20.2
+# ℹ 334 more rows</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section><section id="your-turn-7" class="slide level2 your-turn"><h2>🧠 YOUR TURN</h2>
+<div class="panel-tabset">
+<ul id="tabset-57" class="panel-tabset-tabby">
+<li><a data-tabby-default="" href="#tabset-57-1">Task</a></li>
+<li><a href="#tabset-57-2">Answer</a></li>
+<li><a href="#tabset-57-3">Output</a></li>
+</ul>
+<div class="tab-content">
+<div id="tabset-57-1">
+<p>How to have a data of variables sex, year, island and flipper length?</p>
+</div>
+<div id="tabset-57-2">
+<div class="cell">
+<div class="sourceCode" id="cb126"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">penguins</span> <span class="op">|&gt;</span> </span>
+<span>  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/select.html">select</a></span><span class="op">(</span><span class="va">sex</span>, <span class="va">year</span>, <span class="va">island</span>, <span class="va">flipper_length_mm</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+<div id="tabset-57-3">
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 344 × 4
+   sex     year island    flipper_length_mm
+   &lt;fct&gt;  &lt;int&gt; &lt;fct&gt;                 &lt;int&gt;
+ 1 male    2007 Torgersen               181
+ 2 female  2007 Torgersen               186
+ 3 female  2007 Torgersen               195
+ 4 &lt;NA&gt;    2007 Torgersen                NA
+ 5 female  2007 Torgersen               193
+ 6 male    2007 Torgersen               190
+ 7 female  2007 Torgersen               181
+ 8 male    2007 Torgersen               195
+ 9 &lt;NA&gt;    2007 Torgersen               193
+10 &lt;NA&gt;    2007 Torgersen               190
+# ℹ 334 more rows</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="cell">
+<div class="cell-output-display">
+<div class="countdown" id="timer_2e9de8cd" data-update-every="1" data-play-sound="true" tabindex="0" style="top:-5%;right:0;font-size:2em;">
+<div class="countdown-controls">
+<button class="countdown-bump-down">−</button><button class="countdown-bump-up">&amp;plus;</button>
+</div>
+<code class="countdown-time"><span class="countdown-digits minutes">05</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
+</div>
+</div>
+</div>
+</section><section id="tips-for-variable-selection" class="slide level2"><h2>💡 Tips for variable selection</h2>
+<ol class="example" type="1">
+<li class="fragment"><p>Use <code><a href="https://rdrr.io/r/base/names.html">names()</a></code> function to see the exact names and the order of the variables.</p></li>
+<li class="fragment"><p>Use <code>:</code> operator to select the range of variables.</p></li>
+</ol>
+<div class="cell">
+<div class="sourceCode" id="cb128"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">penguins</span> <span class="op">|&gt;</span> </span>
+<span>  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/select.html">select</a></span><span class="op">(</span><span class="va">island</span> <span class="op">:</span> <span class="va">flipper_length_mm</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<ol start="3" class="example" type="1">
+<li class="fragment">Use location value of the variable.</li>
+</ol>
+<div class="cell">
+<div class="sourceCode" id="cb129"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">penguins</span> <span class="op">|&gt;</span> </span>
+<span>  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/select.html">select</a></span><span class="op">(</span><span class="fl">3</span> <span class="op">:</span> <span class="fl">7</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<ol start="4" class="example" type="1">
+<li class="fragment">Use <code>-</code> operator to not to select the range of variables.</li>
+</ol>
+<div class="cell">
+<div class="sourceCode" id="cb130"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="co"># results: hide</span></span>
+<span></span>
+<span><span class="va">penguins</span> <span class="op">|&gt;</span> </span>
+<span>  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/select.html">select</a></span><span class="op">(</span><span class="op">-</span><span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="va">island</span> <span class="op">:</span> <span class="va">flipper_length_mm</span><span class="op">)</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 344 × 4
+   species body_mass_g sex     year
+   &lt;fct&gt;         &lt;int&gt; &lt;fct&gt;  &lt;int&gt;
+ 1 Adelie         3750 male    2007
+ 2 Adelie         3800 female  2007
+ 3 Adelie         3250 female  2007
+ 4 Adelie           NA &lt;NA&gt;    2007
+ 5 Adelie         3450 female  2007
+ 6 Adelie         3650 male    2007
+ 7 Adelie         3625 female  2007
+ 8 Adelie         4675 male    2007
+ 9 Adelie         3475 &lt;NA&gt;    2007
+10 Adelie         4250 &lt;NA&gt;    2007
+# ℹ 334 more rows</code></pre>
+</div>
+</div>
+</section><section id="your-turn-8" class="slide level2 your-turn"><h2>🧠 YOUR TURN</h2>
+<div class="panel-tabset">
+<ul id="tabset-58" class="panel-tabset-tabby">
+<li><a data-tabby-default="" href="#tabset-58-1">Task</a></li>
+<li><a href="#tabset-58-2">Answer</a></li>
+<li><a href="#tabset-58-3">Output</a></li>
+</ul>
+<div class="tab-content">
+<div id="tabset-58-1">
+<p>How to have a data of variables from location first to fifth but without the variable island?</p>
+</div>
+<div id="tabset-58-2">
+<div class="cell">
+<div class="sourceCode" id="cb132"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">penguins</span> <span class="op">|&gt;</span> </span>
+<span>  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/select.html">select</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="fl">1</span>, <span class="fl">3</span><span class="op">:</span><span class="fl">5</span><span class="op">)</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+<div id="tabset-58-3">
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 344 × 4
+   species bill_length_mm bill_depth_mm flipper_length_mm
+   &lt;fct&gt;            &lt;dbl&gt;         &lt;dbl&gt;             &lt;int&gt;
+ 1 Adelie            39.1          18.7               181
+ 2 Adelie            39.5          17.4               186
+ 3 Adelie            40.3          18                 195
+ 4 Adelie            NA            NA                  NA
+ 5 Adelie            36.7          19.3               193
+ 6 Adelie            39.3          20.6               190
+ 7 Adelie            38.9          17.8               181
+ 8 Adelie            39.2          19.6               195
+ 9 Adelie            34.1          18.1               193
+10 Adelie            42            20.2               190
+# ℹ 334 more rows</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="cell">
+<div class="cell-output-display">
+<div class="countdown" id="timer_eabfef3c" data-update-every="1" data-play-sound="true" tabindex="0" style="top:-5%;right:0;font-size:2em;">
+<div class="countdown-controls">
+<button class="countdown-bump-down">−</button><button class="countdown-bump-up">&amp;plus;</button>
+</div>
+<code class="countdown-time"><span class="countdown-digits minutes">05</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
+</div>
+</div>
+</div>
+</section><section id="mutate-function" class="slide level2"><h2>
+<code>mutate()</code> Function:</h2>
+<blockquote>
+<p>Adds new variables that are functions of existing variables.</p>
+</blockquote>
+
+<img data-src="images/04-mutate.png" class="r-stretch"></section><section id="mutate-function-1" class="slide level2"><h2>
+<code>mutate()</code> Function</h2>
+<div class="panel-tabset">
+<ul id="tabset-59" class="panel-tabset-tabby">
+<li><a data-tabby-default="" href="#tabset-59-1">Task</a></li>
+<li><a href="#tabset-59-2">Code</a></li>
+<li><a href="#tabset-59-3">Output</a></li>
+</ul>
+<div class="tab-content">
+<div id="tabset-59-1">
+<blockquote>
+<p>How to convert body mass of penguins from grams to kilograms?</p>
+</blockquote>
+</div>
+<div id="tabset-59-2">
+<div class="cell">
+<div class="sourceCode" id="cb134"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">penguins</span> <span class="op">|&gt;</span> </span>
+<span>  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/select.html">select</a></span><span class="op">(</span><span class="va">body_mass_g</span><span class="op">)</span> <span class="op">|&gt;</span> </span>
+<span>  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/mutate.html">mutate</a></span><span class="op">(</span>body_mass_kg <span class="op">=</span> <span class="va">body_mass_g</span> <span class="op">/</span> <span class="fl">1000</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+<div id="tabset-59-3">
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 344 × 2
+   body_mass_g body_mass_kg
+         &lt;int&gt;        &lt;dbl&gt;
+ 1        3750         3.75
+ 2        3800         3.8 
+ 3        3250         3.25
+ 4          NA        NA   
+ 5        3450         3.45
+ 6        3650         3.65
+ 7        3625         3.62
+ 8        4675         4.68
+ 9        3475         3.48
+10        4250         4.25
+# ℹ 334 more rows</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section><section id="mutate-function-2" class="slide level2"><h2>
+<code>mutate()</code> Function</h2>
+<div class="panel-tabset">
+<ul id="tabset-60" class="panel-tabset-tabby">
+<li><a data-tabby-default="" href="#tabset-60-1">Task</a></li>
+<li><a href="#tabset-60-2">Code</a></li>
+<li><a href="#tabset-60-3">Output</a></li>
+</ul>
+<div class="tab-content">
+<div id="tabset-60-1">
+<blockquote>
+<p>How to measure the penguin’s bill size using length and depth?</p>
+</blockquote>
+</div>
+<div id="tabset-60-2">
+<div class="cell">
+<div class="sourceCode" id="cb136"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">penguins</span> <span class="op">|&gt;</span> </span>
+<span>  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/mutate.html">mutate</a></span><span class="op">(</span>bill_size <span class="op">=</span> <span class="va">bill_length_mm</span> <span class="op">*</span> <span class="va">bill_depth_mm</span><span class="op">)</span> <span class="op">|&gt;</span> </span>
+<span>  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/select.html">select</a></span><span class="op">(</span><span class="va">bill_size</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+<div id="tabset-60-3">
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 344 × 1
+   bill_size
+       &lt;dbl&gt;
+ 1      731.
+ 2      687.
+ 3      725.
+ 4       NA 
+ 5      708.
+ 6      810.
+ 7      692.
+ 8      768.
+ 9      617.
+10      848.
+# ℹ 334 more rows</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section><section id="your-turn-9" class="slide level2 your-turn"><h2>🧠 YOUR TURN</h2>
+<div class="panel-tabset">
+<ul id="tabset-61" class="panel-tabset-tabby">
+<li><a data-tabby-default="" href="#tabset-61-1">Task</a></li>
+<li><a href="#tabset-61-2">Answer</a></li>
+<li><a href="#tabset-61-3">Output</a></li>
+</ul>
+<div class="tab-content">
+<div id="tabset-61-1">
+<p>How to convert the bill dimensions from mm to cm?</p>
+</div>
+<div id="tabset-61-2">
+<div class="cell">
+<div class="sourceCode" id="cb138"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">penguins</span> <span class="op">|&gt;</span> </span>
+<span>  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/select.html">select</a></span><span class="op">(</span><span class="va">bill_length_mm</span>, <span class="va">bill_depth_mm</span><span class="op">)</span> <span class="op">|&gt;</span> </span>
+<span>  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/mutate.html">mutate</a></span><span class="op">(</span>bill_length_cm <span class="op">=</span> <span class="va">bill_length_mm</span> <span class="op">/</span> <span class="fl">10</span>, <span class="va">bill_depth_mm</span> <span class="op">/</span> <span class="fl">10</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+<div id="tabset-61-3">
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 344 × 4
+   bill_length_mm bill_depth_mm bill_length_cm `bill_depth_mm/10`
+            &lt;dbl&gt;         &lt;dbl&gt;          &lt;dbl&gt;              &lt;dbl&gt;
+ 1           39.1          18.7           3.91               1.87
+ 2           39.5          17.4           3.95               1.74
+ 3           40.3          18             4.03               1.8 
+ 4           NA            NA            NA                 NA   
+ 5           36.7          19.3           3.67               1.93
+ 6           39.3          20.6           3.93               2.06
+ 7           38.9          17.8           3.89               1.78
+ 8           39.2          19.6           3.92               1.96
+ 9           34.1          18.1           3.41               1.81
+10           42            20.2           4.2                2.02
+# ℹ 334 more rows</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="cell">
+<div class="cell-output-display">
+<div class="countdown" id="timer_acd34ef6" data-update-every="1" data-play-sound="true" tabindex="0" style="top:-5%;right:0;font-size:2em;">
+<div class="countdown-controls">
+<button class="countdown-bump-down">−</button><button class="countdown-bump-up">&amp;plus;</button>
+</div>
+<code class="countdown-time"><span class="countdown-digits minutes">05</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
+</div>
+</div>
+</div>
+</section><section id="arrange-function" class="slide level2"><h2>
+<code>arrange()</code> Function:</h2>
+<blockquote>
+<p>Changes the ordering of the rows.</p>
+</blockquote>
+
+<img data-src="images/02-arrange.png" class="r-stretch"></section><section id="arrange-function-1" class="slide level2"><h2>
+<code>arrange()</code> Function</h2>
+<div class="panel-tabset">
+<ul id="tabset-62" class="panel-tabset-tabby">
+<li><a data-tabby-default="" href="#tabset-62-1">Task</a></li>
+<li><a href="#tabset-62-2">Code</a></li>
+<li><a href="#tabset-62-3">Output</a></li>
+</ul>
+<div class="tab-content">
+<div id="tabset-62-1">
+<blockquote>
+<p>How to arrange data as per the bill length of the penguins?</p>
+</blockquote>
+</div>
+<div id="tabset-62-2">
+<div class="cell">
+<div class="sourceCode" id="cb140"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">penguins</span> <span class="op">|&gt;</span> </span>
+<span>  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/arrange.html">arrange</a></span><span class="op">(</span><span class="va">bill_length_mm</span><span class="op">)</span> <span class="co">#default is ascending order</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+<div id="tabset-62-3">
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 344 × 8
+   species island    bill_length_mm bill_depth_mm flipper_length_mm body_mass_g
+   &lt;fct&gt;   &lt;fct&gt;              &lt;dbl&gt;         &lt;dbl&gt;             &lt;int&gt;       &lt;int&gt;
+ 1 Adelie  Dream               32.1          15.5               188        3050
+ 2 Adelie  Dream               33.1          16.1               178        2900
+ 3 Adelie  Torgersen           33.5          19                 190        3600
+ 4 Adelie  Dream               34            17.1               185        3400
+ 5 Adelie  Torgersen           34.1          18.1               193        3475
+ 6 Adelie  Torgersen           34.4          18.4               184        3325
+ 7 Adelie  Biscoe              34.5          18.1               187        2900
+ 8 Adelie  Torgersen           34.6          21.1               198        4400
+ 9 Adelie  Torgersen           34.6          17.2               189        3200
+10 Adelie  Biscoe              35            17.9               190        3450
+# ℹ 334 more rows
+# ℹ 2 more variables: sex &lt;fct&gt;, year &lt;int&gt;</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section><section id="arrange-function-2" class="slide level2"><h2>
+<code>arrange()</code> Function</h2>
+<div class="panel-tabset">
+<ul id="tabset-63" class="panel-tabset-tabby">
+<li><a data-tabby-default="" href="#tabset-63-1">Task</a></li>
+<li><a href="#tabset-63-2">Code</a></li>
+<li><a href="#tabset-63-3">Output</a></li>
+</ul>
+<div class="tab-content">
+<div id="tabset-63-1">
+<blockquote>
+<p>How to see five penguins of the least bill length?</p>
+</blockquote>
+</div>
+<div id="tabset-63-2">
+<div class="cell">
+<div class="sourceCode cell-code" id="cb142" data-code-line-numbers="3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb142-1"><a href="#cb142-1"></a>penguins <span class="sc">|&gt;</span> </span>
+<span id="cb142-2"><a href="#cb142-2"></a>  <span class="fu">arrange</span>(bill_length_mm) <span class="sc">|&gt;</span> </span>
+<span id="cb142-3"><a href="#cb142-3"></a>  <span class="fu">head</span>(<span class="dv">5</span>) </span>
+<span id="cb142-4"><a href="#cb142-4"></a></span>
+<span id="cb142-5"><a href="#cb142-5"></a><span class="co">#tail function to see the bottom of the data</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+<div id="tabset-63-3">
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 5 × 8
+  species island    bill_length_mm bill_depth_mm flipper_length_mm body_mass_g
+  &lt;fct&gt;   &lt;fct&gt;              &lt;dbl&gt;         &lt;dbl&gt;             &lt;int&gt;       &lt;int&gt;
+1 Adelie  Dream               32.1          15.5               188        3050
+2 Adelie  Dream               33.1          16.1               178        2900
+3 Adelie  Torgersen           33.5          19                 190        3600
+4 Adelie  Dream               34            17.1               185        3400
+5 Adelie  Torgersen           34.1          18.1               193        3475
+# ℹ 2 more variables: sex &lt;fct&gt;, year &lt;int&gt;</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section><section id="your-turn-10" class="slide level2 your-turn"><h2>🧠 YOUR TURN</h2>
+<div class="panel-tabset">
+<ul id="tabset-64" class="panel-tabset-tabby">
+<li><a data-tabby-default="" href="#tabset-64-1">Task</a></li>
+<li><a href="#tabset-64-2">Answer</a></li>
+<li><a href="#tabset-64-3">Output</a></li>
+</ul>
+<div class="tab-content">
+<div id="tabset-64-1">
+<blockquote>
+<p>How to see five penguins of the highest bill length?</p>
+</blockquote>
+</div>
+<div id="tabset-64-2">
+<div class="cell">
+<div class="sourceCode" id="cb144"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">penguins</span> <span class="op">|&gt;</span> </span>
+<span>  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/arrange.html">arrange</a></span><span class="op">(</span><span class="va">bill_length_mm</span><span class="op">)</span> <span class="op">|&gt;</span> </span>
+<span>  <span class="fu"><a href="https://rdrr.io/r/utils/head.html">tail</a></span><span class="op">(</span><span class="fl">5</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+<div id="tabset-64-3">
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 5 × 8
+  species   island    bill_length_mm bill_depth_mm flipper_length_mm body_mass_g
+  &lt;fct&gt;     &lt;fct&gt;              &lt;dbl&gt;         &lt;dbl&gt;             &lt;int&gt;       &lt;int&gt;
+1 Gentoo    Biscoe              55.9          17                 228        5600
+2 Chinstrap Dream               58            17.8               181        3700
+3 Gentoo    Biscoe              59.6          17                 230        6050
+4 Adelie    Torgersen           NA            NA                  NA          NA
+5 Gentoo    Biscoe              NA            NA                  NA          NA
+# ℹ 2 more variables: sex &lt;fct&gt;, year &lt;int&gt;</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="cell">
+<div class="cell-output-display">
+<div class="countdown" id="timer_a4dbad41" data-update-every="1" data-play-sound="true" tabindex="0" style="top:-5%;right:0;font-size:2em;">
+<div class="countdown-controls">
+<button class="countdown-bump-down">−</button><button class="countdown-bump-up">&amp;plus;</button>
+</div>
+<code class="countdown-time"><span class="countdown-digits minutes">05</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
+</div>
+</div>
+</div>
+</section><section id="summarise-function" class="slide level2"><h2>
+<code>summarise()</code> Function:</h2>
+<blockquote>
+<p>Reduces multiple values down to a single summary.</p>
+</blockquote>
+
+<img data-src="images/05-summarise.png" class="r-stretch"></section><section id="summarise-function-1" class="slide level2"><h2>
+<code>summarise()</code> Function</h2>
+<div class="panel-tabset">
+<ul id="tabset-65" class="panel-tabset-tabby">
+<li><a data-tabby-default="" href="#tabset-65-1">Task</a></li>
+<li><a href="#tabset-65-2">Code</a></li>
+<li><a href="#tabset-65-3">Output</a></li>
+</ul>
+<div class="tab-content">
+<div id="tabset-65-1">
+<blockquote>
+<p>What is the mean bill length of penguins?</p>
+</blockquote>
+</div>
+<div id="tabset-65-2">
+<div class="cell">
+<div class="sourceCode cell-code" id="cb146" data-code-line-numbers="3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb146-1"><a href="#cb146-1"></a>penguins <span class="sc">|&gt;</span> </span>
+<span id="cb146-2"><a href="#cb146-2"></a>  <span class="fu">summarise</span>(<span class="fu">mean</span>(bill_length_mm))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+<div id="tabset-65-3">
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 1 × 1
+  `mean(bill_length_mm)`
+                   &lt;dbl&gt;
+1                     NA</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section><section id="summarise-function-2" class="slide level2"><h2>
+<code>summarise()</code> Function</h2>
+<div class="panel-tabset">
+<ul id="tabset-66" class="panel-tabset-tabby">
+<li><a data-tabby-default="" href="#tabset-66-1">Task</a></li>
+<li><a href="#tabset-66-2">Code</a></li>
+<li><a href="#tabset-66-3">Output</a></li>
+</ul>
+<div class="tab-content">
+<div id="tabset-66-1">
+<blockquote>
+<p>What is the mean bill length of penguins after removing the missing values?</p>
+</blockquote>
+</div>
+<div id="tabset-66-2">
+<div class="cell">
+<div class="sourceCode cell-code" id="cb148" data-code-line-numbers="2"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb148-1"><a href="#cb148-1"></a>penguins <span class="sc">|&gt;</span></span>
+<span id="cb148-2"><a href="#cb148-2"></a>  <span class="fu">drop_na</span>() <span class="sc">|&gt;</span> </span>
+<span id="cb148-3"><a href="#cb148-3"></a>  <span class="fu">summarise</span>(<span class="fu">mean</span>(bill_length_mm))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+<div id="tabset-66-3">
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 1 × 1
+  `mean(bill_length_mm)`
+                   &lt;dbl&gt;
+1                   44.0</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section><section id="summarise-function-3" class="slide level2"><h2>
+<code>summarise()</code> Function</h2>
+<div class="panel-tabset">
+<ul id="tabset-67" class="panel-tabset-tabby">
+<li><a data-tabby-default="" href="#tabset-67-1">Task</a></li>
+<li><a href="#tabset-67-2">Code</a></li>
+<li><a href="#tabset-67-3">Output</a></li>
+</ul>
+<div class="tab-content">
+<div id="tabset-67-1">
+<blockquote>
+<p>What is the species wise mean bill length of penguins?</p>
+</blockquote>
+</div>
+<div id="tabset-67-2">
+<div class="cell">
+<div class="sourceCode cell-code" id="cb150" data-code-line-numbers="3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb150-1"><a href="#cb150-1"></a>penguins <span class="sc">|&gt;</span></span>
+<span id="cb150-2"><a href="#cb150-2"></a>  <span class="fu">drop_na</span>() <span class="sc">|&gt;</span> </span>
+<span id="cb150-3"><a href="#cb150-3"></a>  <span class="fu">group_by</span>(species) <span class="sc">|&gt;</span> </span>
+<span id="cb150-4"><a href="#cb150-4"></a>  <span class="fu">summarise</span>(<span class="fu">mean</span>(bill_length_mm))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+<div id="tabset-67-3">
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 3 × 2
+  species   `mean(bill_length_mm)`
+  &lt;fct&gt;                      &lt;dbl&gt;
+1 Adelie                      38.8
+2 Chinstrap                   48.8
+3 Gentoo                      47.6</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section><section id="summarise-function-4" class="slide level2"><h2>
+<code>summarise()</code> Function</h2>
+<div class="panel-tabset">
+<ul id="tabset-68" class="panel-tabset-tabby">
+<li><a data-tabby-default="" href="#tabset-68-1">Task</a></li>
+<li><a href="#tabset-68-2">Code</a></li>
+<li><a href="#tabset-68-3">Output</a></li>
+</ul>
+<div class="tab-content">
+<div id="tabset-68-1">
+<blockquote>
+<p>What is the species wise mean bill length of penguins and total number of penguins in each specie?</p>
+</blockquote>
+</div>
+<div id="tabset-68-2">
+<div class="cell">
+<div class="sourceCode cell-code" id="cb152" data-code-line-numbers="3"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb152-1"><a href="#cb152-1"></a>penguins <span class="sc">|&gt;</span></span>
+<span id="cb152-2"><a href="#cb152-2"></a>  <span class="fu">drop_na</span>() <span class="sc">|&gt;</span> </span>
+<span id="cb152-3"><a href="#cb152-3"></a>  <span class="fu">group_by</span>(species) <span class="sc">|&gt;</span> </span>
+<span id="cb152-4"><a href="#cb152-4"></a>  <span class="fu">summarise</span>(<span class="fu">mean</span>(bill_length_mm),</span>
+<span id="cb152-5"><a href="#cb152-5"></a>            <span class="at">n =</span> <span class="fu">n</span>())</span>
+<span id="cb152-6"><a href="#cb152-6"></a></span>
+<span id="cb152-7"><a href="#cb152-7"></a><span class="co"># n() function to know the number of observations in the current group</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+<div id="tabset-68-3">
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 3 × 3
+  species   `mean(bill_length_mm)`     n
+  &lt;fct&gt;                      &lt;dbl&gt; &lt;int&gt;
+1 Adelie                      38.8   146
+2 Chinstrap                   48.8    68
+3 Gentoo                      47.6   119</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section><section id="your-turn-11" class="slide level2 your-turn"><h2>🧠 YOUR TURN</h2>
+<div class="panel-tabset">
+<ul id="tabset-69" class="panel-tabset-tabby">
+<li><a data-tabby-default="" href="#tabset-69-1">Task</a></li>
+<li><a href="#tabset-69-2">Answer</a></li>
+<li><a href="#tabset-69-3">Output</a></li>
+</ul>
+<div class="tab-content">
+<div id="tabset-69-1">
+<p>Who are of more weight male or female penguins?</p>
+</div>
+<div id="tabset-69-2">
+<div class="cell">
+<div class="sourceCode" id="cb154"><pre class="downlit sourceCode r code-with-copy"><code class="sourceCode R"><span><span class="va">penguins</span> <span class="op">|&gt;</span></span>
+<span>  <span class="fu"><a href="https://tidyr.tidyverse.org/reference/drop_na.html">drop_na</a></span><span class="op">(</span><span class="op">)</span> <span class="op">|&gt;</span> </span>
+<span>  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/group_by.html">group_by</a></span><span class="op">(</span><span class="va">sex</span><span class="op">)</span> <span class="op">|&gt;</span> </span>
+<span>  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/summarise.html">summarise</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/mean.html">mean</a></span><span class="op">(</span><span class="va">body_mass_g</span><span class="op">)</span>,</span>
+<span>            n <span class="op">=</span> <span class="fu"><a href="https://dplyr.tidyverse.org/reference/context.html">n</a></span><span class="op">(</span><span class="op">)</span><span class="op">)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+<div id="tabset-69-3">
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 2 × 3
+  sex    `mean(body_mass_g)`     n
+  &lt;fct&gt;                &lt;dbl&gt; &lt;int&gt;
+1 female               3862.   165
+2 male                 4546.   168</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="cell">
+<div class="cell-output-display">
+<div class="countdown" id="timer_58d6d3bb" data-update-every="1" data-play-sound="true" tabindex="0" style="top:-5%;right:0;font-size:2em;">
+<div class="countdown-controls">
+<button class="countdown-bump-down">−</button><button class="countdown-bump-up">&amp;plus;</button>
+</div>
+<code class="countdown-time"><span class="countdown-digits minutes">05</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
+</div>
+</div>
+</div>
+</section><section id="references" class="slide level2 scrollable small"><h2>References</h2>
 <div>
 <ul>
 <li><p>Title slide background image is from <a href="https://unsplash.com/photos/white-baubles-and-sleigh-bells-0CQfTLOVTPU">Joanna Kosinska</a>.</p></li>
@@ -3581,7 +4635,7 @@ Figure&nbsp;24
 <li><p>R packages for data science <a href="https://www.tidyverse.org/" class="uri">https://www.tidyverse.org/</a></p></li>
 </ul>
 </div>
-</section></section><section id="section-31" class="title-slide slide level1 center" data-background-image="https://images.unsplash.com/photo-1553379762-ff913d5513b5?q=80&amp;w=2070&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" data-background-size="cover"><h1></h1>
+</section></section><section id="section-32" class="title-slide slide level1 center" data-background-image="https://images.unsplash.com/photo-1553379762-ff913d5513b5?q=80&amp;w=2070&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" data-background-size="cover"><h1></h1>
 <div class="columns">
 <div class="column" style="width:70%;">
 <p><span class="r-fit-text theme-cursive theme-navy-blue left">Thank<br>You</span></p>
